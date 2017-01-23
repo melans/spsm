@@ -9,6 +9,10 @@
 #SBATCH --mail-user=anssary@gmail.com
 #SBATCH --mail-type=ALL
 
+
+# github connected
+# 
+
 . inc/fun.sh
 
 ################################################################################
