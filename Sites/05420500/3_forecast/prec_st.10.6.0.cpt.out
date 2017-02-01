@@ -1,0 +1,1591 @@
+
+
+            C L I M A T E   P R E D I C T A B I L I T Y   T O O L
+                                Version 11.03
+
+                 Evaluating seasonal climate predictability
+                        Designed for MOS applications
+
+
+ Copyright 2002-2011 International Research Institute for Climate and Society
+
+
+III RRRR  III
+ I  R   R  I
+ I  R   R  I
+ I  RRRR   I
+ I  R   R  I   I N T E R N A T I O N A L   R E S E A R C H   I N S T I T U T E
+III R   R III  F O R         C L I M A T E         A N D         S O C I E T Y
+
+
+1.  Canonical Correlation Analysis (CCA)
+2.  Principal Components Regression (PCR)
+3.  Multiple Linear Regression (MLR)
+4.  Raw GCM Model Output (GCM)
+0.  Exit
+
+________________________________________________________________________________________________________________________________
+
+Climate Predictability Tool, v. 11.03                                                                                           
+
+                                            X File
+
+Input Data                                  
+First data                                  N/A
+Last data                                   N/A
+Start at                                    0                        
+Number of fields                            0
+Number of lags                              0
+Number of gridpoints                        0
+Number used variables:                      0
+
+                                            Y File
+
+Input Data                                  
+First data                                  N/A
+Last data                                   N/A
+Start at                                    0                        
+Number of fields                            0
+Number of lags                              0
+Number of gridpoints                        0
+Number used variables:                      0
+
+                                            Forecast File
+
+Input Data                                  
+First data                                  N/A
+Last data                                   N/A
+Start at                                    0                        
+Number of fields                            0
+Number of lags                              0
+Number of gridpoints                        0
+Number used variables:                      0
+
+Training Data
+Length of training period                            0
+Length of cross-validation window                    5
+Number of forecasts                                  1
+________________________________________________________________________________________________________________________________
+
+Select option:
+  1.  Open X input file
+  2.  Open Y input file
+  7.  Length of training period
+  8.  Length of cross-validation window
+EDIT
+OPTIONS
+511.  Change language
+521.  Change numbers of X modes
+522.  Change X modes options
+531.  Goodness index options
+533.  Tailoring
+541.  Transform Y data (turn on)
+542.  Zero-bound (turn on)
+543.  Sort Ensemble Members (turn off)
+544.  Missing value options
+551.  Bootstrap settings
+552.  Forecast settings
+561.  Skill map p-values (turn on)
+VIEW
+611.  Canonical Correlation Analysis          (CCA)
+613.  Multiple Linear Regression              (MLR)
+614.  Raw GCM Model Output                    (GCM)
+ 
+  0.  Exit
+X Input File: X domain selection
+Please specify domain limits (approximate data limits in brackets):
+(southern latitudes and western longitudes negative)
+Northernmost latitude ( 47): Southernmost latitude ( 37): Westernmost longitude ( -96): Easternmost longitude ( -87): 
+X modes options
+Minimum number of X modes: Maximum number of X modes: 
+________________________________________________________________________________________________________________________________
+
+Climate Predictability Tool, v. 11.03                                                                                           
+
+                                            X File
+
+Input Data                                  X.prec_st.10.6.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1958                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        33
+Number used variables:                      0
+
+                                            Y File
+
+Input Data                                  
+First data                                  N/A
+Last data                                   N/A
+Start at                                    0                        
+Number of fields                            0
+Number of lags                              0
+Number of gridpoints                        0
+Number used variables:                      0
+
+                                            Forecast File
+
+Input Data                                  X.prec_st.10.6.0
+First data                                  1958
+Last data                                   2015
+Start at                                    2015                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        33
+Number used variables:                      0
+
+Training Data
+Length of training period                            0
+Length of cross-validation window                    5
+Number of forecasts                                  1
+________________________________________________________________________________________________________________________________
+
+Select option:
+  1.  Open X input file
+  2.  Open Y input file
+  3.  Open forecast file
+  4.  X training period settings
+  6.  Forecast period settings
+  7.  Length of training period
+  8.  Length of cross-validation window
+  9.  Number Number of forecasts
+EDIT
+211.  Change X data domain
+OPTIONS
+511.  Change language
+521.  Change numbers of X modes
+522.  Change X modes options
+531.  Goodness index options
+533.  Tailoring
+541.  Transform Y data (turn on)
+542.  Zero-bound (turn on)
+543.  Sort Ensemble Members (turn off)
+544.  Missing value options
+551.  Bootstrap settings
+552.  Forecast settings
+561.  Skill map p-values (turn on)
+VIEW
+611.  Canonical Correlation Analysis          (CCA)
+ 
+  0.  Exit
+Y Input File: Y domain selection
+Please specify domain limits (approximate data limits in brackets):
+(southern latitudes and western longitudes negative)
+Northernmost latitude ( 42): Southernmost latitude ( 41): Westernmost longitude ( -91): Easternmost longitude ( -90): 
+________________________________________________________________________________________________________________________________
+
+Climate Predictability Tool, v. 11.03                                                                                           
+
+                                            X File
+
+Input Data                                  X.prec_st.10.6.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1958                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        33
+Number used variables:                      0
+
+                                            Y File
+
+Input Data                                  Y.10.5
+First data                                  1958
+Last data                                   2015
+Start at                                    1958                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        1
+Number used variables:                      0
+
+                                            Forecast File
+
+Input Data                                  X.prec_st.10.6.0
+First data                                  1958
+Last data                                   2015
+Start at                                    2015                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        33
+Number used variables:                      0
+
+Training Data
+Length of training period                           58
+Length of cross-validation window                    5
+Number of forecasts                                  1
+________________________________________________________________________________________________________________________________
+
+Select option:
+  1.  Open X input file
+  2.  Open Y input file
+  3.  Open forecast file
+  4.  X training period settings
+  5.  Y training period settings
+  6.  Forecast period settings
+  7.  Length of training period
+  8.  Length of cross-validation window
+  9.  Number Number of forecasts
+EDIT
+211.  Change X data domain
+212.  Change Y data domain
+ACTIONS
+311.  Perform cross-validated analysis
+312.  Perform retroactive analysis
+321.  Reset
+OPTIONS
+511.  Change language
+521.  Change numbers of X modes
+522.  Change X modes options
+531.  Goodness index options
+532.  Set climatological period
+533.  Tailoring
+541.  Transform Y data (turn on)
+542.  Zero-bound (turn on)
+543.  Sort Ensemble Members (turn off)
+544.  Missing value options
+551.  Bootstrap settings
+552.  Forecast settings
+561.  Skill map p-values (turn on)
+VIEW
+611.  Canonical Correlation Analysis          (CCA)
+ 
+  0.  Exit
+
+Forecast Settings
+
+
+Prediction Interval
+Confidence level (%): Ensemble size: 
+Number of ensemble members: Error variance:
+1. Cross-validated error variance
+3. Fitted error variance
+Odds: 
+0. Odds
+1. Odds relative to climatology
+Precision: 
+Number of decimal places (maximum is 8): 
+________________________________________________________________________________________________________________________________
+
+Climate Predictability Tool, v. 11.03                                                                                           
+
+                                            X File
+
+Input Data                                  X.prec_st.10.6.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1958                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        33
+Number used variables:                      0
+
+                                            Y File
+
+Input Data                                  Y.10.5
+First data                                  1958
+Last data                                   2015
+Start at                                    1958                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        1
+Number used variables:                      0
+
+                                            Forecast File
+
+Input Data                                  X.prec_st.10.6.0
+First data                                  1958
+Last data                                   2015
+Start at                                    2015                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        33
+Number used variables:                      0
+
+Training Data
+Length of training period                           58
+Length of cross-validation window                    5
+Number of forecasts                                  1
+________________________________________________________________________________________________________________________________
+
+Select option:
+  1.  Open X input file
+  2.  Open Y input file
+  3.  Open forecast file
+  4.  X training period settings
+  5.  Y training period settings
+  6.  Forecast period settings
+  7.  Length of training period
+  8.  Length of cross-validation window
+  9.  Number Number of forecasts
+EDIT
+211.  Change X data domain
+212.  Change Y data domain
+ACTIONS
+311.  Perform cross-validated analysis
+312.  Perform retroactive analysis
+321.  Reset
+OPTIONS
+511.  Change language
+521.  Change numbers of X modes
+522.  Change X modes options
+531.  Goodness index options
+532.  Set climatological period
+533.  Tailoring
+541.  Transform Y data (turn on)
+542.  Zero-bound (turn on)
+543.  Sort Ensemble Members (turn off)
+544.  Missing value options
+551.  Bootstrap settings
+552.  Forecast settings
+561.  Skill map p-values (turn on)
+VIEW
+611.  Canonical Correlation Analysis          (CCA)
+ 
+  0.  Exit
+
+Number of forecasts: 
+________________________________________________________________________________________________________________________________
+
+Climate Predictability Tool, v. 11.03                                                                                           
+
+                                            X File
+
+Input Data                                  X.prec_st.10.6.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1958                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        33
+Number used variables:                      0
+
+                                            Y File
+
+Input Data                                  Y.10.5
+First data                                  1958
+Last data                                   2015
+Start at                                    1958                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        1
+Number used variables:                      0
+
+                                            Forecast File
+
+Input Data                                  X.prec_st.10.6.0
+First data                                  1958
+Last data                                   2015
+Start at                                    2015                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        33
+Number used variables:                      0
+
+Training Data
+Length of training period                           58
+Length of cross-validation window                    5
+Number of forecasts                                 30
+________________________________________________________________________________________________________________________________
+
+Select option:
+  1.  Open X input file
+  2.  Open Y input file
+  3.  Open forecast file
+  4.  X training period settings
+  5.  Y training period settings
+  6.  Forecast period settings
+  7.  Length of training period
+  8.  Length of cross-validation window
+  9.  Number Number of forecasts
+EDIT
+211.  Change X data domain
+212.  Change Y data domain
+ACTIONS
+311.  Perform cross-validated analysis
+312.  Perform retroactive analysis
+321.  Reset
+OPTIONS
+511.  Change language
+521.  Change numbers of X modes
+522.  Change X modes options
+531.  Goodness index options
+532.  Set climatological period
+533.  Tailoring
+541.  Transform Y data (turn on)
+542.  Zero-bound (turn on)
+543.  Sort Ensemble Members (turn off)
+544.  Missing value options
+551.  Bootstrap settings
+552.  Forecast settings
+561.  Skill map p-values (turn on)
+VIEW
+611.  Canonical Correlation Analysis          (CCA)
+ 
+  0.  Exit
+First date of data in forecast file: 1958                     
+First year from which to forecast: 
+________________________________________________________________________________________________________________________________
+
+Climate Predictability Tool, v. 11.03                                                                                           
+
+                                            X File
+
+Input Data                                  X.prec_st.10.6.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1958                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        33
+Number used variables:                      0
+
+                                            Y File
+
+Input Data                                  Y.10.5
+First data                                  1958
+Last data                                   2015
+Start at                                    1958                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        1
+Number used variables:                      0
+
+                                            Forecast File
+
+Input Data                                  X.prec_st.10.6.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1985                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        33
+Number used variables:                      0
+
+Training Data
+Length of training period                           58
+Length of cross-validation window                    5
+Number of forecasts                                 30
+________________________________________________________________________________________________________________________________
+
+Select option:
+  1.  Open X input file
+  2.  Open Y input file
+  3.  Open forecast file
+  4.  X training period settings
+  5.  Y training period settings
+  6.  Forecast period settings
+  7.  Length of training period
+  8.  Length of cross-validation window
+  9.  Number Number of forecasts
+EDIT
+211.  Change X data domain
+212.  Change Y data domain
+ACTIONS
+311.  Perform cross-validated analysis
+312.  Perform retroactive analysis
+321.  Reset
+OPTIONS
+511.  Change language
+521.  Change numbers of X modes
+522.  Change X modes options
+531.  Goodness index options
+532.  Set climatological period
+533.  Tailoring
+541.  Transform Y data (turn on)
+542.  Zero-bound (turn on)
+543.  Sort Ensemble Members (turn off)
+544.  Missing value options
+551.  Bootstrap settings
+552.  Forecast settings
+561.  Skill map p-values (turn on)
+VIEW
+611.  Canonical Correlation Analysis          (CCA)
+ 
+  0.  Exit
+
+Length of cross-validation period (must be odd): 
+________________________________________________________________________________________________________________________________
+
+Climate Predictability Tool, v. 11.03                                                                                           
+
+                                            X File
+
+Input Data                                  X.prec_st.10.6.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1958                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        33
+Number used variables:                      0
+
+                                            Y File
+
+Input Data                                  Y.10.5
+First data                                  1958
+Last data                                   2015
+Start at                                    1958                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        1
+Number used variables:                      0
+
+                                            Forecast File
+
+Input Data                                  X.prec_st.10.6.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1985                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        33
+Number used variables:                      0
+
+Training Data
+Length of training period                           58
+Length of cross-validation window                    3
+Number of forecasts                                 30
+________________________________________________________________________________________________________________________________
+
+Select option:
+  1.  Open X input file
+  2.  Open Y input file
+  3.  Open forecast file
+  4.  X training period settings
+  5.  Y training period settings
+  6.  Forecast period settings
+  7.  Length of training period
+  8.  Length of cross-validation window
+  9.  Number Number of forecasts
+EDIT
+211.  Change X data domain
+212.  Change Y data domain
+ACTIONS
+311.  Perform cross-validated analysis
+312.  Perform retroactive analysis
+321.  Reset
+OPTIONS
+511.  Change language
+521.  Change numbers of X modes
+522.  Change X modes options
+531.  Goodness index options
+532.  Set climatological period
+533.  Tailoring
+541.  Transform Y data (turn on)
+542.  Zero-bound (turn on)
+543.  Sort Ensemble Members (turn off)
+544.  Missing value options
+551.  Bootstrap settings
+552.  Forecast settings
+561.  Skill map p-values (turn on)
+VIEW
+611.  Canonical Correlation Analysis          (CCA)
+ 
+  0.  Exit
+Reading ../Sites/05420500/2_format/X.prec_st.10.6.0 ...
+Reading ../Sites/05420500/2_format/Y.10.5 ...
+Checking for missing values ...
+Total number of non-missing Station in X domain:              33
+Total number of non-missing Station in Y domain:               1
+Data read successfully
+
+Beginning analysis ...
+Climatological period: 1958 to 2015
+Calculating climatologies and thresholds ...
+Optimizing cross-validated performance ...
+Training period: 1958 to 2015
+ 
+               CURRENT                         OPTIMUM
+ 
+      Number of Modes    Goodness      Number of Modes    Goodness
+                            Index                            Index
+              1             0.087              1             0.087
+              2             0.304              2             0.304
+              3             0.650              3             0.650
+              4             0.643              3             0.650
+Constructing model using full training period (1958 to 2015) ...
+Identifying categories ...
+Done!
+
+________________________________________________________________________________________________________________________________
+
+Climate Predictability Tool, v. 11.03                                                                                           
+
+                                            X File
+
+Input Data                                  X.prec_st.10.6.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1958                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        33
+Number used variables:                      33
+
+                                            Y File
+
+Input Data                                  Y.10.5
+First data                                  1958
+Last data                                   2015
+Start at                                    1958                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        1
+Number used variables:                      1
+
+                                            Forecast File
+
+Input Data                                  X.prec_st.10.6.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1985                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        33
+Number used variables:                      33
+
+Training Data
+Length of training period                           58
+Length of cross-validation window                    3
+Number of forecasts                                 30
+________________________________________________________________________________________________________________________________
+
+Select option:
+  1.  Open X input file
+  2.  Open Y input file
+  3.  Open forecast file
+  4.  X training period settings
+  5.  Y training period settings
+  6.  Forecast period settings
+  7.  Length of training period
+  8.  Length of cross-validation window
+  9.  Number Number of forecasts
+FILE
+111.  Data output
+ACTIONS
+321.  Reset
+TOOLS
+411.  Cross-validated performance measures
+412.  Cross-validated bootstrapping and significance testing
+413.  Cross-validated skill maps
+414.  Cross-validated ROC
+415.  Cross-validated contingency tables
+441.  Scree plots
+451.  Forecast series
+452.  Forecast ensembles
+453.  Exceedance probabilities
+454.  Forecast values
+455.  Forecast probabilities
+OPTIONS
+511.  Change language
+521.  Change numbers of X modes
+522.  Change X modes options
+531.  Goodness index options
+532.  Set climatological period
+533.  Tailoring
+551.  Bootstrap settings
+552.  Forecast settings
+561.  Skill map p-values (turn on)
+ 
+  0.  Exit
+
+Output files:
+
+Input Data
+ 1. X Input Data
+ 3. Y Input Data
+
+Historical Predictions
+ 4. Cross-Validated Predictions
+
+EOF Prefiltering
+X variable EOF files
+ 8. X Eigenvalues
+ 9. X Spatial Loadings
+10. X Temporal Scores
+
+PCR Results
+Regression files
+19. Regression Coefficients
+20. PC Regression Coefficients
+
+ 0. Exit
+Cross-Validated Predictions Output file: 
+Saving: ../Sites/05420500/3_forecast/prec_st.10.6.0.CV.txt
+Done!
+
+Output files:
+
+Input Data
+ 1. X Input Data
+ 3. Y Input Data
+
+Historical Predictions
+ 4. Cross-Validated Predictions
+
+EOF Prefiltering
+X variable EOF files
+ 8. X Eigenvalues
+ 9. X Spatial Loadings
+10. X Temporal Scores
+
+PCR Results
+Regression files
+19. Regression Coefficients
+20. PC Regression Coefficients
+
+ 0. Exit
+
+________________________________________________________________________________________________________________________________
+
+Climate Predictability Tool, v. 11.03                                                                                           
+
+                                            X File
+
+Input Data                                  X.prec_st.10.6.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1958                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        33
+Number used variables:                      33
+
+                                            Y File
+
+Input Data                                  Y.10.5
+First data                                  1958
+Last data                                   2015
+Start at                                    1958                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        1
+Number used variables:                      1
+
+                                            Forecast File
+
+Input Data                                  X.prec_st.10.6.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1985                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        33
+Number used variables:                      33
+
+Training Data
+Length of training period                           58
+Length of cross-validation window                    3
+Number of forecasts                                 30
+________________________________________________________________________________________________________________________________
+
+Select option:
+  1.  Open X input file
+  2.  Open Y input file
+  3.  Open forecast file
+  4.  X training period settings
+  5.  Y training period settings
+  6.  Forecast period settings
+  7.  Length of training period
+  8.  Length of cross-validation window
+  9.  Number Number of forecasts
+FILE
+111.  Data output
+ACTIONS
+321.  Reset
+TOOLS
+411.  Cross-validated performance measures
+412.  Cross-validated bootstrapping and significance testing
+413.  Cross-validated skill maps
+414.  Cross-validated ROC
+415.  Cross-validated contingency tables
+441.  Scree plots
+451.  Forecast series
+452.  Forecast ensembles
+453.  Exceedance probabilities
+454.  Forecast values
+455.  Forecast probabilities
+OPTIONS
+511.  Change language
+521.  Change numbers of X modes
+522.  Change X modes options
+531.  Goodness index options
+532.  Set climatological period
+533.  Tailoring
+551.  Bootstrap settings
+552.  Forecast settings
+561.  Skill map p-values (turn on)
+ 
+  0.  Exit
+ Resetting clears the current results.
+
+________________________________________________________________________________________________________________________________
+
+Climate Predictability Tool, v. 11.03                                                                                           
+
+                                            X File
+
+Input Data                                  X.prec_st.10.6.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1958                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        33
+Number used variables:                      0
+
+                                            Y File
+
+Input Data                                  Y.10.5
+First data                                  1958
+Last data                                   2015
+Start at                                    1958                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        1
+Number used variables:                      0
+
+                                            Forecast File
+
+Input Data                                  X.prec_st.10.6.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1985                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        33
+Number used variables:                      0
+
+Training Data
+Length of training period                           58
+Length of cross-validation window                    3
+Number of forecasts                                 30
+________________________________________________________________________________________________________________________________
+
+Select option:
+  1.  Open X input file
+  2.  Open Y input file
+  3.  Open forecast file
+  4.  X training period settings
+  5.  Y training period settings
+  6.  Forecast period settings
+  7.  Length of training period
+  8.  Length of cross-validation window
+  9.  Number Number of forecasts
+EDIT
+211.  Change X data domain
+212.  Change Y data domain
+ACTIONS
+311.  Perform cross-validated analysis
+312.  Perform retroactive analysis
+321.  Reset
+OPTIONS
+511.  Change language
+521.  Change numbers of X modes
+522.  Change X modes options
+531.  Goodness index options
+532.  Set climatological period
+533.  Tailoring
+541.  Transform Y data (turn on)
+542.  Zero-bound (turn on)
+543.  Sort Ensemble Members (turn off)
+544.  Missing value options
+551.  Bootstrap settings
+552.  Forecast settings
+561.  Skill map p-values (turn on)
+VIEW
+611.  Canonical Correlation Analysis          (CCA)
+ 
+  0.  Exit
+
+________________________________________________________________________________________________________________________________
+
+Climate Predictability Tool, v. 11.03                                                                                           
+
+                                            X File
+
+Input Data                                  X.prec_st.10.6.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1958                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        33
+Number used variables:                      0
+
+                                            Y File
+
+Input Data                                  Y.10.5
+First data                                  1958
+Last data                                   2015
+Start at                                    1958                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        1
+Number used variables:                      0
+
+                                            Forecast File
+
+Input Data                                  X.prec_st.10.6.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1985                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        33
+Number used variables:                      0
+
+Training Data
+Length of training period                           58
+Length of cross-validation window                    3
+Number of forecasts                                 30
+________________________________________________________________________________________________________________________________
+
+Select option:
+  1.  Open X input file
+  2.  Open Y input file
+  3.  Open forecast file
+  4.  X training period settings
+  5.  Y training period settings
+  6.  Forecast period settings
+  7.  Length of training period
+  8.  Length of cross-validation window
+  9.  Number Number of forecasts
+EDIT
+211.  Change X data domain
+212.  Change Y data domain
+ACTIONS
+311.  Perform cross-validated analysis
+312.  Perform retroactive analysis
+321.  Reset
+OPTIONS
+511.  Change language
+521.  Change numbers of X modes
+522.  Change X modes options
+531.  Goodness index options
+532.  Set climatological period
+533.  Tailoring
+541.  Transform Y data (turn on)
+542.  Zero-bound (turn off)
+543.  Sort Ensemble Members (turn off)
+544.  Missing value options
+551.  Bootstrap settings
+552.  Forecast settings
+561.  Skill map p-values (turn on)
+VIEW
+611.  Canonical Correlation Analysis          (CCA)
+ 
+  0.  Exit
+
+Retroactive forecasts
+Length of initial training period (suggested value 29): 
+Retroactive forecasts
+Training period update interval: Reading ../Sites/05420500/2_format/X.prec_st.10.6.0 ...
+Reading ../Sites/05420500/2_format/Y.10.5 ...
+Checking for missing values ...
+Total number of non-missing Station in X domain:              33
+Total number of non-missing Station in Y domain:               1
+Data read successfully
+
+Beginning analysis ...
+Climatological period: 1958 to 2015
+Calculating climatologies and thresholds ...
+Calculating retroactive forecasts ...
+Training period: 1958 to 1986
+ 
+               CURRENT                         OPTIMUM
+ 
+      Number of Modes    Goodness      Number of Modes    Goodness
+                            Index                            Index
+              1            -0.207              1            -0.207
+              2             0.128              2             0.128
+              3             0.453              3             0.453
+              4             0.453              3             0.453
+Calculating retroactive forecasts for 1987
+ 
+Training period: 1958 to 1987
+ 
+               CURRENT                         OPTIMUM
+ 
+      Number of Modes    Goodness      Number of Modes    Goodness
+                            Index                            Index
+              1            -0.241              1            -0.241
+              2             0.126              2             0.126
+              3             0.471              3             0.471
+              4             0.513              4             0.513
+Calculating retroactive forecasts for 1988
+ 
+Training period: 1958 to 1988
+ 
+               CURRENT                         OPTIMUM
+ 
+      Number of Modes    Goodness      Number of Modes    Goodness
+                            Index                            Index
+              1            -0.174              1            -0.174
+              2             0.196              2             0.196
+              3             0.531              3             0.531
+              4             0.523              3             0.531
+Calculating retroactive forecasts for 1989
+ 
+Training period: 1958 to 1989
+ 
+               CURRENT                         OPTIMUM
+ 
+      Number of Modes    Goodness      Number of Modes    Goodness
+                            Index                            Index
+              1            -0.230              1            -0.230
+              2             0.185              2             0.185
+              3             0.556              3             0.556
+              4             0.548              3             0.556
+Calculating retroactive forecasts for 1990
+ 
+Training period: 1958 to 1990
+ 
+               CURRENT                         OPTIMUM
+ 
+      Number of Modes    Goodness      Number of Modes    Goodness
+                            Index                            Index
+              1            -0.254              1            -0.254
+              2             0.186              2             0.186
+              3             0.542              3             0.542
+              4             0.477              3             0.542
+Calculating retroactive forecasts for 1991
+ 
+Training period: 1958 to 1991
+ 
+               CURRENT                         OPTIMUM
+ 
+      Number of Modes    Goodness      Number of Modes    Goodness
+                            Index                            Index
+              1            -0.251              1            -0.251
+              2             0.169              2             0.169
+              3             0.540              3             0.540
+              4             0.512              3             0.540
+Calculating retroactive forecasts for 1992
+ 
+Training period: 1958 to 1992
+ 
+               CURRENT                         OPTIMUM
+ 
+      Number of Modes    Goodness      Number of Modes    Goodness
+                            Index                            Index
+              1            -0.190              1            -0.190
+              2             0.197              2             0.197
+              3             0.543              3             0.543
+              4             0.503              3             0.543
+Calculating retroactive forecasts for 1993
+ 
+Training period: 1958 to 1993
+ 
+               CURRENT                         OPTIMUM
+ 
+      Number of Modes    Goodness      Number of Modes    Goodness
+                            Index                            Index
+              1            -0.194              1            -0.194
+              2             0.181              2             0.181
+              3             0.537              3             0.537
+              4             0.511              3             0.537
+Calculating retroactive forecasts for 1994
+ 
+Training period: 1958 to 1994
+ 
+               CURRENT                         OPTIMUM
+ 
+      Number of Modes    Goodness      Number of Modes    Goodness
+                            Index                            Index
+              1            -0.285              1            -0.285
+              2             0.219              2             0.219
+              3             0.574              3             0.574
+              4             0.544              3             0.574
+Calculating retroactive forecasts for 1995
+ 
+Training period: 1958 to 1995
+ 
+               CURRENT                         OPTIMUM
+ 
+      Number of Modes    Goodness      Number of Modes    Goodness
+                            Index                            Index
+              1            -0.275              1            -0.275
+              2             0.220              2             0.220
+              3             0.565              3             0.565
+              4             0.528              3             0.565
+Calculating retroactive forecasts for 1996
+ 
+Training period: 1958 to 1996
+ 
+               CURRENT                         OPTIMUM
+ 
+      Number of Modes    Goodness      Number of Modes    Goodness
+                            Index                            Index
+              1            -0.247              1            -0.247
+              2             0.212              2             0.212
+              3             0.547              3             0.547
+              4             0.522              3             0.547
+Calculating retroactive forecasts for 1997
+ 
+Training period: 1958 to 1997
+ 
+               CURRENT                         OPTIMUM
+ 
+      Number of Modes    Goodness      Number of Modes    Goodness
+                            Index                            Index
+              1            -0.372              1            -0.372
+              2             0.233              2             0.233
+              3             0.579              3             0.579
+              4             0.577              3             0.579
+Calculating retroactive forecasts for 1998
+ 
+Training period: 1958 to 1998
+ 
+               CURRENT                         OPTIMUM
+ 
+      Number of Modes    Goodness      Number of Modes    Goodness
+                            Index                            Index
+              1            -0.320              1            -0.320
+              2             0.224              2             0.224
+              3             0.593              3             0.593
+              4             0.583              3             0.593
+Calculating retroactive forecasts for 1999
+ 
+Training period: 1958 to 1999
+ 
+               CURRENT                         OPTIMUM
+ 
+      Number of Modes    Goodness      Number of Modes    Goodness
+                            Index                            Index
+              1            -0.168              1            -0.168
+              2             0.289              2             0.289
+              3             0.614              3             0.614
+              4             0.603              3             0.614
+Calculating retroactive forecasts for 2000
+ 
+Training period: 1958 to 2000
+ 
+               CURRENT                         OPTIMUM
+ 
+      Number of Modes    Goodness      Number of Modes    Goodness
+                            Index                            Index
+              1            -0.172              1            -0.172
+              2             0.298              2             0.298
+              3             0.626              3             0.626
+              4             0.612              3             0.626
+Calculating retroactive forecasts for 2001
+ 
+Training period: 1958 to 2001
+ 
+               CURRENT                         OPTIMUM
+ 
+      Number of Modes    Goodness      Number of Modes    Goodness
+                            Index                            Index
+              1            -0.137              1            -0.137
+              2             0.313              2             0.313
+              3             0.632              3             0.632
+              4             0.626              3             0.632
+Calculating retroactive forecasts for 2002
+ 
+Training period: 1958 to 2002
+ 
+               CURRENT                         OPTIMUM
+ 
+      Number of Modes    Goodness      Number of Modes    Goodness
+                            Index                            Index
+              1            -0.139              1            -0.139
+              2             0.293              2             0.293
+              3             0.624              3             0.624
+              4             0.620              3             0.624
+Calculating retroactive forecasts for 2003
+ 
+Training period: 1958 to 2003
+ 
+               CURRENT                         OPTIMUM
+ 
+      Number of Modes    Goodness      Number of Modes    Goodness
+                            Index                            Index
+              1            -0.134              1            -0.134
+              2             0.328              2             0.328
+              3             0.631              3             0.631
+              4             0.610              3             0.631
+Calculating retroactive forecasts for 2004
+ 
+Training period: 1958 to 2004
+ 
+               CURRENT                         OPTIMUM
+ 
+      Number of Modes    Goodness      Number of Modes    Goodness
+                            Index                            Index
+              1            -0.112              1            -0.112
+              2             0.275              2             0.275
+              3             0.636              3             0.636
+              4             0.611              3             0.636
+Calculating retroactive forecasts for 2005
+ 
+Training period: 1958 to 2005
+ 
+               CURRENT                         OPTIMUM
+ 
+      Number of Modes    Goodness      Number of Modes    Goodness
+                            Index                            Index
+              1            -0.083              1            -0.083
+              2             0.268              2             0.268
+              3             0.640              3             0.640
+              4             0.622              3             0.640
+Calculating retroactive forecasts for 2006
+ 
+Training period: 1958 to 2006
+ 
+               CURRENT                         OPTIMUM
+ 
+      Number of Modes    Goodness      Number of Modes    Goodness
+                            Index                            Index
+              1            -0.087              1            -0.087
+              2             0.192              2             0.192
+              3             0.612              3             0.612
+              4             0.605              3             0.612
+Calculating retroactive forecasts for 2007
+ 
+Training period: 1958 to 2007
+ 
+               CURRENT                         OPTIMUM
+ 
+      Number of Modes    Goodness      Number of Modes    Goodness
+                            Index                            Index
+              1            -0.066              1            -0.066
+              2             0.207              2             0.207
+              3             0.613              3             0.613
+              4             0.613              3             0.613
+Calculating retroactive forecasts for 2008
+ 
+Training period: 1958 to 2008
+ 
+               CURRENT                         OPTIMUM
+ 
+      Number of Modes    Goodness      Number of Modes    Goodness
+                            Index                            Index
+              1            -0.049              1            -0.049
+              2             0.198              2             0.198
+              3             0.625              3             0.625
+              4             0.628              4             0.628
+Calculating retroactive forecasts for 2009
+ 
+Training period: 1958 to 2009
+ 
+               CURRENT                         OPTIMUM
+ 
+      Number of Modes    Goodness      Number of Modes    Goodness
+                            Index                            Index
+              1            -0.050              1            -0.050
+              2             0.231              2             0.231
+              3             0.623              3             0.623
+              4             0.624              4             0.624
+Calculating retroactive forecasts for 2010
+ 
+Training period: 1958 to 2010
+ 
+               CURRENT                         OPTIMUM
+ 
+      Number of Modes    Goodness      Number of Modes    Goodness
+                            Index                            Index
+              1            -0.009              1            -0.009
+              2             0.218              2             0.218
+              3             0.623              3             0.623
+              4             0.626              4             0.626
+Calculating retroactive forecasts for 2011
+ 
+Training period: 1958 to 2011
+ 
+               CURRENT                         OPTIMUM
+ 
+      Number of Modes    Goodness      Number of Modes    Goodness
+                            Index                            Index
+              1             0.057              1             0.057
+              2             0.238              2             0.238
+              3             0.634              3             0.634
+              4             0.632              3             0.634
+Calculating retroactive forecasts for 2012
+ 
+Training period: 1958 to 2012
+ 
+               CURRENT                         OPTIMUM
+ 
+      Number of Modes    Goodness      Number of Modes    Goodness
+                            Index                            Index
+              1             0.051              1             0.051
+              2             0.238              2             0.238
+              3             0.638              3             0.638
+              4             0.636              3             0.638
+Calculating retroactive forecasts for 2013
+ 
+Training period: 1958 to 2013
+ 
+               CURRENT                         OPTIMUM
+ 
+      Number of Modes    Goodness      Number of Modes    Goodness
+                            Index                            Index
+              1             0.035              1             0.035
+              2             0.242              2             0.242
+              3             0.631              3             0.631
+              4             0.627              3             0.631
+Calculating retroactive forecasts for 2014
+ 
+Training period: 1958 to 2014
+ 
+               CURRENT                         OPTIMUM
+ 
+      Number of Modes    Goodness      Number of Modes    Goodness
+                            Index                            Index
+              1             0.056              1             0.056
+              2             0.254              2             0.254
+              3             0.640              3             0.640
+              4             0.642              4             0.642
+Calculating retroactive forecasts for 2015
+ 
+Optimizing cross-validated performance ...
+Training period: 1958 to 2015
+ 
+               CURRENT                         OPTIMUM
+ 
+      Number of Modes    Goodness      Number of Modes    Goodness
+                            Index                            Index
+              1             0.087              1             0.087
+              2             0.304              2             0.304
+              3             0.650              3             0.650
+              4             0.643              3             0.650
+Constructing model using full training period (1958 to 2015) ...
+Identifying categories ...
+Done!
+
+________________________________________________________________________________________________________________________________
+
+Climate Predictability Tool, v. 11.03                                                                                           
+
+                                            X File
+
+Input Data                                  X.prec_st.10.6.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1958                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        33
+Number used variables:                      33
+
+                                            Y File
+
+Input Data                                  Y.10.5
+First data                                  1958
+Last data                                   2015
+Start at                                    1958                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        1
+Number used variables:                      1
+
+                                            Forecast File
+
+Input Data                                  X.prec_st.10.6.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1985                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        33
+Number used variables:                      33
+
+Training Data
+Length of training period                           58
+Length of cross-validation window                    3
+Number of forecasts                                 30
+________________________________________________________________________________________________________________________________
+
+Select option:
+  1.  Open X input file
+  2.  Open Y input file
+  3.  Open forecast file
+  4.  X training period settings
+  5.  Y training period settings
+  6.  Forecast period settings
+  7.  Length of training period
+  8.  Length of cross-validation window
+  9.  Number Number of forecasts
+FILE
+111.  Data output
+ACTIONS
+321.  Reset
+TOOLS
+411.  Cross-validated performance measures
+412.  Cross-validated bootstrapping and significance testing
+413.  Cross-validated skill maps
+414.  Cross-validated ROC
+415.  Cross-validated contingency tables
+421.  Retroactive performance measures
+422.  Retroactive bootstrapping and significance testing
+423.  Retroactive skill maps
+424.  Retroactive ROC
+425.  Retroactive contingency tables
+431.  Attributes diagram
+432.  ROC diagram
+433.  Probabilistic verification scores
+434.  Weather roulette
+441.  Scree plots
+451.  Forecast series
+452.  Forecast ensembles
+453.  Exceedance probabilities
+454.  Forecast values
+455.  Forecast probabilities
+OPTIONS
+511.  Change language
+521.  Change numbers of X modes
+522.  Change X modes options
+531.  Goodness index options
+532.  Set climatological period
+533.  Tailoring
+551.  Bootstrap settings
+552.  Forecast settings
+561.  Skill map p-values (turn on)
+ 
+  0.  Exit
+
+Output files:
+
+Input Data
+ 1. X Input Data
+ 3. Y Input Data
+
+Historical Predictions
+ 4. Cross-Validated Predictions
+ 5. Retroactive Predictions
+ 6. Retroactive Forecast Probabilities
+ 7. Retroactive Lower Prediction Limits
+
+EOF Prefiltering
+X variable EOF files
+ 8. X Eigenvalues
+ 9. X Spatial Loadings
+10. X Temporal Scores
+
+PCR Results
+Regression files
+19. Regression Coefficients
+20. PC Regression Coefficients
+
+ 0. Exit
+Retroactive Predictions Output file: 
+Saving: ../Sites/05420500/3_forecast/prec_st.10.6.0.RP.txt
+Done!
+
+Output files:
+
+Input Data
+ 1. X Input Data
+ 3. Y Input Data
+
+Historical Predictions
+ 4. Cross-Validated Predictions
+ 5. Retroactive Predictions
+ 6. Retroactive Forecast Probabilities
+ 7. Retroactive Lower Prediction Limits
+
+EOF Prefiltering
+X variable EOF files
+ 8. X Eigenvalues
+ 9. X Spatial Loadings
+10. X Temporal Scores
+
+PCR Results
+Regression files
+19. Regression Coefficients
+20. PC Regression Coefficients
+
+ 0. Exit
+
+________________________________________________________________________________________________________________________________
+
+Climate Predictability Tool, v. 11.03                                                                                           
+
+                                            X File
+
+Input Data                                  X.prec_st.10.6.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1958                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        33
+Number used variables:                      33
+
+                                            Y File
+
+Input Data                                  Y.10.5
+First data                                  1958
+Last data                                   2015
+Start at                                    1958                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        1
+Number used variables:                      1
+
+                                            Forecast File
+
+Input Data                                  X.prec_st.10.6.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1985                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        33
+Number used variables:                      33
+
+Training Data
+Length of training period                           58
+Length of cross-validation window                    3
+Number of forecasts                                 30
+________________________________________________________________________________________________________________________________
+
+Select option:
+  1.  Open X input file
+  2.  Open Y input file
+  3.  Open forecast file
+  4.  X training period settings
+  5.  Y training period settings
+  6.  Forecast period settings
+  7.  Length of training period
+  8.  Length of cross-validation window
+  9.  Number Number of forecasts
+FILE
+111.  Data output
+ACTIONS
+321.  Reset
+TOOLS
+411.  Cross-validated performance measures
+412.  Cross-validated bootstrapping and significance testing
+413.  Cross-validated skill maps
+414.  Cross-validated ROC
+415.  Cross-validated contingency tables
+421.  Retroactive performance measures
+422.  Retroactive bootstrapping and significance testing
+423.  Retroactive skill maps
+424.  Retroactive ROC
+425.  Retroactive contingency tables
+431.  Attributes diagram
+432.  ROC diagram
+433.  Probabilistic verification scores
+434.  Weather roulette
+441.  Scree plots
+451.  Forecast series
+452.  Forecast ensembles
+453.  Exceedance probabilities
+454.  Forecast values
+455.  Forecast probabilities
+OPTIONS
+511.  Change language
+521.  Change numbers of X modes
+522.  Change X modes options
+531.  Goodness index options
+532.  Set climatological period
+533.  Tailoring
+551.  Bootstrap settings
+552.  Forecast settings
+561.  Skill map p-values (turn on)
+ 
+  0.  Exit

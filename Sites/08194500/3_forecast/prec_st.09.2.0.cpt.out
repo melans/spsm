@@ -1,0 +1,1388 @@
+
+
+            C L I M A T E   P R E D I C T A B I L I T Y   T O O L
+                                Version 11.03
+
+                 Evaluating seasonal climate predictability
+                        Designed for MOS applications
+
+
+ Copyright 2002-2011 International Research Institute for Climate and Society
+
+
+III RRRR  III
+ I  R   R  I
+ I  R   R  I
+ I  RRRR   I
+ I  R   R  I   I N T E R N A T I O N A L   R E S E A R C H   I N S T I T U T E
+III R   R III  F O R         C L I M A T E         A N D         S O C I E T Y
+
+
+1.  Canonical Correlation Analysis (CCA)
+2.  Principal Components Regression (PCR)
+3.  Multiple Linear Regression (MLR)
+4.  Raw GCM Model Output (GCM)
+0.  Exit
+
+________________________________________________________________________________________________________________________________
+
+Climate Predictability Tool, v. 11.03                                                                                           
+
+                                            X File
+
+Input Data                                  
+First data                                  N/A
+Last data                                   N/A
+Start at                                    0                        
+Number of fields                            0
+Number of lags                              0
+Number of gridpoints                        0
+Number used variables:                      0
+
+                                            Y File
+
+Input Data                                  
+First data                                  N/A
+Last data                                   N/A
+Start at                                    0                        
+Number of fields                            0
+Number of lags                              0
+Number of gridpoints                        0
+Number used variables:                      0
+
+                                            Forecast File
+
+Input Data                                  
+First data                                  N/A
+Last data                                   N/A
+Start at                                    0                        
+Number of fields                            0
+Number of lags                              0
+Number of gridpoints                        0
+Number used variables:                      0
+
+Training Data
+Length of training period                            0
+Length of cross-validation window                    5
+Number of forecasts                                  1
+________________________________________________________________________________________________________________________________
+
+Select option:
+  1.  Open X input file
+  2.  Open Y input file
+  7.  Length of training period
+  8.  Length of cross-validation window
+EDIT
+OPTIONS
+511.  Change language
+521.  Change numbers of X modes
+522.  Change X modes options
+531.  Goodness index options
+533.  Tailoring
+541.  Transform Y data (turn on)
+542.  Zero-bound (turn on)
+543.  Sort Ensemble Members (turn off)
+544.  Missing value options
+551.  Bootstrap settings
+552.  Forecast settings
+561.  Skill map p-values (turn on)
+VIEW
+611.  Canonical Correlation Analysis          (CCA)
+613.  Multiple Linear Regression              (MLR)
+614.  Raw GCM Model Output                    (GCM)
+ 
+  0.  Exit
+X Input File: X domain selection
+Please specify domain limits (approximate data limits in brackets):
+(southern latitudes and western longitudes negative)
+Northernmost latitude ( 35): Southernmost latitude ( 23): Westernmost longitude (-102): Easternmost longitude ( -95): 
+X modes options
+Minimum number of X modes: Maximum number of X modes: 
+________________________________________________________________________________________________________________________________
+
+Climate Predictability Tool, v. 11.03                                                                                           
+
+                                            X File
+
+Input Data                                  X.prec_st.09.2.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1958                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        31
+Number used variables:                      0
+
+                                            Y File
+
+Input Data                                  
+First data                                  N/A
+Last data                                   N/A
+Start at                                    0                        
+Number of fields                            0
+Number of lags                              0
+Number of gridpoints                        0
+Number used variables:                      0
+
+                                            Forecast File
+
+Input Data                                  X.prec_st.09.2.0
+First data                                  1958
+Last data                                   2015
+Start at                                    2015                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        31
+Number used variables:                      0
+
+Training Data
+Length of training period                            0
+Length of cross-validation window                    5
+Number of forecasts                                  1
+________________________________________________________________________________________________________________________________
+
+Select option:
+  1.  Open X input file
+  2.  Open Y input file
+  3.  Open forecast file
+  4.  X training period settings
+  6.  Forecast period settings
+  7.  Length of training period
+  8.  Length of cross-validation window
+  9.  Number Number of forecasts
+EDIT
+211.  Change X data domain
+OPTIONS
+511.  Change language
+521.  Change numbers of X modes
+522.  Change X modes options
+531.  Goodness index options
+533.  Tailoring
+541.  Transform Y data (turn on)
+542.  Zero-bound (turn on)
+543.  Sort Ensemble Members (turn off)
+544.  Missing value options
+551.  Bootstrap settings
+552.  Forecast settings
+561.  Skill map p-values (turn on)
+VIEW
+611.  Canonical Correlation Analysis          (CCA)
+ 
+  0.  Exit
+Y Input File: ERROR: Problem reading file: ../Sites/08194500/2_format/Y.09.1 Last successfully read data for    0
+
+________________________________________________________________________________________________________________________________
+
+Climate Predictability Tool, v. 11.03                                                                                           
+
+                                            X File
+
+Input Data                                  X.prec_st.09.2.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1958                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        31
+Number used variables:                      0
+
+                                            Y File
+
+Input Data                                  
+First data                                  N/A
+Last data                                   N/A
+Start at                                    0                        
+Number of fields                            0
+Number of lags                              0
+Number of gridpoints                        0
+Number used variables:                      0
+
+                                            Forecast File
+
+Input Data                                  X.prec_st.09.2.0
+First data                                  1958
+Last data                                   2015
+Start at                                    2015                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        31
+Number used variables:                      0
+
+Training Data
+Length of training period                            0
+Length of cross-validation window                    5
+Number of forecasts                                  1
+________________________________________________________________________________________________________________________________
+
+Select option:
+  1.  Open X input file
+  2.  Open Y input file
+  3.  Open forecast file
+  4.  X training period settings
+  6.  Forecast period settings
+  7.  Length of training period
+  8.  Length of cross-validation window
+  9.  Number Number of forecasts
+EDIT
+211.  Change X data domain
+OPTIONS
+511.  Change language
+521.  Change numbers of X modes
+522.  Change X modes options
+531.  Goodness index options
+533.  Tailoring
+541.  Transform Y data (turn on)
+542.  Zero-bound (turn on)
+543.  Sort Ensemble Members (turn off)
+544.  Missing value options
+551.  Bootstrap settings
+552.  Forecast settings
+561.  Skill map p-values (turn on)
+VIEW
+611.  Canonical Correlation Analysis          (CCA)
+ 
+  0.  Exit
+
+________________________________________________________________________________________________________________________________
+
+Climate Predictability Tool, v. 11.03                                                                                           
+
+                                            X File
+
+Input Data                                  X.prec_st.09.2.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1958                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        31
+Number used variables:                      0
+
+                                            Y File
+
+Input Data                                  
+First data                                  N/A
+Last data                                   N/A
+Start at                                    0                        
+Number of fields                            0
+Number of lags                              0
+Number of gridpoints                        0
+Number used variables:                      0
+
+                                            Forecast File
+
+Input Data                                  X.prec_st.09.2.0
+First data                                  1958
+Last data                                   2015
+Start at                                    2015                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        31
+Number used variables:                      0
+
+Training Data
+Length of training period                            0
+Length of cross-validation window                    5
+Number of forecasts                                  1
+________________________________________________________________________________________________________________________________
+
+Select option:
+  1.  Open X input file
+  2.  Open Y input file
+  3.  Open forecast file
+  4.  X training period settings
+  6.  Forecast period settings
+  7.  Length of training period
+  8.  Length of cross-validation window
+  9.  Number Number of forecasts
+EDIT
+211.  Change X data domain
+OPTIONS
+511.  Change language
+521.  Change numbers of X modes
+522.  Change X modes options
+531.  Goodness index options
+533.  Tailoring
+541.  Transform Y data (turn on)
+542.  Zero-bound (turn on)
+543.  Sort Ensemble Members (turn off)
+544.  Missing value options
+551.  Bootstrap settings
+552.  Forecast settings
+561.  Skill map p-values (turn on)
+VIEW
+611.  Canonical Correlation Analysis          (CCA)
+ 
+  0.  Exit
+
+________________________________________________________________________________________________________________________________
+
+Climate Predictability Tool, v. 11.03                                                                                           
+
+                                            X File
+
+Input Data                                  X.prec_st.09.2.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1958                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        31
+Number used variables:                      0
+
+                                            Y File
+
+Input Data                                  
+First data                                  N/A
+Last data                                   N/A
+Start at                                    0                        
+Number of fields                            0
+Number of lags                              0
+Number of gridpoints                        0
+Number used variables:                      0
+
+                                            Forecast File
+
+Input Data                                  X.prec_st.09.2.0
+First data                                  1958
+Last data                                   2015
+Start at                                    2015                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        31
+Number used variables:                      0
+
+Training Data
+Length of training period                            0
+Length of cross-validation window                    5
+Number of forecasts                                  1
+________________________________________________________________________________________________________________________________
+
+Select option:
+  1.  Open X input file
+  2.  Open Y input file
+  3.  Open forecast file
+  4.  X training period settings
+  6.  Forecast period settings
+  7.  Length of training period
+  8.  Length of cross-validation window
+  9.  Number Number of forecasts
+EDIT
+211.  Change X data domain
+OPTIONS
+511.  Change language
+521.  Change numbers of X modes
+522.  Change X modes options
+531.  Goodness index options
+533.  Tailoring
+541.  Transform Y data (turn on)
+542.  Zero-bound (turn on)
+543.  Sort Ensemble Members (turn off)
+544.  Missing value options
+551.  Bootstrap settings
+552.  Forecast settings
+561.  Skill map p-values (turn on)
+VIEW
+611.  Canonical Correlation Analysis          (CCA)
+ 
+  0.  Exit
+
+________________________________________________________________________________________________________________________________
+
+Climate Predictability Tool, v. 11.03                                                                                           
+
+                                            X File
+
+Input Data                                  X.prec_st.09.2.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1958                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        31
+Number used variables:                      0
+
+                                            Y File
+
+Input Data                                  
+First data                                  N/A
+Last data                                   N/A
+Start at                                    0                        
+Number of fields                            0
+Number of lags                              0
+Number of gridpoints                        0
+Number used variables:                      0
+
+                                            Forecast File
+
+Input Data                                  X.prec_st.09.2.0
+First data                                  1958
+Last data                                   2015
+Start at                                    2015                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        31
+Number used variables:                      0
+
+Training Data
+Length of training period                            0
+Length of cross-validation window                    5
+Number of forecasts                                  1
+________________________________________________________________________________________________________________________________
+
+Select option:
+  1.  Open X input file
+  2.  Open Y input file
+  3.  Open forecast file
+  4.  X training period settings
+  6.  Forecast period settings
+  7.  Length of training period
+  8.  Length of cross-validation window
+  9.  Number Number of forecasts
+EDIT
+211.  Change X data domain
+OPTIONS
+511.  Change language
+521.  Change numbers of X modes
+522.  Change X modes options
+531.  Goodness index options
+533.  Tailoring
+541.  Transform Y data (turn on)
+542.  Zero-bound (turn on)
+543.  Sort Ensemble Members (turn off)
+544.  Missing value options
+551.  Bootstrap settings
+552.  Forecast settings
+561.  Skill map p-values (turn on)
+VIEW
+611.  Canonical Correlation Analysis          (CCA)
+ 
+  0.  Exit
+
+________________________________________________________________________________________________________________________________
+
+Climate Predictability Tool, v. 11.03                                                                                           
+
+                                            X File
+
+Input Data                                  X.prec_st.09.2.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1958                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        31
+Number used variables:                      0
+
+                                            Y File
+
+Input Data                                  
+First data                                  N/A
+Last data                                   N/A
+Start at                                    0                        
+Number of fields                            0
+Number of lags                              0
+Number of gridpoints                        0
+Number used variables:                      0
+
+                                            Forecast File
+
+Input Data                                  X.prec_st.09.2.0
+First data                                  1958
+Last data                                   2015
+Start at                                    2015                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        31
+Number used variables:                      0
+
+Training Data
+Length of training period                            0
+Length of cross-validation window                    5
+Number of forecasts                                  1
+________________________________________________________________________________________________________________________________
+
+Select option:
+  1.  Open X input file
+  2.  Open Y input file
+  3.  Open forecast file
+  4.  X training period settings
+  6.  Forecast period settings
+  7.  Length of training period
+  8.  Length of cross-validation window
+  9.  Number Number of forecasts
+EDIT
+211.  Change X data domain
+OPTIONS
+511.  Change language
+521.  Change numbers of X modes
+522.  Change X modes options
+531.  Goodness index options
+533.  Tailoring
+541.  Transform Y data (turn on)
+542.  Zero-bound (turn on)
+543.  Sort Ensemble Members (turn off)
+544.  Missing value options
+551.  Bootstrap settings
+552.  Forecast settings
+561.  Skill map p-values (turn on)
+VIEW
+611.  Canonical Correlation Analysis          (CCA)
+ 
+  0.  Exit
+
+Forecast Settings
+
+
+Prediction Interval
+Confidence level (%): Ensemble size: 
+Number of ensemble members: Error variance:
+1. Cross-validated error variance
+3. Fitted error variance
+Odds: 
+0. Odds
+1. Odds relative to climatology
+Precision: 
+Number of decimal places (maximum is 8): 
+________________________________________________________________________________________________________________________________
+
+Climate Predictability Tool, v. 11.03                                                                                           
+
+                                            X File
+
+Input Data                                  X.prec_st.09.2.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1958                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        31
+Number used variables:                      0
+
+                                            Y File
+
+Input Data                                  
+First data                                  N/A
+Last data                                   N/A
+Start at                                    0                        
+Number of fields                            0
+Number of lags                              0
+Number of gridpoints                        0
+Number used variables:                      0
+
+                                            Forecast File
+
+Input Data                                  X.prec_st.09.2.0
+First data                                  1958
+Last data                                   2015
+Start at                                    2015                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        31
+Number used variables:                      0
+
+Training Data
+Length of training period                            0
+Length of cross-validation window                    5
+Number of forecasts                                  1
+________________________________________________________________________________________________________________________________
+
+Select option:
+  1.  Open X input file
+  2.  Open Y input file
+  3.  Open forecast file
+  4.  X training period settings
+  6.  Forecast period settings
+  7.  Length of training period
+  8.  Length of cross-validation window
+  9.  Number Number of forecasts
+EDIT
+211.  Change X data domain
+OPTIONS
+511.  Change language
+521.  Change numbers of X modes
+522.  Change X modes options
+531.  Goodness index options
+533.  Tailoring
+541.  Transform Y data (turn on)
+542.  Zero-bound (turn on)
+543.  Sort Ensemble Members (turn off)
+544.  Missing value options
+551.  Bootstrap settings
+552.  Forecast settings
+561.  Skill map p-values (turn on)
+VIEW
+611.  Canonical Correlation Analysis          (CCA)
+ 
+  0.  Exit
+
+Number of forecasts: 
+________________________________________________________________________________________________________________________________
+
+Climate Predictability Tool, v. 11.03                                                                                           
+
+                                            X File
+
+Input Data                                  X.prec_st.09.2.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1958                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        31
+Number used variables:                      0
+
+                                            Y File
+
+Input Data                                  
+First data                                  N/A
+Last data                                   N/A
+Start at                                    0                        
+Number of fields                            0
+Number of lags                              0
+Number of gridpoints                        0
+Number used variables:                      0
+
+                                            Forecast File
+
+Input Data                                  X.prec_st.09.2.0
+First data                                  1958
+Last data                                   2015
+Start at                                    2015                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        31
+Number used variables:                      0
+
+Training Data
+Length of training period                            0
+Length of cross-validation window                    5
+Number of forecasts                                 30
+________________________________________________________________________________________________________________________________
+
+Select option:
+  1.  Open X input file
+  2.  Open Y input file
+  3.  Open forecast file
+  4.  X training period settings
+  6.  Forecast period settings
+  7.  Length of training period
+  8.  Length of cross-validation window
+  9.  Number Number of forecasts
+EDIT
+211.  Change X data domain
+OPTIONS
+511.  Change language
+521.  Change numbers of X modes
+522.  Change X modes options
+531.  Goodness index options
+533.  Tailoring
+541.  Transform Y data (turn on)
+542.  Zero-bound (turn on)
+543.  Sort Ensemble Members (turn off)
+544.  Missing value options
+551.  Bootstrap settings
+552.  Forecast settings
+561.  Skill map p-values (turn on)
+VIEW
+611.  Canonical Correlation Analysis          (CCA)
+ 
+  0.  Exit
+First date of data in forecast file: 1958                     
+First year from which to forecast: 
+________________________________________________________________________________________________________________________________
+
+Climate Predictability Tool, v. 11.03                                                                                           
+
+                                            X File
+
+Input Data                                  X.prec_st.09.2.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1958                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        31
+Number used variables:                      0
+
+                                            Y File
+
+Input Data                                  
+First data                                  N/A
+Last data                                   N/A
+Start at                                    0                        
+Number of fields                            0
+Number of lags                              0
+Number of gridpoints                        0
+Number used variables:                      0
+
+                                            Forecast File
+
+Input Data                                  X.prec_st.09.2.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1985                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        31
+Number used variables:                      0
+
+Training Data
+Length of training period                            0
+Length of cross-validation window                    5
+Number of forecasts                                 30
+________________________________________________________________________________________________________________________________
+
+Select option:
+  1.  Open X input file
+  2.  Open Y input file
+  3.  Open forecast file
+  4.  X training period settings
+  6.  Forecast period settings
+  7.  Length of training period
+  8.  Length of cross-validation window
+  9.  Number Number of forecasts
+EDIT
+211.  Change X data domain
+OPTIONS
+511.  Change language
+521.  Change numbers of X modes
+522.  Change X modes options
+531.  Goodness index options
+533.  Tailoring
+541.  Transform Y data (turn on)
+542.  Zero-bound (turn on)
+543.  Sort Ensemble Members (turn off)
+544.  Missing value options
+551.  Bootstrap settings
+552.  Forecast settings
+561.  Skill map p-values (turn on)
+VIEW
+611.  Canonical Correlation Analysis          (CCA)
+ 
+  0.  Exit
+
+Length of cross-validation period (must be odd): 
+________________________________________________________________________________________________________________________________
+
+Climate Predictability Tool, v. 11.03                                                                                           
+
+                                            X File
+
+Input Data                                  X.prec_st.09.2.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1958                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        31
+Number used variables:                      0
+
+                                            Y File
+
+Input Data                                  
+First data                                  N/A
+Last data                                   N/A
+Start at                                    0                        
+Number of fields                            0
+Number of lags                              0
+Number of gridpoints                        0
+Number used variables:                      0
+
+                                            Forecast File
+
+Input Data                                  X.prec_st.09.2.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1985                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        31
+Number used variables:                      0
+
+Training Data
+Length of training period                            0
+Length of cross-validation window                    3
+Number of forecasts                                 30
+________________________________________________________________________________________________________________________________
+
+Select option:
+  1.  Open X input file
+  2.  Open Y input file
+  3.  Open forecast file
+  4.  X training period settings
+  6.  Forecast period settings
+  7.  Length of training period
+  8.  Length of cross-validation window
+  9.  Number Number of forecasts
+EDIT
+211.  Change X data domain
+OPTIONS
+511.  Change language
+521.  Change numbers of X modes
+522.  Change X modes options
+531.  Goodness index options
+533.  Tailoring
+541.  Transform Y data (turn on)
+542.  Zero-bound (turn on)
+543.  Sort Ensemble Members (turn off)
+544.  Missing value options
+551.  Bootstrap settings
+552.  Forecast settings
+561.  Skill map p-values (turn on)
+VIEW
+611.  Canonical Correlation Analysis          (CCA)
+ 
+  0.  Exit
+
+________________________________________________________________________________________________________________________________
+
+Climate Predictability Tool, v. 11.03                                                                                           
+
+                                            X File
+
+Input Data                                  X.prec_st.09.2.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1958                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        31
+Number used variables:                      0
+
+                                            Y File
+
+Input Data                                  
+First data                                  N/A
+Last data                                   N/A
+Start at                                    0                        
+Number of fields                            0
+Number of lags                              0
+Number of gridpoints                        0
+Number used variables:                      0
+
+                                            Forecast File
+
+Input Data                                  X.prec_st.09.2.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1985                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        31
+Number used variables:                      0
+
+Training Data
+Length of training period                            0
+Length of cross-validation window                    3
+Number of forecasts                                 30
+________________________________________________________________________________________________________________________________
+
+Select option:
+  1.  Open X input file
+  2.  Open Y input file
+  3.  Open forecast file
+  4.  X training period settings
+  6.  Forecast period settings
+  7.  Length of training period
+  8.  Length of cross-validation window
+  9.  Number Number of forecasts
+EDIT
+211.  Change X data domain
+OPTIONS
+511.  Change language
+521.  Change numbers of X modes
+522.  Change X modes options
+531.  Goodness index options
+533.  Tailoring
+541.  Transform Y data (turn on)
+542.  Zero-bound (turn on)
+543.  Sort Ensemble Members (turn off)
+544.  Missing value options
+551.  Bootstrap settings
+552.  Forecast settings
+561.  Skill map p-values (turn on)
+VIEW
+611.  Canonical Correlation Analysis          (CCA)
+ 
+  0.  Exit
+
+Output files:
+
+Input Data
+ 1. X Input Data
+ 3. Y Input Data
+
+Historical Predictions
+ 4. Cross-Validated Predictions
+
+EOF Prefiltering
+X variable EOF files
+ 8. X Eigenvalues
+ 9. X Spatial Loadings
+10. X Temporal Scores
+
+PCR Results
+Regression files
+19. Regression Coefficients
+20. PC Regression Coefficients
+
+ 0. Exit
+Cross-Validated Predictions Output file: 
+Saving: ../Sites/08194500/3_forecast/prec_st.09.2.0.CV.txt
+Done!
+
+Output files:
+
+Input Data
+ 1. X Input Data
+ 3. Y Input Data
+
+Historical Predictions
+ 4. Cross-Validated Predictions
+
+EOF Prefiltering
+X variable EOF files
+ 8. X Eigenvalues
+ 9. X Spatial Loadings
+10. X Temporal Scores
+
+PCR Results
+Regression files
+19. Regression Coefficients
+20. PC Regression Coefficients
+
+ 0. Exit
+
+________________________________________________________________________________________________________________________________
+
+Climate Predictability Tool, v. 11.03                                                                                           
+
+                                            X File
+
+Input Data                                  X.prec_st.09.2.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1958                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        31
+Number used variables:                      0
+
+                                            Y File
+
+Input Data                                  
+First data                                  N/A
+Last data                                   N/A
+Start at                                    0                        
+Number of fields                            0
+Number of lags                              0
+Number of gridpoints                        0
+Number used variables:                      0
+
+                                            Forecast File
+
+Input Data                                  X.prec_st.09.2.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1985                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        31
+Number used variables:                      0
+
+Training Data
+Length of training period                            0
+Length of cross-validation window                    3
+Number of forecasts                                 30
+________________________________________________________________________________________________________________________________
+
+Select option:
+  1.  Open X input file
+  2.  Open Y input file
+  3.  Open forecast file
+  4.  X training period settings
+  6.  Forecast period settings
+  7.  Length of training period
+  8.  Length of cross-validation window
+  9.  Number Number of forecasts
+EDIT
+211.  Change X data domain
+OPTIONS
+511.  Change language
+521.  Change numbers of X modes
+522.  Change X modes options
+531.  Goodness index options
+533.  Tailoring
+541.  Transform Y data (turn on)
+542.  Zero-bound (turn on)
+543.  Sort Ensemble Members (turn off)
+544.  Missing value options
+551.  Bootstrap settings
+552.  Forecast settings
+561.  Skill map p-values (turn on)
+VIEW
+611.  Canonical Correlation Analysis          (CCA)
+ 
+  0.  Exit
+
+________________________________________________________________________________________________________________________________
+
+Climate Predictability Tool, v. 11.03                                                                                           
+
+                                            X File
+
+Input Data                                  X.prec_st.09.2.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1958                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        31
+Number used variables:                      0
+
+                                            Y File
+
+Input Data                                  
+First data                                  N/A
+Last data                                   N/A
+Start at                                    0                        
+Number of fields                            0
+Number of lags                              0
+Number of gridpoints                        0
+Number used variables:                      0
+
+                                            Forecast File
+
+Input Data                                  X.prec_st.09.2.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1985                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        31
+Number used variables:                      0
+
+Training Data
+Length of training period                            0
+Length of cross-validation window                    3
+Number of forecasts                                 30
+________________________________________________________________________________________________________________________________
+
+Select option:
+  1.  Open X input file
+  2.  Open Y input file
+  3.  Open forecast file
+  4.  X training period settings
+  6.  Forecast period settings
+  7.  Length of training period
+  8.  Length of cross-validation window
+  9.  Number Number of forecasts
+EDIT
+211.  Change X data domain
+OPTIONS
+511.  Change language
+521.  Change numbers of X modes
+522.  Change X modes options
+531.  Goodness index options
+533.  Tailoring
+541.  Transform Y data (turn on)
+542.  Zero-bound (turn on)
+543.  Sort Ensemble Members (turn off)
+544.  Missing value options
+551.  Bootstrap settings
+552.  Forecast settings
+561.  Skill map p-values (turn on)
+VIEW
+611.  Canonical Correlation Analysis          (CCA)
+ 
+  0.  Exit
+
+________________________________________________________________________________________________________________________________
+
+Climate Predictability Tool, v. 11.03                                                                                           
+
+                                            X File
+
+Input Data                                  X.prec_st.09.2.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1958                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        31
+Number used variables:                      0
+
+                                            Y File
+
+Input Data                                  
+First data                                  N/A
+Last data                                   N/A
+Start at                                    0                        
+Number of fields                            0
+Number of lags                              0
+Number of gridpoints                        0
+Number used variables:                      0
+
+                                            Forecast File
+
+Input Data                                  X.prec_st.09.2.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1985                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        31
+Number used variables:                      0
+
+Training Data
+Length of training period                            0
+Length of cross-validation window                    3
+Number of forecasts                                 30
+________________________________________________________________________________________________________________________________
+
+Select option:
+  1.  Open X input file
+  2.  Open Y input file
+  3.  Open forecast file
+  4.  X training period settings
+  6.  Forecast period settings
+  7.  Length of training period
+  8.  Length of cross-validation window
+  9.  Number Number of forecasts
+EDIT
+211.  Change X data domain
+OPTIONS
+511.  Change language
+521.  Change numbers of X modes
+522.  Change X modes options
+531.  Goodness index options
+533.  Tailoring
+541.  Transform Y data (turn on)
+542.  Zero-bound (turn off)
+543.  Sort Ensemble Members (turn off)
+544.  Missing value options
+551.  Bootstrap settings
+552.  Forecast settings
+561.  Skill map p-values (turn on)
+VIEW
+611.  Canonical Correlation Analysis          (CCA)
+ 
+  0.  Exit
+
+________________________________________________________________________________________________________________________________
+
+Climate Predictability Tool, v. 11.03                                                                                           
+
+                                            X File
+
+Input Data                                  X.prec_st.09.2.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1958                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        31
+Number used variables:                      0
+
+                                            Y File
+
+Input Data                                  
+First data                                  N/A
+Last data                                   N/A
+Start at                                    0                        
+Number of fields                            0
+Number of lags                              0
+Number of gridpoints                        0
+Number used variables:                      0
+
+                                            Forecast File
+
+Input Data                                  X.prec_st.09.2.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1985                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        31
+Number used variables:                      0
+
+Training Data
+Length of training period                            0
+Length of cross-validation window                    3
+Number of forecasts                                 30
+________________________________________________________________________________________________________________________________
+
+Select option:
+  1.  Open X input file
+  2.  Open Y input file
+  3.  Open forecast file
+  4.  X training period settings
+  6.  Forecast period settings
+  7.  Length of training period
+  8.  Length of cross-validation window
+  9.  Number Number of forecasts
+EDIT
+211.  Change X data domain
+OPTIONS
+511.  Change language
+521.  Change numbers of X modes
+522.  Change X modes options
+531.  Goodness index options
+533.  Tailoring
+541.  Transform Y data (turn on)
+542.  Zero-bound (turn off)
+543.  Sort Ensemble Members (turn off)
+544.  Missing value options
+551.  Bootstrap settings
+552.  Forecast settings
+561.  Skill map p-values (turn on)
+VIEW
+611.  Canonical Correlation Analysis          (CCA)
+ 
+  0.  Exit
+
+________________________________________________________________________________________________________________________________
+
+Climate Predictability Tool, v. 11.03                                                                                           
+
+                                            X File
+
+Input Data                                  X.prec_st.09.2.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1958                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        31
+Number used variables:                      0
+
+                                            Y File
+
+Input Data                                  
+First data                                  N/A
+Last data                                   N/A
+Start at                                    0                        
+Number of fields                            0
+Number of lags                              0
+Number of gridpoints                        0
+Number used variables:                      0
+
+                                            Forecast File
+
+Input Data                                  X.prec_st.09.2.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1985                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        31
+Number used variables:                      0
+
+Training Data
+Length of training period                            0
+Length of cross-validation window                    3
+Number of forecasts                                 30
+________________________________________________________________________________________________________________________________
+
+Select option:
+  1.  Open X input file
+  2.  Open Y input file
+  3.  Open forecast file
+  4.  X training period settings
+  6.  Forecast period settings
+  7.  Length of training period
+  8.  Length of cross-validation window
+  9.  Number Number of forecasts
+EDIT
+211.  Change X data domain
+OPTIONS
+511.  Change language
+521.  Change numbers of X modes
+522.  Change X modes options
+531.  Goodness index options
+533.  Tailoring
+541.  Transform Y data (turn on)
+542.  Zero-bound (turn off)
+543.  Sort Ensemble Members (turn off)
+544.  Missing value options
+551.  Bootstrap settings
+552.  Forecast settings
+561.  Skill map p-values (turn on)
+VIEW
+611.  Canonical Correlation Analysis          (CCA)
+ 
+  0.  Exit
+X Input File: X Input File: X Input File: X Input File: ERROR: Problem reading file: 0 File is not a valid CPT format.
+
+________________________________________________________________________________________________________________________________
+
+Climate Predictability Tool, v. 11.03                                                                                           
+
+                                            X File
+
+Input Data                                  X.prec_st.09.2.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1958                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        31
+Number used variables:                      0
+
+                                            Y File
+
+Input Data                                  
+First data                                  N/A
+Last data                                   N/A
+Start at                                    0                        
+Number of fields                            0
+Number of lags                              0
+Number of gridpoints                        0
+Number used variables:                      0
+
+                                            Forecast File
+
+Input Data                                  X.prec_st.09.2.0
+First data                                  1958
+Last data                                   2015
+Start at                                    1985                     
+Number of fields                            1
+Number of lags                              1
+Number of gridpoints                        31
+Number used variables:                      0
+
+Training Data
+Length of training period                            0
+Length of cross-validation window                    3
+Number of forecasts                                 30
+________________________________________________________________________________________________________________________________
+
+Select option:
+  1.  Open X input file
+  2.  Open Y input file
+  3.  Open forecast file
+  4.  X training period settings
+  6.  Forecast period settings
+  7.  Length of training period
+  8.  Length of cross-validation window
+  9.  Number Number of forecasts
+EDIT
+211.  Change X data domain
+OPTIONS
+511.  Change language
+521.  Change numbers of X modes
+522.  Change X modes options
+531.  Goodness index options
+533.  Tailoring
+541.  Transform Y data (turn on)
+542.  Zero-bound (turn off)
+543.  Sort Ensemble Members (turn off)
+544.  Missing value options
+551.  Bootstrap settings
+552.  Forecast settings
+561.  Skill map p-values (turn on)
+VIEW
+611.  Canonical Correlation Analysis          (CCA)
+ 
+  0.  Exit

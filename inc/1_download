@@ -1,0 +1,34 @@
+################################################################################
+function _1_download_ {
+	echo -n "Preparing ";
+	mkdir -p $Sites/$site/0_temp $Sites/$site/1_download $Sites/$site/2_format $Sites/$site/3_forecast $Sites/$site/4_calculate  $Sites/$site/5_graphs;
+	wget $XYURI$site -cqO $Sites/$site/1_download/latlon.info > /dev/null;
+	varSite $site;
+	echo -n "the data for site #$site (${sitename[$site]}):";
+	_msg_ "	Step 1: Downloading ...";
+	varXY $site;
+	_msg_ "		the site's map at ($Sites/$site/1_download/map_$site.jpg)";
+	map="site_$site[2]";map=${!map};
+	wget "$mapURI/$map.jpg" -cqO $Sites/$site/1_download/map_$site.jpg > /dev/null &
+	_msg_ "		the site's streamflow data";
+	wget "$flowURI$site" -cqO $Sites/$site/1_download/flow.0 > /dev/null &
+	for p in "${!parameter[@]}"; do
+		_msg_ "		${parameter[$p]} ($p)";
+		tmpURI=$gridsURI/.$p/X/$X1/$X2/RANGEEDGES/Y/$Y1/$Y2/RANGEEDGES;
+		for L in {1..7}; do
+			_msg_ "			$L months lead time ";
+			LtmpURI=$tmpURI/L/$L/VALUE
+			if [ $p == "gz" ] || [ $p == "omg" ] || [ $p == "q" ] || [ $p == "temp" ]; then
+				for Z in ${Zs//,/ }; do
+					counter;
+					wget "$LtmpURI/Z/$Z/VALUE/gridtable.tsv" -cqO $Sites/$site/1_download/$p.$L.$Z.0 > /dev/null;
+				done
+			else
+				counter;
+				wget "$LtmpURI/gridtable.tsv" -cqO $Sites/$site/1_download/$p.$L.0.0 > /dev/null;
+			fi
+		done
+	done;
+	wait;
+}
+################################################################################

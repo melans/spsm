@@ -1,0 +1,1001 @@
+   61  cp nueces_nr_tldn.sh bkps/nueces_nr_tldn.1.3
+   62  csh nueces_nr_tldn.sh
+   63  mailx -s "nueces_nr_tldn.sh" -a nueces_nr_tldn.sh -- anssary@gmail.com < "."
+   64  mailx -s "nueces_nr_tldn.sh" -a nueces_nr_tldn.sh -- anssary@gmail.com
+   65  gedit nueces_nr_tldn.sh &
+   66  nano nueces_nr_tldn.sh
+   67  nano nueces_nr_tldn.sh
+   68  gedit nueces_nr_tldn.sh &
+   69  exit
+   70  gedit CPT/nueces_nr_tldn.sh &
+   71  nano CPT/nueces_nr_tldn.sh 
+   72  exit
+   73  gedit &
+   74  ps -aux|grep melans
+   75  exit
+   76  mailx -s "nueces_nr_tldn.sh" -a nueces_nr_tldn.sh -- anssary@gmail.com < "."
+   77  mailx -s "nueces_nr_tldn.sh" -a nueces_nr_tldn.sh -- anssary@gmail.com
+   78  exit
+   79  gedit nueces_nr_tldn.sh &
+   80  nano nueces_nr_tldn.sh
+   81  module spider sublime
+   82  cd ../
+   83  mkcd 5rc2
+   84  wget http://c758482.r82.cf2.rackcdn.com/sublime_text_3_build_3083_x64.tar.bz2
+   85  tar x sublime_text_3_build_3083_x64.tar.bz2 
+   86  tar xf sublime_text_3_build_3083_x64.tar.bz2 
+   87  ll sublime_text_3
+   88  ./sublime_text_3/sublime_text 
+   89  cd ../CPT/data_150701_1617/
+   90  mkcd x
+   91  cp ../tmp/FLOW_ .
+   92  awk '{d=$5($6>9?$6:"0"$6);if(d>195611 && d<201312 && $6==12)print $5+1,$7}' FLOW_|les
+   93  awk '{d=$5($6>9?$6:"0"$6);if(d>195611 && d<201312 && $6==12)print $5+1,$7>"_FLOW.00"}' FLOW_
+   94  awk '{m=$6>9?$6:"0"$6;if($5>1956 && $5<2014)print $5,$7>"_FLOW."m}' FLOW_
+   95  awk '{m=$6+12;if($5>1957 && $5<2015 && $6<6)print $5,$7>"_FLOW."m}' FLOW_
+   96  les _FLOW.09 
+   97  pr -mts" " _*|awk '{printf($1" ");for(i=2;i<=NF;i+=2)printf($i" ");print ""}' > FLOW
+   98  rm _*
+   99  csh nueces_nr_tldn.sh
+  100  cd tmp/
+  101  cd data;pr -mts"    " ../tmp/_P*.$m ../tmp/_T*.$m ../tmp/FLOW|les
+  102  pr -mts"    " ../tmp/_P*.$m ../tmp/_T*.$m ../tmp/FLOW|les
+  103  cd ../data;pr -mts"    " ../tmp/_P*.$m ../tmp/_T*.$m ../tmp/FLOW|les
+  104  pr -mts"    " ../tmp/_P*.04 ../tmp/_T*.04 ../tmp/FLOW|les
+  105  pr -mts"    " ../tmp/_P*.04 ../tmp/_T*.04 ../tmp/FLOW|awk 'BEGIN{l=0;f=69+l}{printf($1" ");for(l=2+'$l';l<65+'$l';l+=8)printf($l" ");printf($'$f'" ");print ""}'|les
+  106  pr -mts"    " ../tmp/_P*.04 ../tmp/_T*.04 ../tmp/FLOW|awk '{printf($1" ");for(l=2+0;l<65+0;l+=8)printf($l" ");printf($69" ");print ""}'|les
+  107  cd Cp
+  108  cd CPT/
+  109  cd data_150707_2156/
+  110  cd x/
+  111  awk '1' _PCPT.grd|les
+  112  awk '{if(NR>1 && $1)1}' _PCPT.grd|les
+  113  awk '{if(NR>1 && $1)print }' _PCPT.grd|les
+  114  awk '{if(NR>1 && $1)print $1,$2,$3,$4,$5}' _PCPT.grd|les
+  115  awk '{if(NR>1 && $1)print $1,$2,$3,$4,$5,$6}' _PCPT.grd|les
+  116  awk '{t=mktime("1960 "($3+1)" 01 0 0 0");y=strftime("%Y",t);m=strftime("%m",t);if(NR>1 && $1)print $1,$2,$3,$4,$5,}' _PCPT.grd|les
+  117  awk '{t=mktime("1960 "($3+1)" 01 0 0 0");y=strftime("%Y",t);m=strftime("%m",t);if(NR>1 && $1)print $1,$2,$3,$4,$5}' _PCPT.grd|les
+  118  awk '{t=mktime("1960 "($3+1)" 01 0 0 0");y=strftime("%Y",t);m=strftime("%m",t);if(NR>1 && $1)print $1,$2,$3,$4,$5,y,m}' _PCPT.grd|les
+  119  awk '{t=mktime("1960 "($5+1)" 01 0 0 0");y=strftime("%Y",t);m=strftime("%m",t);if(NR>1 && $1)print $1,$2,$3,$4,$5,y,m}' _PCPT.grd|les
+  120  awk '{t=mktime("1960 "($5-$4+.5)" 01 0 0 0");y=strftime("%Y",t);m=strftime("%m",t);if(NR>1 && $1)print $1,$2,$3,$4,$5,y,m}' _PCPT.grd|les
+  121  awk '{t=mktime("1960 "($5-$4+.5)" 01 0 0 0");y=strftime("%Y",t);m=strftime("%m",t);tl=mktime("1960 "($5-$4+.5)" 01 0 0 0");yl=strftime("%Y",tl);ml=strftime("%m",tl);if(NR>1 && $1)print $1,$2,$3,$4,$5,y,m,yl,ml}' _PCPT.grd|les
+  122  awk '{t=mktime("1960 "($5+1)" 01 0 0 0");y=strftime("%Y",t);m=strftime("%m",t);tl=mktime("1960 "($5-$4-.5)" 01 0 0 0");yl=strftime("%Y",tl);ml=strftime("%m",tl);if(NR>1 && $1)print $1,$2,$3,$4,$5,y,m,yl,ml}' _PCPT.grd|les
+  123  awk '{t=mktime("1960 "($5+1)" 01 0 0 0");y=strftime("%Y",t);m=strftime("%m",t);tl=mktime("1960 "($5-$4+.5)" 01 0 0 0");yl=strftime("%Y",tl);ml=strftime("%m",tl);if(NR>1 && $1)print $1,$2,$3,$4,$5,y,m,yl,ml}' _PCPT.grd|les
+  124  awk '{t=mktime("1960 "($5+1)" 01 0 0 0");y=strftime("%Y",t);m=strftime("%m",t);tl=mktime("1960 "($5-$4+1.5)" 01 0 0 0");yl=strftime("%Y",tl);ml=strftime("%m",tl);if(NR>1 && $1)print $1,$2,$3,$4,$5,y,m,yl,ml}' _PCPT.grd|les
+  125  awk '{t=mktime("1960 "($5+1)" 01 0 0 0");y=strftime("%Y",t);m=strftime("%m",t);tl=mktime("1960 "($5-$4+1.5)" 01 0 0 0");yl=strftime("%Y",tl);ml=strftime("%m",tl);if(NR>1 && $1)print $1,$2,$3,$4,$5,y,m,"-"$4-.5,yl,ml}' _PCPT.grd|les
+  126  awk '{t=mktime("1960 "($5+1)" 01 0 0 0");y=strftime("%Y",t);m=strftime("%m",t);tl=mktime("1960 "($5-$4+1.5)" 01 0 0 0");yl=strftime("%Y",tl);ml=strftime("%m",tl);if(NR>1 && $1)print $1,$2,$3,$4,$5,y,m,"-"$4-.5,yl,ml,m-$4-.5}' _PCPT.grd|les
+  127  awk '{t=mktime("1960 "($5+1)" 01 0 0 0");y=strftime("%Y",t);m=strftime("%m",t);tl=mktime("1960 "($5-$4+1.5)" 01 0 0 0");yl=strftime("%Y",tl);ml=strftime("%m",tl);if(NR>1 && $1)print $1,$2,$3,$4,$5,y,m,"-"$4-.5,yl,ml,m-$4+.5}' _PCPT.grd|les
+  128  awk '{t=mktime("1960 "($5+1)" 01 0 0 0");y=strftime("%Y",t);m=strftime("%m",t);tl=mktime("1960 "($5-$4+1.5)" 01 0 0 0");yl=strftime("%Y",tl);ml=strftime("%m",tl);if(NR>1 && $1 && $2<-100 && $3,27)print $1,$2,$3,$4,$5,y,m,"-"$4-.5,"=",m-$4+.5,"    ",yl,ml}' _PCPT.grd|les
+  129  awk '{t=mktime("1960 "($5+1)" 01 0 0 0");y=strftime("%Y",t);m=strftime("%m",t);tl=mktime("1960 "($5-$4+1.5)" 01 0 0 0");yl=strftime("%Y",tl);ml=strftime("%m",tl);if(NR>1 && $1 && $2<-100 && $3<27)print $1,$2,$3,$4,$5,y,m,"-"$4-.5,"=",m-$4+.5,"    ",yl,ml}' _PCPT.grd|les
+  130  les _PCPT.grd.29.30136_-101.2500.12.12
+  131  les _PCPT.grd.29.30136_-101.2500.04.-1
+  132  awk '{t=mktime("1960 "($5+1)" 01 0 0 0");y=strftime("%Y",t);m=strftime("%m",t);tl=mktime("1960 "($5-$4+1.5)" 01 0 0 0");yl=strftime("%Y",tl);ml=strftime("%m",tl);if(NR>1 && $1)print y,$1>FILENAME"."$2"_"$1"."m"."m-$4+.5}' _*.grd
+  133  awk '{t=mktime("1960 "($5+1)" 01 0 0 0");y=strftime("%Y",t);m=strftime("%m",t);if(NR>1 && $1)print y,$1>FILENAME"."$3"_"$2"."m"."m-$4+.5}' _*.grd
+  134  awk '{t=mktime("1960 "($5+1)" 01 0 0 0");y=strftime("%Y",t);m=strftime("%m",t);tl=mktime("1960 "($5-$4+1.5)" 01 0 0 0");yl=strftime("%Y",tl);ml=strftime("%m",tl);if(NR>1 && $1)print $1,$2,$3,$4,$5,y,m,"-"$4-.5,"=",m-$4+.5,"    ",yl,ml}' _PCPT.grd|les
+  135  rm _*.grd.*
+  136  XXXawk '{t=mktime("1960 "($5+1)" 01 0 0 0");y=strftime("%Y",t);m=strftime("%m",t);if(NR>1 && $1)print y,$1>FILENAME"."$3"_"$2"."m"."m-$4+.5}' _*.grd
+  137  awk '{t=mktime("1960 "($5+1)" 01 0 0 0");y=strftime("%Y",t);m=strftime("%m",t);if(NR>1 && $1)print y,$1}' _*.grd|les
+  138  awk '{t=mktime("1960 "($5+1)" 01 0 0 0");y=strftime("%Y",t);m=strftime("%m",t);if($1 && $2<0)print y,$1}' _*.grd|les
+  139  awk '{t=mktime("1960 "($5+1)" 01 0 0 0");y=strftime("%Y",t);m=strftime("%m",t);if(IsNumber($1))print y,$1}' _*.grd|les
+  140  awk '{t=mktime("1960 "($5+1)" 01 0 0 0");y=strftime("%Y",t);m=strftime("%m",t);if($1==$1*1)print y,$1}' _*.grd|les
+  141  les _FLOW
+  142  wget "http://waterdata.usgs.gov/tx/nwis/monthly?referred_module=sw&site_no=08194500&agency_cd=USGS&por_08194500_2=1792,00060,2,1956-12,2014-05&partial_periods=on&format=rdb"  --quiet -O FLOW_ > /dev/null
+  143  les FLOW_
+  144  rm _FLOW.*
+  145  rm ll
+  146  rm *
+  147  awk '{if($5>1955 && $5<2013 && $6==12 && NR>37 && $1)print $5+1,$7>FILENAME".00"}' _FLOW
+  148  awk '{m=$6>9?$6:"0"$6;if($5>1956 && $5<2014 && NR>37 && $1)print $5,$7>FILENAME"."m}' _FLOW
+  149  sed -i '/2008 /a 2009 -999' _FLOW.09
+  150  pr -mts" " _*.*|awk '{printf($1" ");for(i=2;i<=NF;i+=2)printf($i" ");print ""}' > FLOW
+  151  les FLOW 
+  152  awk '{printf($1" ");for(i=2;i<=NF;i++){$i=$i>0?$i:.000001;printf(log($i)" ")};print ""}' FLOW > FLOW_ln
+  153  rm _*.*
+  154  wget "http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.ECHAM4p5/.Forecast/.ca_sst/.ensemble24/.MONTHLY/.prec/Y/29/27/RANGEEDGES/X/-98/-101/RANGEEDGES/%5BM%5Daverage/gridtable.tsv" --quiet -O _PCPT.grd > /dev/null
+  155  wget "http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.ECHAM4p5/.Forecast/.ca_sst/.ensemble24/.MONTHLY/.st/Y/29/27/RANGEEDGES/X/-98/-101/RANGEEDGES/%5BM%5Daverage/gridtable.tsv" --quiet -O _TEMP.grd > /dev/null
+  156  awk '{t=mktime("1960 "($5+1)" 01 0 0 0");y=strftime("%Y",t);m=strftime("%m",t);if($1==$1*1)print y,$1>FILENAME"."$3"_"$2"."m"."m-$4+.5}' _*.grd
+  157  les FLOW
+  158  cp ../../nueces_nr_tldn.sh ../../bkps/nueces_nr_tldn.2.1
+  159  awk '{if($5>1955 && $5<2013 && $6==12 && NR>37 && $1)print $5+1,$7}' _FLOW|les
+  160  awk '{if($1==$1*1 && $5>1955 && $5<2013 && $6==12)print $5+1,$7}' _FLOW|les
+  161  nano ../../../prj/melans
+  162  les ../../../prj/melans
+  163  wget "http://waterdata.usgs.gov/tx/nwis/monthly?referred_module=sw&site_no="$stn"&agency_cd=USGS&por_"$stn"_2=1792,00060,2,1956-12,2014-05&partial_periods=on&format=rdb"  --quiet -O _FLOW > /dev/null
+  164  awk '{if($2==$2*1 && $5>1955 && $5<2013 && $6==12)print $5+1,$7>"../data/yy.00"}' _FLOW
+  165  awk '{if($2==$2*1 && $5>1955 && $5<2013 && $6==12)print $5+1,$7}' _FLOW|les
+  166  wget "http://waterdata.usgs.gov/tx/nwis/monthly?referred_module=sw&site_no=08194500&agency_cd=USGS&por_08194500_2=1792,00060,2,1956-12,2014-05&partial_periods=on&format=rdb"  --quiet -O _FLOW > /dev/null
+  167  awk '{if($2==$2*1 && $5>1955 && $5<2013 && $6==12)print $5+1,$7>"../data/y.00"}' _FLOW
+  168  awk '{m=$6>9?$6:"0"$6;if($2==$2*1 && $5>1956 && $5<2014)print $5,$7>"../data/y."m}' _FLOW
+  169  sed -i '/2008 /a 2009 -999' ../data/y.09
+  170  les _FLOW 
+  171  awk '{y=FILENAME;gsub(/y./,"y_ln.",y);i=$2>0?$2:.000001;print $1,log($i)>y}' ../data/y.*
+  172  rm ../data/y*
+  173  rm ../data/Y*
+  174  ll ../data/
+  175  awk '{if($2==$2*1 && $5>1955 && $5<2013 && $6==12)print $5+1,$7>"../data/Y.00"}' _FLOW
+  176  awk '{m=$6>9?$6:"0"$6;if($2==$2*1 && $5>1956 && $5<2014)print $5,$7>"../data/Y."m}' _FLOW
+  177  sed -i '/2008 /a 2009 -999' ../data/Y.09
+  178  awk '{y=FILENAME;gsub(/Y./,"Y_ln.",y);i=$2>0?$2:.000001;print $1,log($i)>y}' ../data/Y.*
+  179  ls ../data/
+  180  les ../data/Y.00
+  181  module spider mosh
+  182  cd C
+  183  cd CPT
+  184  exit
+  185  cd C
+  186  cd CPT
+  187  cd CPT/
+  188  nano ../nueces_nr_tldn.sh
+  189  cd ../data_150710_0226/tmp/
+  190  sed 's/,$//' ../data/X*
+  191  nano ../../nueces_nr_tldn.sh
+  192  sed -i 's/,$//' ../data/X*
+  193  cd ../../
+  194  les data_150710_0451/data/X.04.4
+  195  nan nueces_nr_tldn.sh
+  196  les data_150710_0451/data/Y.04
+  197  ls data_150710_0451/data/
+  198  les data_150710_0451/data/Y.12
+  199  les data_150710_0451/data/Y_ln.12
+  200  nano nueces_nr_tldn.sh
+  201  exit
+  202  les ../data/Y.00
+  203  module spider mosh
+  204  cd C
+  205  cd CPT
+  206  exit
+  207  cd CPT/
+  208  cd data_150710_0226/
+  209  les data/X.01.1
+  210  les data/X.01.6
+  211  les data/X.02.5
+  212  les data/X.04.4
+  213  les data/X.04.1
+  214  cd ../11.03/
+  215  sed -i 's/,/ /g' ../data_150710_0226/CPT/04.4
+  216  sed -i 's/,/ /g' ../data_150710_0226/data/X.04.4
+  217  sed -i 's/,/ /g' ../data_150710_0226/data/X_ln.04.4
+  218  CPT.x < ../data_150710_0226/CPT/04.4
+  219  les ../data_150710_0226/CPT/04.4
+  220  ll ../data_150710_0226/CPT/04.4
+  221  nano ../nueces_nr_tldn.sh
+  222  cd ..
+  223  csh nueces_nr_tldn.sh
+  224  cd data_150710_0451/tmp/
+  225  awk '{y=FILENAME;gsub(/Y./,"Y_ln.",y);i=$2>0?$2:.000001;print $1,log($i),y}' ../data/Y.*|les
+  226  awk '{y=FILENAME;gsub(/Y./,"Y_ln.",y);i=$2>0?$2:.0001;print $1,log($i),y}' ../data/Y.*|les
+  227  awk '{y=FILENAME;gsub(/Y./,"Y_ln.",y);i=$2>0?$2:.0001;print $1,$i,y}' ../data/Y.00|les
+  228  awk '{print $1,$2}' ../data/Y.00|les
+  229  nan nueces_nr_tldn.sh
+  230  les data_150710_0451/data/Y.04
+  231  ls data_150710_0451/data/
+  232  les data_150710_0451/data/Y.12
+  233  les data_150710_0451/data/Y_ln.12
+  234  exit
+  235  cd CPT/
+  236  les data_150710_0451/tmp/
+  237  nano nueces_nr_tldn.sh
+  238  csh nueces_nr_tldn.sh
+  239  les data_150710_0554/Results/CV.04.4.txt 
+  240  les data_150710_0554/Results/RP.04.4.txt 
+  241  sbatch nueces_nr_tldn.sh
+  242  cd cpt
+  243  cd CPT
+  244  nano nueces_nr_tldn.sh.5495553
+  245  exit
+  246  cd CP
+  247  mailx -a nueces_nr_tldn.sh.5495553 -- anssary@gmail.com
+  248  mailx -- anssary@gmail.com<nueces_nr_tldn.sh.5495553
+  249  cd CPT/
+  250  les nueces_nr_tldn.sh.5495553
+  251  awk '{print $1,$2}' ../data/Y.00|les
+  252  cd CPT/
+  253  showq  --help
+  254  sbatch --help
+  255  squeue --help
+  256  scancel 5493689
+  257  showq  -u
+  258  les data_150710_0712/corAll.csv 
+  259  nano nueces_nr_tldn.sh
+  260  cd CPT/
+  261  cd CPT/
+  262  les nueces_nr_tldn.sh.5497596
+  263  les data_150710_0712/corAll.csv 
+  264  cd CPT/
+  265  nano nueces_nr_tldn.sh
+  266  les nueces_nr_tldn.sh.5497596
+  267  les data_150710_0712/corAll.csv 
+  268  nano nueces_nr_tldn.sh
+  269  cd CPT/
+  270  .
+  271  mailx -s "final - running" -a nueces_nr_tldn.sh -- anssarygmail.com
+  272  mailx -s "final - running" -a nueces_nr_tldn.sh -- anssarygmail.com < nueces_nr_tldn.sh
+  273  les nueces_nr_tldn.sh.5497596
+  274  cd CPT/
+  275  les nueces_nr_tldn.sh.5497608
+  276  nano nueces_nr_tldn.sh
+  277  cd CPT/
+  278  .
+  279  mailx -s "final - running" -a nueces_nr_tldn.sh -- anssarygmail.com
+  280  mailx -s "final - running" -a nueces_nr_tldn.sh -- anssarygmail.com < nueces_nr_tldn.sh
+  281  les nueces_nr_tldn.sh.5497596
+  282  cd CPT/
+  283  cd CPT/ 
+  284  les data_150711_1046/
+  285  ll data_150711_1045
+  286  ll data_150711_0451
+  287  les data_150711_0451/corAll.csv 
+  288  les data_150711_0451/Results/
+  289  les nueces_nr_tldn.sh.5497608
+  290  les data_150711_0451/Results/RP.01.0.txt 
+  291  gedit data_150711_0451/Results/RP.01.0.txt 
+  292  nano data_150711_0451/Results/RP.01.0.txt 
+  293  les data_150711_0451/corAll.csv 
+  294  les data_150711_0451/Results/
+  295  les nueces_nr_tldn.sh.5497608
+  296  les data_150711_0451/Results/RP.01.0.txt 
+  297  gedit data_150711_0451/Results/RP.01.0.txt 
+  298  nano data_150711_0451/Results/RP.01.0.txt 
+  299  cd CPT/
+  300  les nueces_nr_tldn.sh.5499480
+  301  nano nueces_nr_tldn.sh
+  302  sbatch nueces_nr_tldn.sh
+  303  cd CPT/
+  304  sbatch nueces_nr_tldn.sh
+  305  exit
+  306  exit
+  307  les nueces_nr_tldn.sh.5497596
+  308  les data_150710_0712/corAll.csv 
+  309  .
+  310  mailx -s "final - running" -a nueces_nr_tldn.sh -- anssarygmail.com
+  311  mailx -s "final - running" -a nueces_nr_tldn.sh -- anssarygmail.com < nueces_nr_tldn.sh
+  312  les nueces_nr_tldn.sh.5497596
+  313  les nueces_nr_tldn.sh.5497608
+  314  cd CPT/
+  315  cd data_150711_0451
+  316  ll Results/
+  317  nano ../nueces_nr_tldn.sh
+  318  nano nueces_nr_tldn.sh
+  319  csh nueces_nr_tldn.sh
+  320  cd CPT/
+  321  les nueces_nr_tldn.sh.5497608
+  322  les data_150711_0451/corAll.csv 
+  323  exit
+  324  cd CPT/
+  325  les nueces_nr_tldn.sh.5500685
+  326  les data_150712_0917/corAll.csv 
+  327  mailx -s "data_150712_0917/corAll.csv" -a data_150712_0917/corAll.csv -a nueces_nr_tldn.sh -- anssary@gmail.com
+  328  exit
+  329  les nueces_nr_tldn.sh.5497608
+  330  cd data_150711_0451
+  331  ll Results/
+  332  nano ../nueces_nr_tldn.sh
+  333  nano nueces_nr_tldn.sh
+  334  csh nueces_nr_tldn.sh
+  335  les nueces_nr_tldn.sh.5497608
+  336  les data_150711_0451/corAll.csv 
+  337  exit
+  338  les data_150712_0917/corAll.csv 
+  339  mailx -s "data_150712_0917/corAll.csv" -a data_150712_0917/corAll.csv -a nueces_nr_tldn.sh -- anssary@gmail.com
+  340  cd CPT/
+  341  cd data_150712_0917
+  342  awk '{print}' corAll.csv 
+  343  awk '{split($1,"_",ml);print m,l}' corAll.csv 
+  344  awk '{split($1,"_",ml);print ml[0]}' corAll.csv 
+  345  awk '{split($1,ml,"_");print ml[0]}' corAll.csv 
+  346  awk '{split($1,ml,"_");print ml[1]}' corAll.csv 
+  347  awk '{split($1,ml,"_");print ml[1],$2,$3,$4,$5,$6,$7,$8,$9}' corAll.csv 
+  348  awk '{split($1,ml,"_");print ml[1],$2,$3,$4,$5,$6,$7,$8,$9>ml[2].FILENAME}' corAll.csv 
+  349  awk '{split($1,ml,"_");print ml[1],$2,$3,$4,$5,$6,$7,$8,$9>ml[2]"."FILENAME}' corAll.csv 
+  350  cat *,.*
+  351  cat corAll.csv *,.*>corAll.l.csv
+  352  hostname
+  353  awk '{for(i=1;i<=NF;i++)printf($i" ");printf ""}' corAll.l.csv|les
+  354  awk '{for(i=1;i<=NF;i++)printf($i" ");print ""}' corAll.l.csv|les
+  355  awk '{for(i=1;i<=NF;i++)printf(($i<.00001?00.00:$i)" ");print ""}' corAll.l.csv|les
+  356  awk '{for(i=1;i<=NF;i++)printf($i<.00001?00.00" ":$i" ");print ""}' corAll.l.csv|les
+  357  awk '{for(i=1;i<=NF;i++)printf($i<0.00001?00.00" ":$i" ");print ""}' corAll.l.csv|les
+  358  awk '{for(i=1;i<=NF;i++)printf($i>0.00001?$i" ":00.00" ");print ""}' corAll.l.csv|les
+  359  awk '{for(i=1;i<=NF;i++)printf($i<0.00001?$i" ":00.00" ");print ""}' corAll.l.csv|les
+  360  awk '{for(i=1;i<=NF;i++)printf($i*1<0.00001?00.00" ":$i" ");print ""}' corAll.l.csv|les
+  361  awk '{for(i=2;i<=NF;i++)printf($i*1<0.00001?00.00" ":$i" ");print ""}' corAll.l.csv|les
+  362  awk '{if(NR>1)for(i=1;i<=NF;i++)printf($i*1<0.00001?00.00" ":$i" ");print ""}' corAll.l.csv|les
+  363  awk 'print{if(NR>1)for(i=1;i<=NF;i++)printf($i*1<0.00001?00.00" ":$i" ");print ""}' corAll.l.csv|les
+  364  awk 'print;{if(NR>1)for(i=1;i<=NF;i++)printf($i*1<0.00001?00.00" ":$i" ");print ""}' corAll.l.csv|les
+  365  awk '{print}{if(NR>1)for(i=1;i<=NF;i++)printf($i*1<0.00001?00.00" ":$i" ");print ""}' corAll.l.csv|les
+  366  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf($i*1<0.00001?00.00" ":$i" ");print ""}' corAll.l.csv|les
+  367  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf($i*1<0.00001?"00.00 ":$i" ");print ""}' corAll.l.csv|les
+  368  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf(abs($i*1)<0.00001?"00.00 ":$i" ");print ""}' corAll.l.csv|les
+  369  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf(($i^2)<e-6?"00.00 ":$i" ");print ""}' corAll.l.csv|les
+  370  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf(($i^2)<e-6?"("$i^2")":$i" ");print ""}' corAll.l.csv|les
+  371  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf(($i^2)<1e-6?"("$i^2")":$i" ");print ""}' corAll.l.csv|les
+  372  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf(($i^2)<1?"("$i^2")":$i" ");print ""}' corAll.l.csv|les
+  373  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf(($i^2)<1?"("$i"_"$i^2")":$i" ");print ""}' corAll.l.csv|les
+  374  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf(($i^2)>1?"("$i"_"$i^2")":$i" ");print ""}' corAll.l.csv|les
+  375  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf(($i^2)>1e6?"("$i"_"$i^2")":$i" ");print ""}' corAll.l.csv|les
+  376  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf(sqrt($i^2)>1?"("$i"_"$i^2")":$i" ");print ""}' corAll.l.csv|les
+  377  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf(sqrt($i^2)>1?"("00.00")":$i" ");print ""}' corAll.l.csv|les
+  378  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf(sqrt($i^2)>1?"00.00":$i" ");print ""}' corAll.l.csv|les
+  379  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf(sqrt($i^2)>1?"00.00 ":$i" ");print ""}' corAll.l.csv|les
+  380  mv Results/ Results_/
+  381  mkdir Results
+  382  cd ../11.03/
+  383  CPT.x < ../data_150712_0917/CPT/01.0
+  384  ll ../data_150712_0917
+  385  ll ..
+  386  les nueces_nr_tldn.sh.5500685
+  387  les ../data_150712_0917/Results_/CV.03.6
+  388  les ../data_150712_0917/Results_/CV_ln.03.6.txt
+  389  les ../data_150712_0917/Results_/CV.03.6.txt
+  390  echo|awk '{print log(25604.194315827590)}'
+  391  les ../data_150712_0917/data/X.03.6
+  392  awk '{print }' ../data_150712_0917/data/X.03.6|les
+  393  awk '{for(i=1;i<=NF;i++)printf($i*1);print "" }' ../data_150712_0917/data/X.03.6|les
+  394  awk '{for(i=1;i<=NF;i++)printf($i*1" ");print "" }' ../data_150712_0917/data/X.03.6|les
+  395  CPT.x < ../data_150712_0917/CPT/03.6>03.6
+  396  CPT.x < ../data_150712_0917/CPT/
+  397  CPT.x < ../data_150712_0917/CPT/ln.03.6>03.6
+  398  les 03.6
+  399  les ../nueces_nr_tldn.sh.5500685
+  400  les data_150712_0917/corAll.csv 
+  401  mailx -s "data_150712_0917/corAll.csv" -a data_150712_0917/corAll.csv -a nueces_nr_tldn.sh -- anssary@gmail.com
+  402  exit
+  403  echo|awk '{print log(1e-1)}'
+  404  echo|awk '{print log(1e1)}'
+  405  echo|awk '{print log(1e-100)}'
+  406  echo|awk '{print log(1e-10)}'
+  407  echo|awk '{print log(5e-1)}'
+  408  echo|awk '{print log(50e-1)}'
+  409  echo|awk '{print log(9e-1)}'
+  410  echo|awk '{print log(7e-1)}'
+  411  echo|awk '{print log(3e-1)}'
+  412  echo|awk '{print log(1.1)}'
+  413  echo|awk '{print log(1.00000001)}'
+  414  echo|awk '{print log(1.0000000001)}'
+  415  echo|awk '{print log(.0000000001)}'
+  416  echo|awk '{print log(.1)}'
+  417  echo|awk '{print log(0)}'
+  418  echo|awk '{print exp(log(0))}'
+  419  echo|awk '{print exp(-inf)}'
+  420  echo|awk '{print exp(inf)}'
+  421  cd CPT/
+  422  ll data_150713_0220/CPT/
+  423  csh nueces_nr_tldn.sh
+  424  ll data_150713_0222/CPT/
+  425  cd data_150713_0222
+  426  echo `ls CPT`
+  427  echo "`ls CPT`"
+  428  echo "CPT.x `ls CPT` &"
+  429  echo `ls CPT`|sed 's/ /& CPT.x/g'
+  430  echo `ls CPT`|sed 's/ /& CPT.x</g'
+  431  echo `ls CPT`|sed 's/ /\& CPT.x</g'
+  432  echo `ls CPT`|sed 's/ / \& CPT.x</g'
+  433  echo " "`ls CPT`|sed 's/ / \& CPT.x</g'
+  434  echo "CPT<"`ls CPT`" &"|sed 's/ / \& CPT.x</g'
+  435  echo "CPT<"`ls CPT`"&"|sed 's/ / \& CPT.x</g'
+  436  echo "CPT<"`ls CPT`"&"|sed 's/ / \& CPT.x < /g'
+  437  echo "CPT<"`ls CPT`" &"|sed 's/ / \& CPT.x < /g'
+  438  echo "CPT<"`ls CPT`" &"|sed 's/ / \& CPT.x < /g'|sed 's/CPT.x < &$//g'
+  439  echo "CPT<"`ls CPT`" &"|sed 's/ / \& CPT.x < /g'|sed 's/CPT.x < &$//g'|exec -e
+  440  echo "CPT<"`ls CPT`" &"|sed 's/ / \& CPT.x < /g'|sed 's/CPT.x < &$//g'|exec
+  441  cd ../11.03/
+  442  echo "CPT<"`ls ..\/data_150713_0222\/CPT`" &"|sed 's/ / \& CPT.x < /g'|sed 's/CPT.x < &$//g'
+  443  echo `ls ..\/data_150713_0222\/CPT`
+  444  echo `ls ../data_150713_0222/CPT`
+  445  echo "CPT<"`ls ../data_150713_0222/CPT`" &"|sed 's/ / \& CPT.x < ..\/data_150713_0222\//g'|sed 's/CPT.x < &$//g'
+  446  echo "CPT<"`ls ../data_150713_0222/CPT`|sed 's/ / \& CPT.x < ..\/data_150713_0222\//g'
+  447  echo "CPT<"`ls ../data_150713_0222/CPT`|sed 's/ / \& CPT.x < ..\/data_150713_0222\//g'|exec
+  448  jobs
+  449  job
+  450  bg
+  451  echo "CPT<"`ls ../data_150713_0222/CPT`|sed 's/ / \& CPT.x < ..\/data_150713_0222\//g'|exec -
+  452  awk '{for(i=1;i<=NF;i++)printf($i<.00001?00.00" ":$i" ");print ""}' corAll.l.csv|les
+  453  awk '{for(i=1;i<=NF;i++)printf($i<0.00001?00.00" ":$i" ");print ""}' corAll.l.csv|les
+  454  awk '{for(i=1;i<=NF;i++)printf($i>0.00001?$i" ":00.00" ");print ""}' corAll.l.csv|les
+  455  awk '{for(i=1;i<=NF;i++)printf($i<0.00001?$i" ":00.00" ");print ""}' corAll.l.csv|les
+  456  awk '{for(i=1;i<=NF;i++)printf($i*1<0.00001?00.00" ":$i" ");print ""}' corAll.l.csv|les
+  457  awk '{for(i=2;i<=NF;i++)printf($i*1<0.00001?00.00" ":$i" ");print ""}' corAll.l.csv|les
+  458  awk '{if(NR>1)for(i=1;i<=NF;i++)printf($i*1<0.00001?00.00" ":$i" ");print ""}' corAll.l.csv|les
+  459  awk 'print{if(NR>1)for(i=1;i<=NF;i++)printf($i*1<0.00001?00.00" ":$i" ");print ""}' corAll.l.csv|les
+  460  awk 'print;{if(NR>1)for(i=1;i<=NF;i++)printf($i*1<0.00001?00.00" ":$i" ");print ""}' corAll.l.csv|les
+  461  awk '{print}{if(NR>1)for(i=1;i<=NF;i++)printf($i*1<0.00001?00.00" ":$i" ");print ""}' corAll.l.csv|les
+  462  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf($i*1<0.00001?00.00" ":$i" ");print ""}' corAll.l.csv|les
+  463  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf($i*1<0.00001?"00.00 ":$i" ");print ""}' corAll.l.csv|les
+  464  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf(abs($i*1)<0.00001?"00.00 ":$i" ");print ""}' corAll.l.csv|les
+  465  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf(($i^2)<e-6?"00.00 ":$i" ");print ""}' corAll.l.csv|les
+  466  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf(($i^2)<e-6?"("$i^2")":$i" ");print ""}' corAll.l.csv|les
+  467  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf(($i^2)<1e-6?"("$i^2")":$i" ");print ""}' corAll.l.csv|les
+  468  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf(($i^2)<1?"("$i^2")":$i" ");print ""}' corAll.l.csv|les
+  469  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf(($i^2)<1?"("$i"_"$i^2")":$i" ");print ""}' corAll.l.csv|les
+  470  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf(($i^2)>1?"("$i"_"$i^2")":$i" ");print ""}' corAll.l.csv|les
+  471  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf(($i^2)>1e6?"("$i"_"$i^2")":$i" ");print ""}' corAll.l.csv|les
+  472  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf(sqrt($i^2)>1?"("$i"_"$i^2")":$i" ");print ""}' corAll.l.csv|les
+  473  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf(sqrt($i^2)>1?"("00.00")":$i" ");print ""}' corAll.l.csv|les
+  474  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf(sqrt($i^2)>1?"00.00":$i" ");print ""}' corAll.l.csv|les
+  475  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf(sqrt($i^2)>1?"00.00 ":$i" ");print ""}' corAll.l.csv|les
+  476  mv Results/ Results_/
+  477  mkdir Results
+  478  CPT.x < ../data_150712_0917/CPT/01.0
+  479  ll ../data_150712_0917
+  480  ll ..
+  481  les nueces_nr_tldn.sh.5500685
+  482  les ../data_150712_0917/Results_/CV.03.6
+  483  les ../data_150712_0917/Results_/CV_ln.03.6.txt
+  484  les ../data_150712_0917/Results_/CV.03.6.txt
+  485  echo|awk '{print log(25604.194315827590)}'
+  486  les ../data_150712_0917/data/X.03.6
+  487  awk '{print }' ../data_150712_0917/data/X.03.6|les
+  488  awk '{for(i=1;i<=NF;i++)printf($i*1);print "" }' ../data_150712_0917/data/X.03.6|les
+  489  awk '{for(i=1;i<=NF;i++)printf($i*1" ");print "" }' ../data_150712_0917/data/X.03.6|les
+  490  CPT.x < ../data_150712_0917/CPT/03.6>03.6
+  491  CPT.x < ../data_150712_0917/CPT/
+  492  CPT.x < ../data_150712_0917/CPT/ln.03.6>03.6
+  493  les 03.6
+  494  les ../nueces_nr_tldn.sh.5500685
+  495  les data_150712_0917/corAll.csv 
+  496  mailx -s "data_150712_0917/corAll.csv" -a data_150712_0917/corAll.csv -a nueces_nr_tldn.sh -- anssary@gmail.com
+  497  exit
+  498  echo|awk '{print log(1e-1)}'
+  499  echo|awk '{print log(1e1)}'
+  500  echo|awk '{print log(1e-100)}'
+  501  echo|awk '{print log(1e-10)}'
+  502  echo|awk '{print log(5e-1)}'
+  503  echo|awk '{print log(50e-1)}'
+  504  echo|awk '{print log(9e-1)}'
+  505  echo|awk '{print log(7e-1)}'
+  506  echo|awk '{print log(3e-1)}'
+  507  echo|awk '{print log(1.1)}'
+  508  echo|awk '{print log(1.00000001)}'
+  509  echo|awk '{print log(1.0000000001)}'
+  510  echo|awk '{print log(.0000000001)}'
+  511  echo|awk '{print log(.1)}'
+  512  echo|awk '{print log(0)}'
+  513  echo|awk '{print exp(log(0))}'
+  514  echo|awk '{print exp(-inf)}'
+  515  echo|awk '{print exp(inf)}'
+  516  ll data_150713_0220/CPT/
+  517  ll data_150713_0222/CPT/
+  518  cd data_150713_0222
+  519  echo `ls CPT`
+  520  echo "`ls CPT`"
+  521  echo "CPT.x `ls CPT` &"
+  522  echo `ls CPT`|sed 's/ /& CPT.x/g'
+  523  echo `ls CPT`|sed 's/ /& CPT.x</g'
+  524  echo `ls CPT`|sed 's/ /\& CPT.x</g'
+  525  echo `ls CPT`|sed 's/ / \& CPT.x</g'
+  526  echo " "`ls CPT`|sed 's/ / \& CPT.x</g'
+  527  echo "CPT<"`ls CPT`" &"|sed 's/ / \& CPT.x</g'
+  528  echo "CPT<"`ls CPT`"&"|sed 's/ / \& CPT.x</g'
+  529  echo "CPT<"`ls CPT`"&"|sed 's/ / \& CPT.x < /g'
+  530  echo "CPT<"`ls CPT`" &"|sed 's/ / \& CPT.x < /g'
+  531  echo "CPT<"`ls CPT`" &"|sed 's/ / \& CPT.x < /g'|sed 's/CPT.x < &$//g'
+  532  echo "CPT<"`ls CPT`" &"|sed 's/ / \& CPT.x < /g'|sed 's/CPT.x < &$//g'|exec -e
+  533  echo "CPT<"`ls CPT`" &"|sed 's/ / \& CPT.x < /g'|sed 's/CPT.x < &$//g'|exec
+  534  echo "CPT<"`ls ..\/data_150713_0222\/CPT`" &"|sed 's/ / \& CPT.x < /g'|sed 's/CPT.x < &$//g'
+  535  echo `ls ..\/data_150713_0222\/CPT`
+  536  echo `ls ../data_150713_0222/CPT`
+  537  echo "CPT<"`ls ../data_150713_0222/CPT`" &"|sed 's/ / \& CPT.x < ..\/data_150713_0222\//g'|sed 's/CPT.x < &$//g'
+  538  echo "CPT<"`ls ../data_150713_0222/CPT`|sed 's/ / \& CPT.x < ..\/data_150713_0222\//g'
+  539  echo "CPT<"`ls ../data_150713_0222/CPT`|sed 's/ / \& CPT.x < ..\/data_150713_0222\//g'|exec
+  540  job
+  541  echo "CPT<"`ls ../data_150713_0222/CPT`|sed 's/ / \& CPT.x < ..\/data_150713_0222\//g'|exec -
+  542  cd data_150713_0318
+  543  ps
+  544  ps -aux|greb melans
+  545  ps -aux|grep melans
+  546  ll Results/
+  547  cd ../11.03/
+  548  CPT.x < ../data_150713_0222/CPT/01.0 & CPT.x < ../data_150713_0222/CPT/01.1 & 
+  549  cd data_150713_0222/Results/
+  550  cd ../../11.03/
+  551  nano ../x
+  552  ll 11.03/
+  553  chmod 400 11.03/CPT.x.BKP 
+  554  ll 11.03/CPT
+  555  ll 11.03/CPT*
+  556  ll 11.03/CPT.*
+  557  csh 
+  558  cd ..
+  559  cd CPT/
+  560  `ls`|sed 's/()/$1/g'
+  561  `ls`|awk '{print}'
+  562  ls|awk '{print}'
+  563  ls|awk '{print "CPT.x<$1>$1.out 2>$1.err"}'
+  564  ls|awk '{print "CPT.x<$1>"$1".out 2>"$1".err"}'
+  565  ls|awk '{print "CPT.x<"$1">"$1".out 2>"$1".err"}'
+  566  ls|awk '{print "CPT.x<"$1">"$1".out 2>"$1".err &"}'
+  567  nano ../../x
+  568  cd ../../
+  569  ls|awk '{print "CPT.x < "$1" > "$1".out 2 > "$1".err &"}'
+  570  cat x
+  571  ls -l|awk '{print $8}'
+  572  ls -l
+  573  ls|awk '{print $1}'
+  574  ls -l|awk '{print $9}'
+  575  nano x
+  576  csh nueces_nr_tldn.sh
+  577  ls data_150713_0222/CPT
+  578  csh x
+  579  s 
+  580  sbatch nueces_nr_tldn.sh
+  581  bg
+  582  jobs
+  583  ps -aux |grep melans
+  584  exit
+  585  les data_150712_0917/corAll.csv 
+  586  mailx -s "data_150712_0917/corAll.csv" -a data_150712_0917/corAll.csv -a nueces_nr_tldn.sh -- anssary@gmail.com
+  587  exit
+  588  les nueces_nr_tldn.sh.5497608
+  589  cd data_150711_0451
+  590  nano ../nueces_nr_tldn.sh
+  591  nano nueces_nr_tldn.sh
+  592  les nueces_nr_tldn.sh.5497608
+  593  les data_150711_0451/corAll.csv 
+  594  exit
+  595  les data_150712_0917/corAll.csv 
+  596  mailx -s "data_150712_0917/corAll.csv" -a data_150712_0917/corAll.csv -a nueces_nr_tldn.sh -- anssary@gmail.com
+  597  cd data_150712_0917
+  598  awk '{print}' corAll.csv 
+  599  awk '{split($1,"_",ml);print m,l}' corAll.csv 
+  600  awk '{split($1,"_",ml);print ml[0]}' corAll.csv 
+  601  awk '{split($1,ml,"_");print ml[0]}' corAll.csv 
+  602  awk '{split($1,ml,"_");print ml[1]}' corAll.csv 
+  603  awk '{split($1,ml,"_");print ml[1],$2,$3,$4,$5,$6,$7,$8,$9}' corAll.csv 
+  604  awk '{split($1,ml,"_");print ml[1],$2,$3,$4,$5,$6,$7,$8,$9>ml[2].FILENAME}' corAll.csv 
+  605  awk '{split($1,ml,"_");print ml[1],$2,$3,$4,$5,$6,$7,$8,$9>ml[2]"."FILENAME}' corAll.csv 
+  606  cat *,.*
+  607  cat corAll.csv *,.*>corAll.l.csv
+  608  hostname
+  609  awk '{for(i=1;i<=NF;i++)printf($i" ");printf ""}' corAll.l.csv|les
+  610  awk '{for(i=1;i<=NF;i++)printf($i" ");print ""}' corAll.l.csv|les
+  611  awk '{for(i=1;i<=NF;i++)printf(($i<.00001?00.00:$i)" ");print ""}' corAll.l.csv|les
+  612  awk '{for(i=1;i<=NF;i++)printf($i<.00001?00.00" ":$i" ");print ""}' corAll.l.csv|les
+  613  awk '{for(i=1;i<=NF;i++)printf($i<0.00001?00.00" ":$i" ");print ""}' corAll.l.csv|les
+  614  awk '{for(i=1;i<=NF;i++)printf($i>0.00001?$i" ":00.00" ");print ""}' corAll.l.csv|les
+  615  awk '{for(i=1;i<=NF;i++)printf($i<0.00001?$i" ":00.00" ");print ""}' corAll.l.csv|les
+  616  awk '{for(i=1;i<=NF;i++)printf($i*1<0.00001?00.00" ":$i" ");print ""}' corAll.l.csv|les
+  617  awk '{for(i=2;i<=NF;i++)printf($i*1<0.00001?00.00" ":$i" ");print ""}' corAll.l.csv|les
+  618  awk '{if(NR>1)for(i=1;i<=NF;i++)printf($i*1<0.00001?00.00" ":$i" ");print ""}' corAll.l.csv|les
+  619  awk 'print{if(NR>1)for(i=1;i<=NF;i++)printf($i*1<0.00001?00.00" ":$i" ");print ""}' corAll.l.csv|les
+  620  awk 'print;{if(NR>1)for(i=1;i<=NF;i++)printf($i*1<0.00001?00.00" ":$i" ");print ""}' corAll.l.csv|les
+  621  awk '{print}{if(NR>1)for(i=1;i<=NF;i++)printf($i*1<0.00001?00.00" ":$i" ");print ""}' corAll.l.csv|les
+  622  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf($i*1<0.00001?00.00" ":$i" ");print ""}' corAll.l.csv|les
+  623  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf($i*1<0.00001?"00.00 ":$i" ");print ""}' corAll.l.csv|les
+  624  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf(abs($i*1)<0.00001?"00.00 ":$i" ");print ""}' corAll.l.csv|les
+  625  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf(($i^2)<e-6?"00.00 ":$i" ");print ""}' corAll.l.csv|les
+  626  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf(($i^2)<e-6?"("$i^2")":$i" ");print ""}' corAll.l.csv|les
+  627  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf(($i^2)<1e-6?"("$i^2")":$i" ");print ""}' corAll.l.csv|les
+  628  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf(($i^2)<1?"("$i^2")":$i" ");print ""}' corAll.l.csv|les
+  629  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf(($i^2)<1?"("$i"_"$i^2")":$i" ");print ""}' corAll.l.csv|les
+  630  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf(($i^2)>1?"("$i"_"$i^2")":$i" ");print ""}' corAll.l.csv|les
+  631  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf(($i^2)>1e6?"("$i"_"$i^2")":$i" ");print ""}' corAll.l.csv|les
+  632  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf(sqrt($i^2)>1?"("$i"_"$i^2")":$i" ");print ""}' corAll.l.csv|les
+  633  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf(sqrt($i^2)>1?"("00.00")":$i" ");print ""}' corAll.l.csv|les
+  634  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf(sqrt($i^2)>1?"00.00":$i" ");print ""}' corAll.l.csv|les
+  635  awk '{if(NR==1)print;else for(i=1;i<=NF;i++)printf(sqrt($i^2)>1?"00.00 ":$i" ");print ""}' corAll.l.csv|les
+  636  mv Results/ Results_/
+  637  mkdir Results
+  638  CPT.x < ../data_150712_0917/CPT/01.0
+  639  ll ../data_150712_0917
+  640  ll ..
+  641  les nueces_nr_tldn.sh.5500685
+  642  les ../data_150712_0917/Results_/CV.03.6
+  643  les ../data_150712_0917/Results_/CV_ln.03.6.txt
+  644  les ../data_150712_0917/Results_/CV.03.6.txt
+  645  echo|awk '{print log(25604.194315827590)}'
+  646  les ../data_150712_0917/data/X.03.6
+  647  awk '{print }' ../data_150712_0917/data/X.03.6|les
+  648  awk '{for(i=1;i<=NF;i++)printf($i*1);print "" }' ../data_150712_0917/data/X.03.6|les
+  649  awk '{for(i=1;i<=NF;i++)printf($i*1" ");print "" }' ../data_150712_0917/data/X.03.6|les
+  650  CPT.x < ../data_150712_0917/CPT/03.6>03.6
+  651  CPT.x < ../data_150712_0917/CPT/
+  652  CPT.x < ../data_150712_0917/CPT/ln.03.6>03.6
+  653  les 03.6
+  654  les ../nueces_nr_tldn.sh.5500685
+  655  les data_150712_0917/corAll.csv 
+  656  mailx -s "data_150712_0917/corAll.csv" -a data_150712_0917/corAll.csv -a nueces_nr_tldn.sh -- anssary@gmail.com
+  657  exit
+  658  echo|awk '{print log(1e-1)}'
+  659  echo|awk '{print log(1e1)}'
+  660  echo|awk '{print log(1e-100)}'
+  661  echo|awk '{print log(1e-10)}'
+  662  echo|awk '{print log(5e-1)}'
+  663  echo|awk '{print log(50e-1)}'
+  664  echo|awk '{print log(9e-1)}'
+  665  echo|awk '{print log(7e-1)}'
+  666  echo|awk '{print log(3e-1)}'
+  667  echo|awk '{print log(1.1)}'
+  668  echo|awk '{print log(1.00000001)}'
+  669  echo|awk '{print log(1.0000000001)}'
+  670  echo|awk '{print log(.0000000001)}'
+  671  echo|awk '{print log(.1)}'
+  672  echo|awk '{print log(0)}'
+  673  echo|awk '{print exp(log(0))}'
+  674  echo|awk '{print exp(-inf)}'
+  675  echo|awk '{print exp(inf)}'
+  676  ll data_150713_0220/CPT/
+  677  ll data_150713_0222/CPT/
+  678  cd data_150713_0222
+  679  echo `ls CPT`
+  680  echo "`ls CPT`"
+  681  echo "CPT.x `ls CPT` &"
+  682  echo `ls CPT`|sed 's/ /& CPT.x/g'
+  683  echo `ls CPT`|sed 's/ /& CPT.x</g'
+  684  echo `ls CPT`|sed 's/ /\& CPT.x</g'
+  685  echo `ls CPT`|sed 's/ / \& CPT.x</g'
+  686  echo " "`ls CPT`|sed 's/ / \& CPT.x</g'
+  687  echo "CPT<"`ls CPT`" &"|sed 's/ / \& CPT.x</g'
+  688  echo "CPT<"`ls CPT`"&"|sed 's/ / \& CPT.x</g'
+  689  echo "CPT<"`ls CPT`"&"|sed 's/ / \& CPT.x < /g'
+  690  echo "CPT<"`ls CPT`" &"|sed 's/ / \& CPT.x < /g'
+  691  echo "CPT<"`ls CPT`" &"|sed 's/ / \& CPT.x < /g'|sed 's/CPT.x < &$//g'
+  692  echo "CPT<"`ls CPT`" &"|sed 's/ / \& CPT.x < /g'|sed 's/CPT.x < &$//g'|exec -e
+  693  echo "CPT<"`ls CPT`" &"|sed 's/ / \& CPT.x < /g'|sed 's/CPT.x < &$//g'|exec
+  694  echo "CPT<"`ls ..\/data_150713_0222\/CPT`" &"|sed 's/ / \& CPT.x < /g'|sed 's/CPT.x < &$//g'
+  695  echo `ls ..\/data_150713_0222\/CPT`
+  696  echo `ls ../data_150713_0222/CPT`
+  697  echo "CPT<"`ls ../data_150713_0222/CPT`" &"|sed 's/ / \& CPT.x < ..\/data_150713_0222\//g'|sed 's/CPT.x < &$//g'
+  698  echo "CPT<"`ls ../data_150713_0222/CPT`|sed 's/ / \& CPT.x < ..\/data_150713_0222\//g'
+  699  echo "CPT<"`ls ../data_150713_0222/CPT`|sed 's/ / \& CPT.x < ..\/data_150713_0222\//g'|exec
+  700  job
+  701  echo "CPT<"`ls ../data_150713_0222/CPT`|sed 's/ / \& CPT.x < ..\/data_150713_0222\//g'|exec -
+  702  cd data_150713_0318
+  703  ps
+  704  ps -aux|greb melans
+  705  ll Results/
+  706  cd ../11.03/
+  707  CPT.x < ../data_150713_0222/CPT/01.0 & CPT.x < ../data_150713_0222/CPT/01.1 & 
+  708  cd data_150713_0222/Results/
+  709  cd ../../11.03/
+  710  nano ../x
+  711  ll 11.03/
+  712  chmod 400 11.03/CPT.x.BKP 
+  713  ll 11.03/CPT
+  714  ll 11.03/CPT*
+  715  ll 11.03/CPT.*
+  716  csh 
+  717  cd ..
+  718  cd CPT/
+  719  `ls`|sed 's/()/$1/g'
+  720  `ls`|awk '{print}'
+  721  ls|awk '{print}'
+  722  ls|awk '{print "CPT.x<$1>$1.out 2>$1.err"}'
+  723  ls|awk '{print "CPT.x<$1>"$1".out 2>"$1".err"}'
+  724  ls|awk '{print "CPT.x<"$1">"$1".out 2>"$1".err"}'
+  725  ls|awk '{print "CPT.x<"$1">"$1".out 2>"$1".err &"}'
+  726  nano ../../x
+  727  cd ../../
+  728  ls|awk '{print "CPT.x < "$1" > "$1".out 2 > "$1".err &"}'
+  729  cat x
+  730  ls -l|awk '{print $8}'
+  731  ls -l
+  732  ls|awk '{print $1}'
+  733  ls -l|awk '{print $9}'
+  734  nano x
+  735  ls data_150713_0222/CPT
+  736  csh x
+  737  s 
+  738  bg
+  739  ps -aux |grep melans
+  740  ls data_150713_0523/Results/
+  741  les nueces_nr_tldn.sh.5503907
+  742  ls data_150713_0523/
+  743  ls data_150713_0523/CPT.o/
+  744  les nueces_nr_tldn.sh.5503907 
+  745  ls data_150713_0602/CPT
+  746  ll data_150713_0602/CPT
+  747  csh nueces_nr_tldn.sh
+  748  showq 0u
+  749  les nueces_nr_tldn.sh.5503976
+  750  les nueces_nr_tldn.sh.5504055
+  751  les nueces_nr_tldn.sh.5504061
+  752  les data_150713_0706/CPT/01.0
+  753  ls data_150713_0706/CPT/
+  754  ll data_150713_0706/CPT/
+  755  sbatch nueces_nr_tldn.sh
+  756  les nueces_nr_tldn.sh.5504064 
+  757  ls data_150713_0708/CPT/
+  758  ll data_150713_0708/CPT/
+  759  ls data_150713_0708/CPT.o/
+  760  ll data_150713_0708/
+  761  ll data_150713_0708/Results/
+  762  ls data_150713_0708/Results/
+  763  ls -al data_150713_0708/Results/
+  764  jobs
+  765  ps -aux|grep melans
+  766  ll data_150713_0602/CPT
+  767  csh nueces_nr_tldn.sh
+  768  showq 0u
+  769  les nueces_nr_tldn.sh.5503976
+  770  les nueces_nr_tldn.sh.5504055
+  771  les nueces_nr_tldn.sh.5504061
+  772  les data_150713_0706/CPT/01.0
+  773  ls data_150713_0706/CPT/
+  774  ll data_150713_0706/CPT/
+  775  sbatch nueces_nr_tldn.sh
+  776  les nueces_nr_tldn.sh.5504064 
+  777  ls data_150713_0708/CPT/
+  778  ll data_150713_0708/CPT/
+  779  ls data_150713_0708/CPT.o/
+  780  ll data_150713_0708/
+  781  ll data_150713_0708/Results/
+  782  ls data_150713_0708/Results/
+  783  ls -al data_150713_0708/Results/
+  784  jobs
+  785  ps -aux|grep melans
+  786  gedit &
+  787  cd CPT/
+  788  l
+  789  gedit basins.sh &
+  790  gedit basins.data &
+  791  mv basins.data basins.sh.data
+  792  gedit basins.sh.data &
+  793  awk '' basins.sh.data
+  794  awk '1' basins.sh.data
+  795  csh basins.sh;ll
+  796  sh basins.sh
+  797  csh basins.sh
+  798  cp basins.sh basins.csh.sh
+  799  ll ~
+  800  mkdir tmp
+  801  sh cshtobash basins.sh
+  802  which bash
+  803  cshtobash
+  804  chmod 700 cshtobash
+  805  cshtobash basins.sh
+  806  ll tmp/
+  807  mv basins.sh basins
+  808  chmod 700 basins
+  809  cp basins.sh.data basins.data
+  810  s='id;some text here with possible ; inside'
+  811  IFS=';' read -r id string <<< "$s"
+  812  echo "$id"
+  813  echo "$string"
+  814  IFS=';' read -r x <<< "$s"
+  815  echo "$x"
+  816  echo "$x[0]"
+  817  echo "${x[0]}"
+  818  IFS=';' read -a x <<< "$s"
+  819  echo "${x[1]}"
+  820  awk '1' -RS='#+' basins.data
+  821  awk '1' RS='#+' basins.data
+  822  awk '{print $0,"_"}' RS='#+' basins.data
+  823  awk RS='#+' '{print $0,"_"}' basins.data
+  824  awk -RS='#+' '{print $0,"_"}' basins.data
+  825  basins 
+  826  read
+  827  man read
+  828  sed 's/\n/;/g' basins.data
+  829  sed 's/\r/;/g' basins.data
+  830  awk '{printf $0}' basins.data
+  831  awk '{printf $0"; "}' basins.data
+  832  awk '{printf $0"; ";print ""}' basins.data
+  833  awk FS=; '{printf $0"; ";print ""}' basins.data
+  834  awk -FS=; '{printf $0"; ";print ""}' basins.data
+  835  awk -vORS=; '{printf $0"; ";print ""}' basins.data
+  836  awk -vORS; '{printf $0"; ";print ""}' basins.data
+  837  awk -vORS=';' '{printf $0"; ";print ""}' basins.data
+  838  awk -FS=';' '{printf $0"; ";print ""}' basins.data
+  839  awk -FS=';' '1' basins.data
+  840  awk -vORS=';' '1' basins.data
+  841  ps -aux|grep melans
+  842  cd CPT/basins/
+  843  nano ../nueces_nr_tldn.sh
+  844  nano basins
+  845  exit
+  846  chmod 700 cshtobash
+  847  cshtobash basins.sh
+  848  ll tmp/
+  849  mv basins.sh basins
+  850  cp basins.sh.data basins.data
+  851  s='id;some text here with possible ; inside'
+  852  IFS=';' read -r id string <<< "$s"
+  853  echo "$id"
+  854  echo "$string"
+  855  IFS=';' read -r x <<< "$s"
+  856  echo "$x"
+  857  echo "$x[0]"
+  858  echo "${x[0]}"
+  859  IFS=';' read -a x <<< "$s"
+  860  echo "${x[1]}"
+  861  awk '1' -RS='#+' basins.data
+  862  awk '1' RS='#+' basins.data
+  863  awk '{print $0,"_"}' RS='#+' basins.data
+  864  awk RS='#+' '{print $0,"_"}' basins.data
+  865  awk -RS='#+' '{print $0,"_"}' basins.data
+  866  basins 
+  867  read
+  868  man read
+  869  sed 's/\n/;/g' basins.data
+  870  sed 's/\r/;/g' basins.data
+  871  awk '{printf $0}' basins.data
+  872  awk '{printf $0"; "}' basins.data
+  873  awk '{printf $0"; ";print ""}' basins.data
+  874  awk FS=; '{printf $0"; ";print ""}' basins.data
+  875  awk -FS=; '{printf $0"; ";print ""}' basins.data
+  876  awk -vORS=; '{printf $0"; ";print ""}' basins.data
+  877  awk -vORS; '{printf $0"; ";print ""}' basins.data
+  878  awk -vORS=';' '{printf $0"; ";print ""}' basins.data
+  879  awk -FS=';' '{printf $0"; ";print ""}' basins.data
+  880  awk -FS=';' '1' basins.data
+  881  awk -vORS=';' '1' basins.data
+  882  ps -aux|grep melans
+  883  cd CPT/basins/
+  884  nano ../nueces_nr_tldn.sh
+  885  nano basins
+  886  exit
+  887  mkcd basins
+  888  cp ../CPT/basins/basins.data .
+  889  nano ../CPT/basins/basins
+  890  chmod 700 basins
+  891  ll *
+  892  ll Nueces_Rv_nr_Tilden/
+  893  ll Nueces_Rv_nr_Tilden/Nueces_Rv_nr_Tilden/Nueces_Rv_nr_Tilden/Nueces_Rv_nr_Tilden/Nueces_Rv_nr_Tilden/Nueces_Rv_nr_Tilden/Nueces_Rv_nr_Tilden/Nueces_Rv_nr_Tilden/Nueces_Rv_nr_Tilden/Nueces_Rv_nr_Tilden/
+  894  ll Nueces_Rv_nr_Tilden/Nueces_Rv_nr_Tilden/Nueces_Rv_nr_Tilden/Nueces_Rv_nr_Tilden/Nueces_Rv_nr_Tilden/Nueces_Rv_nr_Tilden/Nueces_Rv_nr_Tilden/Nueces_Rv_nr_Tilden/Nueces_Rv_nr_Tilden/Nueces_Rv_nr_Tilden/tmp/_FLOW 
+  895  ll Nueces_Rv_nr_Tilden/tmp/
+  896  cat 0
+  897  rm Nueces_Rv_nr_Tilden/
+  898  rm 0
+  899  rm Frio_river_nr_Derby/
+  900  ll Frio_river_nr_Derby/
+  901  lll
+  902  rm F* L* N*
+  903  ll Llano_river_at_Llano/CPT/
+  904  gedit &
+  905  bc 5
+  906  bc
+  907  echo "5+4"|bc
+  908  bc 5+3
+  909  bc "5+3"
+  910  clear
+  911  wget http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.ECHAM4p5/.Forecast/.ca_sst/.ensemble24/.MONTHLY/.st/Y/29.058611/27.558611/RANGEEDGES/X/-97.556944/-99.556944/RANGEEDGES/%5BM%5Daverage/gridtable.tsv --quiet -O _TEMP.grd
+  912  wget http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.ECHAM4p5/.Forecast/.ca_sst/.ensemble24/.MONTHLY/.st/Y/29.058611/27.558611/RANGEEDGES/X/-97.556944/-100.556944/RANGEEDGES/%5BM%5Daverage/gridtable.tsv --quiet -O _TEMP.grd
+  913  wget http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.ECHAM4p5/.Forecast/.ca_sst/.ensemble24/.MONTHLY/.st/Y/29.308611/27.308611/RANGEEDGES/X/-97.556944/-99.556944/RANGEEDGES/%5BM%5Daverage/gridtable.tsv --quiet -O tmp/_TEMP.grd
+  914  wget http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.ECHAM4p5/.Forecast/.ca_sst/.ensemble24/.MONTHLY/.st/Y/29.308611/27.308611/RANGEEDGES/X/-97.556944/-99.556944/RANGEEDGES/%5BM%5Daverage/gridtable.tsv --quiet -O _TEMP.grd
+  915  les _TEMP.grd 
+  916  les Frio_river_nr_Derby/tmp/_TEMP.grd
+  917  les Llano_river_at_Llano/tmp/_TEMP.grd
+  918  les Nueces_Rv_nr_Tilden/tmp/_TEMP.grd
+  919  les Frio_river_nr_Derby/tmp/_TEMP.grd;les Llano_river_at_Llano/tmp/_TEMP.grd;les Nueces_Rv_nr_Tilden/tmp/_TEMP.grd
+  920  basins basins.data 
+  921  less Frio_river_nr_Derby/tmp/_TEMP.grd
+  922  les nueces_nr_tldn.sh.5517554 
+  923  ls Frio_river_nr_Derby/Results/
+  924  awk -FS=';' '{printf $0"; ";print ""}' basins.data
+  925  awk -FS=';' '1' basins.data
+  926  awk -vORS=';' '1' basins.data
+  927  ps -aux|grep melans
+  928  cd CPT/basins/
+  929  nano ../nueces_nr_tldn.sh
+  930  nano basins
+  931  exit
+  932  less Frio_river_nr_Derby/tmp/_TEMP.grd                                                     
+  933  less Llano_river_at_Llano/tmp/_TEMP.grd                                                    
+  934  less Nueces_Rv_nr_Tilden/tmp/_TEMP.grd                                                    
+  935  rm Frio_river_nr_Derby/ Llano_river_at_Llano/ Nueces_Rv_nr_Tilden/ _TEMP.grd 
+  936  less Frio_river_nr_Derby/tmp/_TEMP.grd
+  937  les */tmp/_FLOW
+  938  less Frio_river_nr_Derby/tmp/_TEMP.grd;less Llano_river_at_Llano/tmp/_TEMP.grd;less Nueces_Rv_nr_Tilden/tmp/_TEMP.grd
+  939  basins basins.data 
+  940  les Frio_river_nr_Derby/CPT/04.4
+  941  nano basins
+  942  ls -d ../*_*
+  943  ls -d ../*_*/
+  944  nano ../basins
+  945  src
+  946  cd basins/
+  947  q|awk '{x++;print x}'
+  948  q|awk '{x++;print x : $0}'
+  949  q|awk '{x++;print x $0}'
+  950  q>q
+  951  les q 
+  952  showq -u
+  953  sinfo 
+  954  sinfo -o "%20P %5a %.10l %16F"
+  955  squeue --start
+  956  q|awk '{if(NR>2)x++;print $1}'
+  957  q|awk '{if(NR>2)print $1}'|squeue --start -j
+  958  q|awk '{if(NR>2)print $1}'
+  959  squeue --start -j 5522229
+  960  squeue --start -j 5522229 -l
+  961  scontrol show job 5522229
+  962  scancel 5522268 5522267
+  963  showq -u -l
+  964  squeue -u melans|awk '{if(NR>1)print $1}'
+  965  squeue -u melans|awk -vORS=" " '{if(NR>1)print $1}'
+  966  squeue -u melans|awk -vORS=" " '{if(NR>1)print $1}'|scancel
+  967  squeue -u melans|awk -vORS=" " '{if(NR>1)print $1}'|scancel -
+  968  echo `squeue -u melans|awk -vORS=" " '{if(NR>1)print $1}'`|scancel
+  969  echo `squeue -u melans|awk -vORS=" " '{if(NR>1)print $1}'`
+  970  `echo squeue -u melans|awk -vORS=" " '{if(NR>1)print $1}'`
+  971  squeue -u melans
+  972  basins Nueces_Rv_nr_Tilden 12
+  973  basins Nueces_Rv_nr_Tilden/ 12
+  974  scancel `squeue -u melans|awk -vORS=" " '{if(NR>1)print $1}'`
+  975  mailx -s "working version" -a basins -- anssary@gmail.com
+  976  mailx -s "working version" -a basins -a basins.data -- anssary@gmail.com
+  977  ls -d *_*/
+  978  les Frio_river_nr_Derby//Results/RP.01.0.txt
+  979  les Frio_river_nr_Derby//Results/RP_ln.01.0.txt
+  980  echo|awk '{print exp(0)}'
+  981  echo|awk '{print exp(-1)}'
+  982  echo|awk '{print exp(-999)}'
+  983  echo|awk '{print exp(-998)}'
+  984  echo|awk '{print exp(-990)}'
+  985  echo|awk '{print exp(-99)}'
+  986  echo|awk '{print exp(-599)}'
+  987  echo|awk '{print exp(-899)}'
+  988  echo|awk '{print exp(-890)}'
+  989  echo|awk '{print exp(-690)}'
+  990  echo|awk '{print exp(-790)}'
+  991  echo|awk '{print exp(-700)}'
+  992  echo|awk '{print exp(-720)}'
+  993  echo|awk '{print exp(-728)}'
+  994  echo|awk '{print exp(-730)}'
+  995  echo|awk '{print exp(-740)}'
+  996  echo|awk '{print exp(-770)}'
+  997  echo|awk '{print exp(-750)}'
+  998  echo|awk '{print exp(-749)}'
+  999  echo|awk '{print exp(-746)}'
+ 1000  echo|awk '{print exp(-745)}'
+ 1001  echo 0|awk '{print exp(-745)}'
+ 1002  echo 0|awk '{print exp($1)}'
+ 1003  echo -999|awk '{print exp($1)}'
+ 1004  echo -999|awk '{print $1>0?exp($1):0}'
+ 1005  echo -999|awk '{print $1>0 ? exp($1):0}'
+ 1006  echo -999|awk '{print $1 > 0 ? exp($1):0}'
+ 1007  echo -999|awk '{$1>0?print exp($1):print 0}'
+ 1008  echo -999|awk '{x=$1>0?exp($1):0;print x}'
+ 1009  echo -999|awk '{print exp($1)||0}'
+ 1010  echo -999|awk '{print ($1>0?exp($1):0)}'
+ 1011  echo 999|awk '{print ($1>0?exp($1):0)}'
+ 1012  echo 9|awk '{print ($1>0?exp($1):0)}'
+ 1013  Rscript -e 'cat(",",cor(c('537.8,23.9,170.6,155.4,53.2,0,6.32,558.9,139.4,24.8,42,20.7,0,1.25,85.7,26.7,21.9,22.9,169.2,90.8,174.7,63.8,0,142.9,19.3,3.69,2.01,0,0',c('0.56196639700910822,28.473299041087433,153.82416007802465,155.68302692630624,42.000973133575648,0.0000000000000000,0.18826247151245212,949.30676732835411,147.35292575998329,23.063803607765671,40.126873581354253,24.381102499564939,1.9362618228081487,0.0000000000000000,117.45025568609984,26.376066340316854,26.798243848672548,24.503802356234544,210.53543953788250,84.639105013348782,226.00662372591046,61.219176846364022,2.5409981373577040,148.55108126690362,16.569310620249219,62.047033030479881,4.90591820081931473E-004,5.60496405952903842E-004,6.63330180302068584E-004'))
+'
+ 1014  module load R
+ 1015  Rscript -e 'cat(",",cor(c('537.8,23.9,170.6,155.4,53.2,0,6.32,558.9,139.4,24.8,42,20.7,0,1.25,85.7,26.7,21.9,22.9,169.2,90.8,174.7,63.8,0,142.9,19.3,3.69,2.01,0,0',c('0.56196639700910822,28.473299041087433,153.82416007802465,155.68302692630624,42.000973133575648,0.0000000000000000,0.18826247151245212,949.30676732835411,147.35292575998329,23.063803607765671,40.126873581354253,24.381102499564939,1.9362618228081487,0.0000000000000000,117.45025568609984,26.376066340316854,26.798243848672548,24.503802356234544,210.53543953788250,84.639105013348782,226.00662372591046,61.219176846364022,2.5409981373577040,148.55108126690362,16.569310620249219,62.047033030479881,4.90591820081931473E-004,5.60496405952903842E-004,6.63330180302068584E-004'))'
+ 1016  Rscript -e 'cor(c('537.8,23.9,170.6,155.4,53.2,0,6.32,558.9,139.4,24.8,42,20.7,0,1.25,85.7,26.7,21.9,22.9,169.2,90.8,174.7,63.8,0,142.9,19.3,3.69,2.01,0,0',c('0.56196639700910822,28.473299041087433,153.82416007802465,155.68302692630624,42.000973133575648,0.0000000000000000,0.18826247151245212,949.30676732835411,147.35292575998329,23.063803607765671,40.126873581354253,24.381102499564939,1.9362618228081487,0.0000000000000000,117.45025568609984,26.376066340316854,26.798243848672548,24.503802356234544,210.53543953788250,84.639105013348782,226.00662372591046,61.219176846364022,2.5409981373577040,148.55108126690362,16.569310620249219,62.047033030479881,4.90591820081931473E-004,5.60496405952903842E-004,6.63330180302068584E-004')'
+ 1017  Rscript -e 'cat(",",cor(c('537.8,23.9,170.6,155.4,53.2,0,6.32,558.9,139.4,24.8,42,20.7,0,1.25,85.7,26.7,21.9,22.9,169.2,90.8,174.7,63.8,0,142.9,19.3,3.69,2.01,0,0',c('0.56196639700910822,28.473299041087433,153.82416007802465,155.68302692630624,42.000973133575648,0.0000000000000000,0.18826247151245212,949.30676732835411,147.35292575998329,23.063803607765671,40.126873581354253,24.381102499564939,1.9362618228081487,0.0000000000000000,117.45025568609984,26.376066340316854,26.798243848672548,24.503802356234544,210.53543953788250,84.639105013348782,226.00662372591046,61.219176846364022,2.5409981373577040,148.55108126690362,16.569310620249219,62.047033030479881,4.90591820081931473E-004,5.60496405952903842E-004,6.63330180302068584E-004'),use="pairwise.complete.obs",method="spearman")'
+ 1018  R
+ 1019  Rscript -e 'cat(",",cor(c('537.8,23.9,170.6,155.4,53.2,0,6.32,558.9,139.4,24.8,42,20.7,0,1.25,85.7,26.7,21.9,22.9,169.2,90.8,174.7,63.8,0,142.9,19.3,3.69,2.01,0,0'),c('0.56196639700910822,28.473299041087433,153.82416007802465,155.68302692630624,42.000973133575648,0.0000000000000000,0.18826247151245212,949.30676732835411,147.35292575998329,23.063803607765671,40.126873581354253,24.381102499564939,1.9362618228081487,0.0000000000000000,117.45025568609984,26.376066340316854,26.798243848672548,24.503802356234544,210.53543953788250,84.639105013348782,226.00662372591046,61.219176846364022,2.5409981373577040,148.55108126690362,16.569310620249219,62.047033030479881,4.90591820081931473E-004,5.60496405952903842E-004,6.63330180302068584E-004'),use="pairwise.complete.obs",method="spearman"))'
+ 1020  Rscript -e cat(",",cor(c(537.8,23.9,170.6,155.4,53.2,0,6.32,558.9,139.4,24.8,42,20.7,0,1.25,85.7,26.7,21.9,22.9,169.2,90.8,174.7,63.8,0,142.9,19.3,3.69,2.01,0,0),c(0.59138130962567459,28.400530189080833,153.70136795494261,155.50066748270461,41.800133845778944,-1.03475314811873886E-003,2.25395527863270217E-004,949.59773124808260,148.69926110604729,23.099685493485609,38.001702494690392,24.699317136375150,6.24170762229425691E-003,5.93021502166237724E-002,117.10054061578600,26.100480994164258,26.500483167670914,24.600462942972619,208.70142875688359,84.600193617315668,224.20182226071944,61.000146038371142,2.63281370801138337E-003,148.20060389217730,16.586003412279403,65.351135920203959,0.35715917163342681,6.45272972263910560E-004,6.42343425639069210E-004),use="pairwise.complete.obs",method="spearman"))
+ 1021  Rscript -e cat(",",cor(c(537.8,23.9,170.6,155.4,53.2,0,6.32,558.9,139.4,24.8,42,20.7,0,1.25,85.7,26.7,21.9,22.9,169.2,90.8,174.7,63.8,0,142.9,19.3,3.69,2.01,0,0),c(0.56196639700910822,28.473299041087433,153.82416007802465,155.68302692630624,42.000973133575648,0.0000000000000000,0.18826247151245212,949.30676732835411,147.35292575998329,23.063803607765671,40.126873581354253,24.381102499564939,1.9362618228081487,0.0000000000000000,117.45025568609984,26.376066340316854,26.798243848672548,24.503802356234544,210.53543953788250,84.639105013348782,226.00662372591046,61.219176846364022,2.5409981373577040,148.55108126690362,16.569310620249219,62.047033030479881,4.90591820081931473E-004,5.60496405952903842E-004,6.63330180302068584E-004),use="pairwise.complete.obs",method="spearman"))
+ 1022  Rscript -e 'cat(",",cor(c(537.8,23.9,170.6,155.4,53.2,0,6.32,558.9,139.4,24.8,42,20.7,0,1.25,85.7,26.7,21.9,22.9,169.2,90.8,174.7,63.8,0,142.9,19.3,3.69,2.01,0,0),c(0.56196639700910822,28.473299041087433,153.82416007802465,155.68302692630624,42.000973133575648,0.0000000000000000,0.18826247151245212,949.30676732835411,147.35292575998329,23.063803607765671,40.126873581354253,24.381102499564939,1.9362618228081487,0.0000000000000000,117.45025568609984,26.376066340316854,26.798243848672548,24.503802356234544,210.53543953788250,84.639105013348782,226.00662372591046,61.219176846364022,2.5409981373577040,148.55108126690362,16.569310620249219,62.047033030479881,4.90591820081931473E-004,5.60496405952903842E-004,6.63330180302068584E-004),use="pairwise.complete.obs",method="spearman"))'
+ 1023  Rscript -e 'cat(",",cor(c(537.8,23.9,170.6,155.4,53.2,0,6.32,558.9,139.4,24.8,42,20.7,0,1.25,85.7,26.7,21.9,22.9,169.2,90.8,174.7,63.8,0,142.9,19.3,3.69,2.01,0,0),c(0.59138130962567459,28.400530189080833,153.70136795494261,155.50066748270461,41.800133845778944,-1.03475314811873886E-003,2.25395527863270217E-004,949.59773124808260,148.69926110604729,23.099685493485609,38.001702494690392,24.699317136375150,6.24170762229425691E-003,5.93021502166237724E-002,117.10054061578600,26.100480994164258,26.500483167670914,24.600462942972619,208.70142875688359,84.600193617315668,224.20182226071944,61.000146038371142,2.63281370801138337E-003,148.20060389217730,16.586003412279403,65.351135920203959,0.35715917163342681,6.45272972263910560E-004,6.42343425639069210E-004),use="pairwise.complete.obs",method="spearman"))'
+ 1024  les Frio_river_nr_Derby/Results/CV_ln.01.0.txt 
+ 1025  ls Frio_river_nr_Derby/Results/CV_ln.*
+ 1026  ll Frio_river_nr_Derby/Results/CV_ln.*
+ 1027  basins R
+ 1028  cd 11.03/
+ 1029  CPT.x < ../Frio_river_nr_Derby/CPT/ln.09.4
+ 1030  CPT.x < ../Frio_river_nr_Derby/CPT/ln.03.0
+ 1031  CPT.x < ../Frio_river_nr_Derby/CPT/04.4
+ 1032  CPT.x < ../Frio_river_nr_Derby/CPT/ln.04.4
+ 1033  ls ..
+ 1034  awk '{if(NF==2 || NR==5)print $2,$3}' Frio_river_nr_Derby/tmp/_PCPT.grd
+ 1035  awk '{if(NR==2 || NR==5)print $2,$3}' Frio_river_nr_Derby/tmp/_PCPT.grd
+ 1036  basins
+ 1037  ls
+ 1038  mkdir x
+ 1039  mv basins.55* nueces_nr_tldn.sh.551* arcinfo.asc Nueces_Rv_nr_Tilden/ Frio_river_nr_Derby/ Llano_river_at_Llano/ x/.
+ 1040  les q
+ 1041  mv q x/.
+ 1042  basins basins.data
+ 1043  les Frio_river_nr_Derby/data/X.04.4
+ 1044  les Frio_river_nr_Derby/data/X_ln.04.4
+ 1045  basins x
+ 1046  les basins.5523548
+ 1047  les Frio_river_nr_Derby/CPT/01.1 
+ 1048  les Frio_river_nr_Derby/CPT.o/01.1 
+ 1049  les Frio_river_nr_Derby/data/X.04.4 
+ 1050  les Frio_river_nr_Derby/data/X_ln.04.4 
+ 1051  les Frio_river_nr_Derby/data/Y_ln.03
+ 1052  q
+ 1053  les basins.5523550
+ 1054  ll
+ 1055  les basins.5523543
+ 1056  cd -
+ 1057  les ../Frio_river_nr_Derby/CPT/01.0
+ 1058  CPT.x
+ 1059  CPT.x < ../Frio_river_nr_Derby/CPT/01.0
+ 1060  hh

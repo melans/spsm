@@ -1,0 +1,17 @@
+# sites="08205500,08151500,08194500,09498500,05420500";
+# sites="08205500,05420500";
+sites="08151500";
+
+# parameters="cld,evap,gz,lh,nlwg,nswg,nswt,olr,omg,prec,q,sh,slp,st,T,t2m,taux,tauy,temp,u,v";
+parameters="prec,st";
+
+startDT="1958";
+endDT="2015";
+training="29";	# Length of initial training period (suggested value 29):
+
+grid="4";	#	grid + / -
+Sites="Sites";	#	data folder
+
+# Correlation testing period
+_10yrs1="1989";
+_10yrs2="2000";

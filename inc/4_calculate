@@ -1,0 +1,53 @@
+function arrsize {
+	x1=(${1//,/ })
+	# x2=($x1)
+	echo ${#x1[@]}
+}
+################################################################################
+function _4_calculate_ {
+	Z=0;
+	echo "M,L,CORR_RP,CORR_CV,MSSS_RP,MSSS_CV" > $Sites/$site/4_calculate/CORR_MSSS.csv
+#	set strt=`awk '{if(NR==7)print $1}' $dir/Results/RP.01.0.txt`;
+
+	strt=$[$endDT-$training];
+	echo $strt
+	for m in {01..12}; do
+		y_trn=`awk -vORS=, 'NR>3 && $1<='$strt'{print $2}' $Sites/$site/2_format/Y.$m.0|sed 's/,$//'`;
+		y_obs=`awk -vORS=, 'NR>3 && $1>'$strt'{print $2}' $Sites/$site/2_format/Y.$m.0|sed 's/,$//'`;
+
+		# echo "$m : $y_trn";echo
+		# y_obs=`awk -vORS=, '{if(NR>3 && $1>='$strt')print $2}' ../$dir/data/Y.$m|sed 's/,$//'`;
+		for L in {1..7}; do
+		# 	set y_rp=`awk -vORS=, '{if(NR>6 && $1>='$strt')print $2}' ../$dir/Results/RP.$m.$l.txt|sed 's/,$//'`;
+		# 	set y_cv=`awk -vORS=, '{if(NR>6 && $1>='$strt')print $2}' ../$dir/Results/CV.$m.$l.txt|sed 's/,$//'`;
+		# 	yy=`awk -vORS=, '$1>1986&&$1==$1*1{print $2}' $Sites/$site/2_format/Y.$m.0|sed 's/,$//g'`;
+			y_rp=`awk -vORS=, 'NR>6{print $2}' $Sites/$site/3_forecast/*.$m.$L.$Z.RP.txt|sed 's/,$//g'`
+			y_cv=`awk -vORS=, '$1>'$strt' && $1==$1*1{print $2}' $Sites/$site/3_forecast/*.$m.$L.$Z.CV.txt|sed 's/,$//g'`;
+
+# x1="${y_trn//,/ }"
+			# echo -n "y_trn = "; arrsize $y_trn;
+			# echo -n "y_obs = "; arrsize $y_obs;
+			# echo -n "y_cv = "; arrsize $y_cv;
+			# echo -n "y_rp = "; arrsize $y_rp;
+			exit;
+
+			# Rscript -e 'cat(",",cor(c('$yy'),c('$rp'),use="pairwise.complete.obs",method="spearman"))'|sed 's/\[1\] //g';
+
+			# echo -n "$m,$l"|tee -a $dir/$dir.csv > /dev/null
+			#
+			# Rscript -e 'cat(",",cor(c('$y_obs'),c('$y_rp'),use="pairwise.complete.obs",method="spearman"))'|sed 's/\[1\] //g'>>$dir/$dir.csv
+			# Rscript -e 'cat(",",cor(c('$y_obs'),c('$y_cv'),use="pairwise.complete.obs",method="spearman"))'|sed 's/\[1\] //g'>>$dir/$dir.csv
+			# Rscript -e 'clim=mean(c('$y_trn'));y=c('$y_obs');z=c('$y_rp');cat(",",1-sum((z-y)^2)/sum((y-clim)^2))'>>$dir/$dir.csv
+			# Rscript -e 'clim=mean(c('$y_trn'));y=c('$y_obs');z=c('$y_cv');cat(",",1-sum((z-y)^2)/sum((y-clim)^2))'>>$dir/$dir.csv
+			#
+			# Rscript -e 'cat(",",cor(c('$y_obs'),c('$y_rp_ln'),use="pairwise.complete.obs",method="spearman"))'|sed 's/\[1\] //g'>>$dir/$dir.csv
+			# Rscript -e 'cat(",",cor(c('$y_obs'),c('$y_cv_ln'),use="pairwise.complete.obs",method="spearman"))'|sed 's/\[1\] //g'>>$dir/$dir.csv
+			# Rscript -e 'clim=mean(c('$y_trn'));y=c('$y_obs');z=c('$y_rp_ln');cat(",",1-sum((z-y)^2)/sum((y-clim)^2))'>>$dir/$dir.csv
+			# Rscript -e 'clim=mean(c('$y_trn'));y=c('$y_obs');z=c('$y_cv_ln');cat(",",1-sum((z-y)^2)/sum((y-clim)^2))'>>$dir/$dir.csv
+			#
+			# echo>>$dir/$dir.csv
+
+		done;
+	done;
+}
+################################################################################

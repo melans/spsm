@@ -1,0 +1,1330 @@
+version 11.03 (2011-3-14)
+Added NAG nagfor support.
+Added Multiple languages support.
+Updated lapack version to 3.2.2. Some files are removed and new files are added.
+Disabled Y transformation for GCM.
+Modified timing of identification of number of used variables in the forecast file.
+Fixed some errors identifying and replacing missing values in the forecast file.
+Fixed some problems saving regression output files.
+Fixed problem with initial limits on number of modes.
+Replaced missing error message with warning message when output file already exists.
+Removed redundant initialization.
+Removed redundant lwait from error routine.
+Confirmed changes to pointers in get_nongridded_info_v10
+Fixed problem with array bounds in forecast.
+Fixed problem with constant grid screen output.
+Fixed occasional problems readig multi-field files.
+Fixed problem with disassociated poniters when reading unreferenced files.
+Simplified data precision setting. Updated some labels. Implemented additional translations.
+Changed options numbers to avoid furture option numbers shortage and conflicts..
+Fixed problem with rounding errors.
+Renamed bkfield in get_area to avoid potential name conflict.
+Corrected length of easternmost longitude label
+Fixed problem reading south-to-north gridded files.
+Corrected problem mapping longitudes less than -180.
+Additional adjustments to avoid perfect canonical correlations Introduced conversions to and from cm/day.
+Put update_pexc within ifm loop so ifm will be always initialized. That solved crashing problem within update_pexc.
+Fixed CCA rounding problem, and improved efficiency.
+Updated restrictions on maximum number of principal components.
+Corrected missing lcw reference.
+Further updates to maximum number of principal components, Set maximum number of PCs to MIN(nt-1,nv) instead of MIN(nt,nv), Parameterized number of principal component calculation options
+
+Version 11.01 (2010-12-21)
+Added ifort and pfg90 support
+Added "Raw GCM Model Output" main menu option
+Added GCM algorithm option selections
+Added Goodness index option selections
+Fixed problems reading unstacked gridded files.
+Fixed problem reassigning field information after failed file opening.
+Implemented option to compare station or gridded data with interpolated or
+nearest GCM gridboxes, with various options for bias and skill corrections.
+Implemented option to choose correlation coefficient for calculating
+goodness index.
+Set default coorelation coefficient for goodness index to Kendall's.
+Implemented option to calculate probabilistic verification scores for
+pooled retroactive forecasts.
+Added options to save 2AFC skill maps for continuous and categorical forecasts.
+Permitted different missing value flags for different fields.
+Permitted missing years or days in input files except for year/day 2.
+Made cpt:T tag line in version 10 input files redundant. This line is no longer needed, or is ignored if present.
+Modified default estimate of "Start at" dates to avoid occasional invalid settings.
+Improved error messaging for input file format problems.
+Simplified error message handling.
+Simplified some file output routines.
+Fixed some problems estimating missing values in forecast files.
+Fixed problem reading data in non-default forecast files.
+Fixed some occasional problems saving regression coefficients.
+Created array of attributes diagrams to simplify programming.
+Generalized probabilistic score routines to allow probabilities to sum to 1 or to 100.
+Simplified data input routines.
+New get_structure algorithms to implement more rigorous testing, and to
+facilitate greater flexibility on input formats.
+Renamed function erfc to avoid conflict with Fortran extensions in some
+compilers.
+Deleted some redundant INTRINSIC statements.
+
+version 10.09 (2010-08-19)
+
+Fixed problem reading multiple month gridded files.
+Corrected valid longitude checks.
+Permitted different domains for different fields.
+Permitted maps wider than 360 degrees.
+Changed 'Number of EOF extensions' to 'Number of additional months/days'
+Prevented occasional problem when first year of data has too many missing
+values.
+Prevented occasional problem with climatological period when first year of
+data is omitted.
+Fixed occasional problem setting season when months are undefined.
+Fixed occasional problem locating stations incorrectly.
+Fixed problem reading multi-month station files.
+Fixed occasional problem printing saving regression coefficients.
+Reorganized file structure checking algorithm.
+Renamed some variables.
+Deleted unused variable.
+
+version 10.08 is skipped on purpose
+
+version 10.07
+
+Fixed problems with forecast start dates
+Fixed problems with dates in predictor scores output file.
+Corrected problem with forecasts when standardization option is reset after
+model calculated.
+Corrected problem with tailoring options which were not set correctly.
+Changed EOF temporal scores output files tag so that the files can be read
+by CPT as unreferenced files.
+
+version 10.06
+
+Applied missing restandardization to forecasts and prediction intervals.
+Corrected occasional problem printing incorrect date on forecast output files.
+Avoided occasional array size inconsistency when printing weather roulette results.
+Fixed occasional problem sequencing daily data.
+Ensured forecast probabilities update when climatological probabilities are adjusted.
+Improved default first date from which to forecast, and number of forecasts.
+Implemented pull down menus for month prompts for daily data.
+Added latitude and longitude prompts for gridded data on bootstrap window.
+Default climatological period set before analysis is run when user attempts to set the climatological period.
+Introduced day and month prompts for climatological period for daily data.
+Resolved problem displaying results for final gridpoint.
+Fixed unequal spacing on map colourbars.
+Increased maximum length of cpt:T line to 2**24.
+Permitted missing '/' at end of XML URLs.
+Corrected error message when boundariesw and lakes files are missing.
+Corrected some spelling mistakes in error messages.
+Renamed get_thresholds subroutine for consistency with menu.
+
+
+version 10.05
+
+Corrected progress meter when retroactive option is used with analogue years.
+Corrected some problems with some of the example data files.
+
+
+version 10.04
+
+Permitted option to include irregularly lagged EOF extensions.
+Added lakes to maps.
+Added option to mask shading over lakes.
+Added option to mask shading over land.
+Improved error messages for input file formatting problems.
+Fixed occasional problem reading files with a single case.
+Fixed occasional problems reading gridded forecast files.
+Fixed problem calculating forecasts when number of forecasts is more than length of training period.
+Fixed occasional problem resetting climatological period.
+Prevented access of verification results when cross-validation is run after retroactive analysis.
+Minor improvements to progress meter, including prevention of premature termination.
+Corrected occasional problem saving regression coefficients because of unset flag.
+COrrected occasional problem printing longitude markings on maps.
+Corrected occasional problems initializing fields.
+Fixed problems saving ensemble forecasts.
+Set default zero flag for multiple fields to be off.
+Modified the default length of initial training period, to avoid problems with small datasets.
+Minor improvements in spacing of labels on colour bar.
+Improved compatibility with Windows 7.
+Revised IF statement in write_grid to avoid logical error, but that would never occur in practice (resolved to avoid messages for some compilers).
+Updated help pages.
+Added Lulin Song as an author.
+
+
+version 10.03
+
+Added option to set category thresholds by analogues years.
+Added option to calculate and save p-values for skill maps.
+Gridded results prompted by latitude and longitude rather than grid number.
+Fixed occasional truncation of grid and station coordinates.
+Corrected some problems formatting bootstrap results.
+Corrected problem showing some retroactive skill maps.
+Corrected problem saving upper and lower prediction interval maps.
+Improved contouring.
+Insured consistency of colour scale.
+Insured shading of last grid square if used.
+Permitted reversal of colour scale on forecast values maps.
+
+
+version 10.02
+
+Added option to view all CCA modes upto maximum number selected.
+Replaced mean squared error with % variance on performance measures window, and reordered other scores.
+Permitted near-360 degree maps when longitudes are realigned.
+Improved tick mark interval on y-axis.
+Improved appearance of logarithmic scree plots.
+Resolved occasional problem typing initial length of training period for retroactive forecasts.
+Prevented occasional fatal errors when entering out-of-range settings.
+Corrected forecasts when tailoring options are reset.
+Prevented viewing of verification results when tailoring options are reset.
+Resolved problem viewing forecast ensembles.
+Resolved occasional problem viewing probabilities of exceedance.
+Resolved problem with 
+Resolved occasional problem calculating forecasts.
+Resolved occasional problem setting dates for version 9 input files.
+Resolved some occasional problems reading multified / EOF extension gridded files.
+Resolved some occasional problems reading short Z files.
+Resolved problem resetting number of variables when domain setting change is cancelled.
+Resolved possible problem drawing maps when last gridpoint is unused.
+Resolved occasional problem calculating asolute thresholds on standardized data.
+Resolved occasional problem reading structure of station and unreferenced files.
+Implemented temporary fix for expressing forecast in anomalies.
+Corrected occasional problem outputting data when some yeas are marked as missing.
+Set correct user directories for Spanish and Portuguese versions of Windows.
+Some improvements in ability to run on Windows Vista.
+Deleted some redundant USE statements ad INTRINSIC declarations.
+
+
+version 10.01
+
+Permitted reading of multiple fields, and new CPT version 10 file formats.
+Combined Input and Results windows, and windows for different analysis settings.
+Added weather roulette options to retroactive verification.
+Added option to view an ensemble of forecasts based on the assumed error distribution.
+Added option to set climatological period after Y file is set and before running analysis.
+Added odds to forecast series window.
+Added option to show odds relative to climatology.
+Added option to specify precision of forecasts.
+Added option to omit cases when number of missing values is too high.
+Adjusted CCA time series graph to plot X and Y against Y year so that graphs are superimposed when lag/=0.
+Last year of data shown with file information.
+Default length of training period set according to amount of available data.
+Default number of forecasts set according to amount of available data.
+Revised skill map colour spectrum.
+Reduced graphic sizes slightly.
+Corrected occasional problems drawing climatological curve on probability of exceedance graph when data are transformed.
+Permitted climatological period of an outer category to exceed 0.5.
+Climatological period printed under actions when calculating.
+Prompt removed when invalid climatological period updated automatically.
+Confidence intervals saved in single file.
+Saved MLR coefficients based on centred rather than standardized data; regression constant also saved.
+Improved output format for regression coefficients, forecast probabilities and confidence intervals.
+Output files saved in CPT 10 format.
+Accepted "STATIONS" as a valid keyword for version 9 station files.
+Improved progress meter.
+Disabled project save when no modification has been made.
+Renamed 'Graphics' menu item to 'Modes'.
+Renamed 'Thresholds' menu item to 'Tailoring'.
+Renamed 'Data Output' menu item to 'Output Results'.
+Moved forecast data output to Output Results menu.
+Added options to save forecast and retroactive odds.
+Parameterized the calculation of the ClearWin+ Window size.
+Prevented fatal error when climatological period is invalid or too short.
+X EOF calculation option restored after MLR.
+Fixed problem with forecasts when resetting standardization option after model fit.
+Prevented MLR calculation when gridded or station X file is opened prior to viewing MLR.
+Improved data availability checks for retroactive calculations.
+Prevented fatal error when degrees of freedom for Student's t-distribution are zero.
+Prevented programme termination if CPT.ini file in user's directory is not found.
+Prevented occasional fatal error when a principal component explains minimal variance during optimization.
+Prevented some occasional fatal errors when using MLR with large numbers of predictors.
+Error and warning indicators printed in bold.
+Updated ifile derived type to include more extensive date information for improved lag checking.
+Created CPT_Data static library to contain parameter settings.
+Converted variable inclusion flags to indices for improved efficiency.
+Modularized error, warning, and advisory notifications, and improved error diagnostics.
+Improved efficiency of dataset structure identification for pre-v10 input files.
+Improved memory handling for pointers.
+Simplified checking for missing values.
+Minor improvements in efficiency of construction of date strings for progress prompts.
+Simplified calling of map-drawing routine.
+Created help initialization subroutine.
+Simplified handling of project files.
+Deleted some redundant default and back-up variables.
+Deleted some redundant USE statements.
+
+
+version 9.11
+
+Prevented occasional estimation of negative values when zero-bound option is set.
+Resolved occasional problems clearing memory after unsuccessful forecast calculation.
+Updated CPT homepage URL.
+
+
+version 9.10
+
+Added option to save prediction error variances.
+Added option to accept approximate data limits as domain settings.
+Fixed occasional problem saving incorrect latitudes and longitudes for some station data output files.
+Remembered last initial length of training period for retroactive forecasts.
+Set lower limit on initial length of training period for retroactive forecasts.
+Modified gridded file date checking to permit greater flexibility.
+Fixed occasional fatal error calculating variance ratio.
+Parameterized some error messages.
+Removed access to some redundant default variables.
+Changed some conflicted accelerator keys.
+Generalized construction of some graphics titles.
+Deleted a redundant IF statement.
+
+
+version 9.09
+
+Fixed occasional problem resetting length of training period.
+Updated ifile derived type to include month and day.
+
+
+version 9.08
+
+Fixed fatal problem plotting exceedance probability curves.
+Fixed fatal problem plotting forecast values.
+Fixed problems resetting graph titles.
+Fixed occasional problem resetting length of training period.
+
+
+version 9.07
+
+Added options to save graphics as .BMP files.
+Changed some accelerator keys.
+Fixed occasional fatal problem calculating forecast probabilities.
+
+
+version 9.06
+
+Implemented 2AFC scores and variance ratio verification measures.
+
+
+version 9.05
+
+Simplified initialization of some graphics variables.
+Eliminated some graphics variable-naming conflicts.
+Supplied some missing IMPLICIT statements.
+Deleted some redundant variables.
+Deleted some redundant USE statements.
+
+
+version 9.04
+
+Resolved occasional problem allocating memory for forecasts.
+Resolved some problems with the cursor after certain error messages.
+Simplified checking of need for forecast calculation.
+Modularized standardization options.
+Alleviated problem with hanging cursor on probability of exceendance windows.
+X and Y output files reset.
+Moved missing value replacement routines from data_input to statistics module.
+Missing value replacement performed after both datasets read.
+Simplified prompting for changed project file.
+Renamed some functions and subroutines for greater clarity and consistency.
+Simplified checks for stopped forecast calculations.
+Moved a calculation flag to analysis module.
+Removed some redundant variables.
+Removed some redundant and supplied some missing USE statements.
+Removed some redundant and supplied some missing INTRINSIC declarations.
+
+
+version 9.03
+
+Resolved problem allocating memory resulting from ALLOCATE bug in new compiler.
+Added hour-glass cursor when reading project file.
+Major restructuring of analysis, cca, and mlr modules to facilitate implementation of DLL structure.
+Minor restructuring of statistics module to facilitate implementation of DLL structure.
+Simplified checking of program settings.
+Combined PCR and MLR modules.
+Simplified control of title and input windows.
+Simplified forcing of minimum training period length, and of odd cross-validation window length.
+Minor improvement to standardization procedure.
+Correction to occasional problem with station longitudes.
+Corrected identification of daily data starting on the last day of the month.
+Simplified code for determining order of magnitude.
+Created separate routines for standardization and unstandardization to avoid potential confusion.
+Editted some ungrammatical messages.
+Derived type INTENT(OUT) changed to INTENT(INOUT) when not all items are set.
+Minor revisions to memory management.
+Added some missing PUBLIC declarations.
+Added some missing INTRINSIC declarations.
+Removed some redundant variables.
+Removed some redundant USE statements.
+Removed some redundant and supplied some missing INTRINSIC declarations.
+
+
+version 9.02
+
+EOF loadings shown in maps and output adjusted for latitude weights.
+Fixed problem introduced in version 9.01 with overwrite prompt.
+Simplified CCA and PCR code.
+Implemented LAPACK 3.1.1.
+Reduced memory requirements.
+
+
+version 9.01
+
+Divided data_io module into input and output.
+LAPACK routines included as DLL.
+Simplified analysis and graphics module to facilitate implementation of DLL structure.
+Minor improvements in efficiency of plotting of probability of exceedance curves.
+Replaced overwrite function with print_qwarning.
+Moved make_coor function to graphics module.
+Renamed some functions and subroutines for greater consistency.
+Removed some redundant USE statements.
+
+
+version 8.08
+
+Permitted reading of continuous daily data.
+Adjusted correlation algorithm to give more accurate results when variances are very different.
+Implemented missing year checks for unreferenced data.
+Fixed an occasional problem reading station data from forecast file.
+Made month format in gridded files case insensitive.
+Renamed some variables.
+Removed some redundant USE statements.
+
+
+version 8.07
+
+Fixed occasional fatal error drawing colour bar.
+Updated help pages.
+
+
+version 8.06
+
+Disabled gridded and station X input files for MLR.
+Removed low resolution map option.
+
+
+version 8.05
+
+Implemented multiple linear regression (MLR).
+Parameterized analysis names.
+Corrected occasional error in indicating project file directory.
+Removed some redundant USE statements.
+
+
+version 8.04
+
+Implemented option to plot cumulative % of variance on scree plots.
+Improved error message on failed opening of CPT.ini.
+Simplified checking of invalid lags.
+Introduced IRI logo on title page.
+Parameterized copyright dates.
+Parameterized font type.
+Alternative font used if default fonts unavailable.
+
+
+version 8.03
+
+Added option to save retroactive forecast probabilities and upper and lower retroactive prediction limits.
+Thresholds and standardization options can be set from input window.
+Added category shading to exceedance probability curves.
+Activated exceedance probability curves for all options.
+Input Y data saved standardized according to standardization option.
+Corrected forecasts for when transformation flag is on.
+Corrected identification of retroactive and forecast categories.
+Fixed fatal error when saving forecast probabilities if output file is not formatted.
+Changed some 'reliability diagram' labels to 'attributes diagram'.
+Upper and lower prediction limits saved as %s if anomalies are defined as %s.
+Simplified standardization implementation.
+Prevented attempts to save data after failed file opening for some output file types.
+Minor improvements to progress meter.
+Simplified definitions of retroactive period.
+Added number to output file derived type to simplify file identification.
+Added some missing INTRINSIC statements.
+Updated help pages.
+
+
+version 8.02
+
+Corrected plotting of frequency histograms on attributes diagrams.
+Corrected retroactive forecast probabilitiy calculation when transformation option is on.
+Improved label positioning on retroactive ROC verification graph when skill is negative.
+Added ROC areas to ROC graph labels.
+No skill line on attributes diagram changed to dash-dotted.
+Minor improvements to black and white graphics.
+Prevented spurious prompt to save project file changes after file is closed by switching analyses via View menu item.
+Supplied some missing INTENT statements.
+Simplified some subroutine calls.
+
+
+version 8.01
+
+Retroactive forecast probabilities calculated.
+Implemented attributes and ROC diagrams for retroactive forecasts for all points.
+Simplified unformatted output of ROC diagrams.
+Corrected resetting of ROC output file name.
+Corrected occasional failure to recalculate forecasts when first year from which to forecast is reset.
+Corrected minor inaccuracies in calculating retroactive forecasts when latitude weighting is applied.
+Corrected calculation of retroactive forecast categories.
+Retroactive forecast update interval remembered.
+Revised calculation of probability of exceedance curves.
+Implemented additional checks to avoid overflow errors.
+Modified output format of ROC results.
+Substantial reorganization of modules.
+Major restructuring of cca and pcr modules to improve efficiency given new retroactive probability forecasts.
+Improved memory handling.
+Deleted some redundant USE and INTRINSIC statements.
+
+
+version 7.06
+
+Added colour indicator to Y-axis of CCA time scores graphs.
+Corrected colour indicators on validation graphs for black and white option.
+Fixed occasional problem saving unreferenced output files.
+Error message issued if a file with its name containing the % character is opened.
+Prevented occasional fatal error resulting from floating errors in calculating the variance of the last EOF.
+Corrected default CCA map and graph titles.
+Modified PUBLIC/PRIVATE attributes of some graphics parameters.
+Supplied some missing INTRINSIC statements.
+
+
+version 7.05
+
+Fixed problem introduced in version 7.01 updating forecast probabilities when thresholds are changed.
+Corrected problem saving regression coefficients for unreferenced data.
+Only the optimal number of CCA modes saved in output file to avoid occasional fatal error when saving.
+
+
+version 7.04
+
+Maximum number of EOFs saved in output files rather than optimum number.
+Principal component scores plotted with correct variance.
+Principal component scores calculated with PCR saved with variances equal to corresponding eigenvalues.
+Implemented option to save hit and false-alaram rates from ROC graph.
+Switched off hour-glass cursor after incorrect initial retroactive training period is specified.
+Fixed fatal problem calculating latitude weights when latitudes are inverted.
+Improved latitude weighting scheme for domain boundaries.
+Improved handling of zero-bound.
+Fixed occasional fatal problem when saving predictor time scores for forecasts.
+Fixed problem calculating forecasts using PCR with Y transformation option switched on.
+File initializations moved to iofiles module.
+Deleted some redundant USE statements.
+
+
+version 7.03
+
+Fixed problem with latitude weighting when only two lines of latitude are used.
+Improved forecast probability estimates when transform Y data option is activated.
+Fixed occasional problem reading forecast file after unsuccessful forecast file change.
+Previous forecast file restored after unsiccessful opening of new file.
+
+
+version 7.02
+
+Fixed problem running PCR with transform Y data option activated.
+
+
+version 7.01
+
+Added option to set a zero-bound.
+Added option to transform forecasts to % of average.
+Reactivated option to transform Y data to normal.
+Added option to set model update interval during retroactive forecasting.
+Disabled probability of exceedance plots if normalization and/or zero-bound option is activated.
+Major improvements in efficiency when optimizing numbers of modes.
+Goodness index indicated even without optimization.
+Output files saved as tab-delimited.
+Can view all principal components, not just those used.
+All principal component scores plotted and saved with variances equal to corresponding eigenvalues.
+Cosine latitude weighting applied to gridded data when calculating principal components.
+Simplified calling of CCA and PCR routines.
+Reduced memory requirement for calculating goodness index.
+Updated help pages.
+
+
+version 6.10
+
+Ensured that forecasts are recalculated if thresholds are updated but a new forecast window is not opened.
+Occasional improvements in efficiency of calculation of forecasts.
+Deleted some unused variables.
+Removed an unused grey menu item flag.
+
+
+version 6.09
+
+Parameterized length of station names and months for improved compatability with source code version. 
+Parameterized output formats for improved flexibiliity.
+Parameterized length of month strings.
+Restructured routines for output of some output formats.
+Minor improvements in efficiency of output to some files.
+Fixed some occasional output problems.
+Improved data structure checking for gridded data files.
+Moved get_structure to an internal procedure of get_ifile.
+Changed some index names for greater consistency.
+
+
+version 6.08
+
+Fixed problem opening gridded files introduced in version 6.07.
+
+
+version 6.07
+
+Fixed problem saving cross-validated scatter diagram.
+Changed default first year to be same as first year of opened file.
+Corrected problem using "LON" keyword.
+Fixed spurious memory allocation error message issued when forecast file is changed.
+Adjusted default error bar for predictions to 68.3%.
+Changed default maximum number of Y EOF modes.
+Improved file format checks for gridded data.
+Implemented improved KIND selection for REAL constants.
+Supplied some missing intrinsic statements.
+
+
+version 6.06
+
+Fixed occasional problem with adjustments to thresholds when climatological period is reset. 
+Resolved problems with saving graphics in Output subdirectory.
+Read input file error messages changed to indicate number of years in training period read successfully.
+Changed years in copyright statement on start-up window.
+Editorial corrections made to Help About window.
+Principal component scores plotted and saved with variances equal to corresponding eigenvalues (corrected from 6.05).
+Resolved problems plotting bar charts of EOF loadings for unreferenced data.
+Corrected warning when problem saving PC regression file using gridded data.
+Converted numbers of X and Y variables to targets to avoid compilation problems with some compilers.
+Replaced some MATMUL calls for compatibility with source code version, which was experiencing large rounding errors with some compilers.
+
+
+version 6.05
+
+Principal component scores plotted with variances equal to corresponding eigenvalues.
+Added option to save predictor EOF time scores for forecast data.
+Fixed problems using anomalies and standardized anomalies.
+Moved standardization options to Threshold Settings.
+Added standardization option to graphics titles.
+Increased maximum size of graphics titles, and decreased font size.
+Fixed problem with absolute thresholds radio button.
+Fixed occasional problem with first year of training period introduced at version 6.04.
+Minor modifications to estimation of percentiles when thresholds are beyond range of data.
+Fixed occasional problem identifying whether to optimise number of modes when running CCA.
+Improved structure and efficiency of data checks.
+Improved structure and efficiency of domain checks.
+Deleted some redundant USE variables.
+
+
+version 6.04
+
+Corrected X input file label on Y input section.
+Forced immediate update to prediction interval length when reset.
+Changed number of grids / stations / series to zero when no input file is open.
+Simplified functions for setting output files and file formats.
+Simplified subroutine call for reading station data.
+Removed redundant Help menu items from Output File Definitions window.
+Changed some function and derived type names.
+
+
+version 6.03
+
+Implemented option to plot exceedance probability graphs.
+Implemented option to print and save forecast values as anomalies or standardized anomalies.
+Major redesign of graphics code.
+Modifications made to normalization procedure.
+Improved traps to prevent occasional fatal errors when windows are closed prematurely.
+Added climatological period to forecast series window.
+Corrected climatological period indication on forecast probabilities window.
+Updated help pages.
+Temporarily disabled Y data transformation option.
+Updated IRI name.
+Changed function names in forecast module for clearer structure.
+
+
+version 6.02
+
+Number of latitudes and longitudes / stations / series detected automatically.
+Line-wrapping no longer permitted in input files.
+Maximum input file line length of 1048576 characters.
+Increased maximum width of output files in Windows version of CPT.
+Updated help pages.
+
+
+version 6.01
+
+Seperate initialization files and directories for multi-users.
+
+
+version 5.07
+
+Implemented options for defining forecast error-variance.
+Prediction confidence level saved in Project file.
+Allowed for asymmetric climatological probabilities.
+Allowed for some output files of wider than 1636 longitudes/stations/series.
+Minor changes in format of some output files.
+Correced problem calculating Gerrity coefficients when a category has no cases.
+Modified procedure for estimation of quantiles beyond data bounds.
+Resolved some problems setting the bootstrap confidence level.
+Resolved some problems setting the default bootstrap confidence level and prediction confidence level.
+Added project name to Results Window.
+Removed project name from forecast output file prompt.
+Simplified checks for changed project file settings.
+Simplified various program option prompts.
+Fixed problem resetting default forecast confidence level.
+Supplied a missing accelerator key on title screen.
+Simplified continency table memory allocation.
+Resolved some occasional problems opening forecast files, after an attempt to open an invalid forecast file.
+Implemented some missing error traps for memory allocation problems.
+Implemented some improvements in efficiency of array handling.
+Minor improvements in memory management for bootstrapping.
+Simplified progress meter for improved compatability with source code version of CPT.
+Improved memory management when results window is closed when program is calculating.
+Created categories module.
+Modularized input screens.
+Modularized forcing of odd length and default length of cross-validation windows.
+Modularized calculation of scores.
+Simplified data precision definitions.
+Removed some redundant USE statements.
+Removed some redundant INTRINSIC statements.
+
+
+version 5.06
+
+Correct keywords saved in unreferenced input files.
+
+
+version 5.05
+
+Fixed occasional problems identifying stations within specified domain when domain crosses the dateline.
+Minor improvements in efficiency in reading station data.
+"LON" keyword permitted for "LONGITUDE" or "LONG".
+File structure identified automatically.
+Fixed fatal error calculating goodness index when any of the cross-validated correlations are +/-1.0.
+Numbers of EOF/CCA modes replaced with minimum numbers.
+Calculations always halted if there are problems with numbers of EOF/CCA modes prior to reading data.
+Corrected problem setting default numbers of Y EOF modes.
+Minor corrections made to calculations of forecast probabilities and prediction intervals.
+Changed accelerator keys for retroactive scatter plots.
+Resolved fatal error calculating retroactive performance measures.
+Deleted some unused variables.
+Updated help pages describing calculation of the goodness index.
+
+
+version 5.04
+
+Implemented Gerrity score.
+Prevented occasional skipping of series when scrolling in bootstrap window.
+
+
+version 5.03
+
+Removed variance-adjusted contingency tables, and variance-adjusted hit and hit skill scores.
+Corrected problems with categorical scores for transformed data.
+Implemented LEPS score.
+Included space for Gerrity score to be implemented at a later version.
+Changed format of grid reference / station / variable names on results windows to prevent update when new window is opened.
+Changed column totals for contingency table to indicate percentages of times each of the three categories are forecasted.
+Changed format of performance measures window to freeze output when another performance measures window is opened.
+Changed format of contingency tables window to freeze output when another contingency tables window is opened.
+Replaced forecast thresholds with climatological probabilities on forecast series window.
+Added confidence level for prediction intervals to forecast values maps.
+Added climatological period to forecast values and probabilities windows.
+Resolved conflict between open forecast values and forecast probabilities windows.
+Prevented overwriting of backup absolute thresholds.
+Corrected scaling of indicated bootstrap confidence level.
+Minor changes in some scree plots.
+Corrected upper limit to climatological probability of above-/below-normal.
+Corrected problem with reversed thresholds when climatological probability of above-/below-normal is extremely low.
+Corrected category shading when thresholds are beyond the y-axis range.
+Improved criteria for y-axis rescaling.
+Some smoothing of advance of progress bar.
+Restructuring of validation procedures to improve efficiency and reduce executable size.
+Major restructuring of modules and internally stored results.
+Minor improvements in efficiency of cross-validation procedure.
+Some functions renamed.
+
+
+version 5.02
+
+Implemented option to transform data to a normal distribution.
+Implemented option to set prior probabilities of above/below, or to use absolute thresholds.
+Climatological period, bootstrap settings, and transformation option saved in Project files.
+Small changes in format of Forecast Series window to prevent update of thresholds in old windows.
+Some early CPT version Project files no longer supported.
+Some restructuring of modules for setting climatological period.
+Deleted some redundant USE variables.
+Updated help pages.
+
+
+version 5.01
+
+Implemented prediction intervals.
+Added option to draw maps/bar charts of forecasted values with prediction limits.
+Removed the forecast category on Forecast Series windows, and removed option to save the categories.
+Grid spacing based on maximum rather than minimum map dimension.
+Variable names included on forecast map windows for unreferenced data.
+Changed accelerator key for scatter plots to avoid conflict with that for performance measures.
+Fixed an occasional problem with y-axis range on logarithmic scree plots.
+Changed y-axis label on unreferenced skill graphs to name of score.
+Improved positioning of y-axis labels.
+Improved default definitions of tick mark intervals.
+Minor improvements in efficiency of constructing y-axes.
+Resolved occasional problems with bar graphs extending beyond the x-axis.
+Red, green, and blue graph lines darkened.
+Implemented some preliminary steps to permit future user-setting of contour and y-axis ranges.
+Supplied some missing INTRINSIC statements.
+Updated help pages.
+
+
+version 4.05
+
+Removed the "no replacement" missing value option, which had been causing some confusion.
+Correction made to calculation of forecast probabilities.
+Fixed problem generating forecasts when number of forecasts has been increased.
+Fixed problem saving some results when using unreferenced data.
+Changed "X variables" prompts to "Explanatory (X) variables" prompts.
+Changed "Y variables" prompts to "Response (Y) variables" prompts.
+Updated help pages.
+
+
+version 4.04
+
+Minor improvements in efficiency in performing SVD, with accompanying reduction in size of executable.
+Small reductions in memory requirements.
+
+
+version 4.03
+
+Implemented black and white graphics option.
+Resolved some problems running analysis after cancelled new input file.
+Supplied missing station/grid type when using project file.
+Changed default JPEG filenames for forecast maps to include year.
+Realigned bootstrap setting prompts.
+Implemented LAPACK patches.
+Minor improvements in efficiency in performing SVD.
+Corrected some INTENT declarations, and reinstituted INTENT(INOUT) after compiler bug fix.
+
+
+version 4.02
+
+Changed format of forecast probabilities output file, and corrected incorrect output when data are gridded.
+Corrected format of some error messages.
+Removed variance-adjusted best-guess forecasts.
+Increased console window size for screen resolutions of 1792 or greater.
+Corrected occasional problems plotting forecast "maps" for unreferenced data.
+Resolved occasional program hang when all data on bar graphs are negative.
+Set correct upper limit to climatological period.
+Deleted some redundant, and supplied some missing, USE variables.
+Removed some redundant calculations and variables in forecast module.
+Implemented analysis type variables for improved modulation.
+Minor changes to dataset structure definitions.
+Prompts for missing value settings moved to analysis module.
+Deleted forecast probabilities derived type to improve compatibility with EPT.
+Minor improvements in efficiency in setting forecast calculation flag when resetting climatological period.
+Minor improvements in efficiency in performing SVD.
+
+
+version 4.01
+
+Implemented option to draw high-resolution boarders and coastlines.
+Implemented option to set graphic titles.
+Implemented data types to allow user-defined axis range at a later version.
+Corrected occasional problems with year limits on forecast graphs.
+Updated some window titles.
+Changed some menu item shortcuts to avoid conflicts.
+Fixed fatal error because of unset climatology when running PCR.
+Fixed occasional problems with data output after an earlier output cancellation.
+Increased console window size for screen resolutions of 1600 or greater.
+Bootstrap confidence intervals activated.
+Graphics frozen on old results windows.
+Eliminated occasional vertical lines on scatter plots.
+Scree plot customise options moved to right mouse click, permitting immediate update.
+Improved precision of values on vertical labelbars.
+Updated help pages for new features, plus general editing.
+New derived type implemented for graphics images, borders, and margins. 
+
+
+version 3.30
+
+Added option to reset climatological period.
+Threshold values included on forecast series window.
+Improved y-axis scaling.
+Added option to plot scree plots on log-linear axes.
+Added broken-stick to scree plots.
+Fixed problem updating unreferenced variable name on some windows.
+Fixed problem viewing forecast maps when number of forecasts is more than one and lag is more than zero.
+Fixed problems saving data in station format.
+Bootstrap option reactivated (although confidence intervals are not shown yet).
+Updated help pages to include descriptions of new options.
+Changed default JPEG quality to maximum value.
+Some missing axis labels supplied.
+Removed vertical 5-marker lines when number of x-axis points is only 5.
+Removed some redundant USE statements.
+Further generalisation of graphics routines.
+Modularisation of output error routines.
+Moved function to obtain data precision to numbers module.
+
+
+version 3.29
+
+Corrected occasional fatal error producing contingency tables.
+Minor improvements in efficiency in routines for checking settings.
+Replaced legacy DBLE calls with REAL, KIND=dp.
+Removed redundant INTERFACE blocks.
+
+
+version 3.28
+
+Optional vertical year lines activated on forecast graphs.
+Further modularisation to improve compatibility with EPT.
+Minor improvements in efficiency of graphics routines.
+Minor improvements in efficiency of initialisation of some windows.
+Supplied some missing intrinsic function statements.
+Minor revisions made to error, warning, and advisory notes.
+Removed some redundant IMPLICIT statements.
+Renamed some tables routines.
+
+
+version 3.27
+
+Fixed fatal problem with threshold calculation from version 3.26.
+
+
+version 3.26
+
+Implemented some minor improvements in efficiency of graph drawing.
+Further modularisation to improve compatibility with EPT.
+
+
+version 3.25
+
+Fixed occasional problem setting number of forecasts at first attempt.
+Supplied some missing, and removed some unused, USE declarations.
+Removed some redundant INTRINSIC statements.
+
+
+version 3.24
+
+Resolved problem accepting default forecast file.
+Resolved problem with file attributes after unsuccessful opening of forecast file.
+Graphics options grouped in Customise menu.
+Improved some error messages for when input files cannot be opened.
+Year(s) keyword accepted in place of Name in unreferenced data files.
+Series name for unreferenced files indicated on relevant validation, contingency table, and forecast windows.
+Minor improvements in efficiency of domains comparison function.
+Redesigned tables module for greater compatibility with similar modules.
+Supplied some missing, and removed some unused, INTRINSIC declarations.
+
+
+version 3.23
+
+Correct date and month output when both datasets are gridded.
+Additional checks implemented for gridded data.
+X input file provided as default forecast file.
+Fixed occasional memory problems resulting from unsuccessful opening of forecast file.
+Implemented attempt to restore previous forecast file after unsuccessful opening of new forecast file.
+Forecast results retained after forecast window closed.
+Year of target data indicated for forecasts with non-zero lag.
+Fixed occasional problems printing longitudes.
+Fixed occasional problems with longitudes exceeding 360 in output files.
+Fixed problem initializing default first year of interest.
+Warning message issued if lag is greater than 1.
+
+
+version 3.22
+
+Cross supplied at last point on graphs.
+Input day and month for gridded data printed in output files.
+Adjustments made to some USE statements.
+
+
+version 3.21
+
+Fixed problem drawing maps with a range of less than 1 degree.
+Fixed problem drawing maps when only one longitude is selected.
+Fixed occasional problems when optimizing number of canonical modes.
+Removed some redundant and supplied some missing USE arguments.
+
+
+version 3.20
+
+Implemented fix for viewing forecast maps at low screen resolution.
+Fixed problem reading unreferenced forecast file.
+
+
+version 3.19
+
+Forecast menu item disabled if newly opened project does not have forecast file set.
+Supplied missing CCA column heading for number of modes optimisation.
+
+
+version 3.18
+
+New menu item added to provide confidence limits and significance tests using resampling procedures.
+New menu item added to adjust resampling settings.
+New property sheet added to define default resampling settings.
+CPT.ini file extended to include resampling settings.
+Fixed problem saving forecast maps as JPEG files.
+Reconfigured interface blocks for compatibility with source code version of CPT.
+Analysis initialisation routines changed to functions.
+Some modules renamed.
+
+
+version 3.17
+
+Minor changes to some window titles.
+Fixed some problems accessing the help pages.
+Removed some redundant USE, PUBLIC, and INTRINSIC statements.
+Help pages updated for changes to file formats implemented at version 3.15.
+
+
+version 3.16
+
+Implemented second check on number of EOF modes to compare with number of available variables.
+Second check fixes occasional program crash.
+
+
+version 3.15
+
+Fixed problem opening input files with no file extension.
+Station file format changed to require STATION, LATITUDE, and LONGITUDE keywords.
+Unreferenced file format changed to require NAME keyword, and to require variable names.
+Excel files saved as Text (Tab delimited) can be read as station and unreferenced datasets.
+
+
+version 3.14
+
+Fixed occasional problem saving skill scores for gridded Y datasets.
+
+
+version 3.13
+
+Corrected labeling of X homogeneous map series output file prompt.
+Supplied missing portion of save prompt for PCR project files.
+Fixed problem trapping memory allocation errors when making forecast.
+
+
+version 3.12
+
+Corrected variance-adjusted forecast values.
+Disabled cross-validation window length of 0.
+Set default first year of interest in forecast file to maximum of first year available, and first year of interest of X.
+Prompts modified for saving changed project file settings.
+Error message implemented for varying months in gridded datasets.
+Number of years read successfully is now indicated when there is an error reading input data.
+Training period is indicated in results window when constructing the model.
+Window titles changed to indicate Input and Results Windows.
+Minor editorial modifications to help pages.
+
+
+version 3.11
+
+Fixed occasional program crash when viewing validation results.
+
+
+version 3.10
+
+Fixed problem displaying EOF loadings of unreferenced data.
+Largest absolute EOF loadings forced to be positive.
+Initial focus provided to default file structure to prevent incorrect selection after enter.
+Simplified assignment of file unit numbers.
+
+
+version 3.09
+
+Results window closed after errors.
+Minor improvements to smoothness of advance of progress meter.
+Windows closed properly after errors.
+Modified nearest neighbour missing value estimation routine so as not to use estimated values when identifying nearest neighbour.
+Fixed occasional program crash when optimizing CCA setting
+Simplified handling of insufficient memory when making forecasts.
+Simplified use of property sheet handles.
+Missing INTENT declarations supplied.
+
+
+version 3.08
+
+New goodness index implemented (see help pages for details.
+Added option to save input data (in case estimated missing values are required).
+Results window opened immediately to show progress in reading data, and to allow earlier termination.
+Fixed problem calculating number of gridpoints in south-north gridded data.
+Fixed problems in forecasting with south-north gridded data.
+Fixed some problems saving gridded results.
+Fixed problem setting missing value estimation method for Y data.
+Minor modification made to tercile definition function to handle very small sample sizes.
+Slight improvements in efficiency of drawing forecast graph.
+Minor modifications to handling termination of analyses given insufficient memory.
+Minor changes in format of some console messages.
+Corrected incorrect labeling of X eigenvalues output file prompt.
+Fixed problem calculating EOFs of cross-products matrix.
+Fixed program crash with PCR when variance of cross-validation sub-sample is zero.
+Simplified calling of data output routines.
+Memory allocation modularised, and safer deallocation implemented.
+Data output routines incorporated into data_io module.
+Some variables in arrays module moved to analysis module.
+Removal of some redundant IMPLICIT statements.
+Scree plot routines modularized.
+Help files updated.
+
+
+version 3.07
+
+Minor revisions made to tercile definition function.
+Simplified handling of some memory allocation problem warnings.
+
+
+version 3.06
+
+Fixed problem drawing skill maps for gridded Y data.
+Fixed overlay of CCA scores.
+Added option to view and save retroactive residuals and scatter plots.
+Added additional accelerator keys to results window menu items.
+Scatter Plots menu item moved from Graphics to Validation~Cross-validated.
+Graphics menu item renamed depending on analysis method.
+Other Tools sub-menu items renamed.
+Fixed occasional problems inheriting domains.
+Fixed occasional problems setting domain limits with station data.
+Fixed occasional problems reading south-north oriented gridded data sets.
+Fixed problem drawing maps of gridded data that is not global and region is split. 
+Eliminated preference for an increasing or decreasing latitude ordering.
+New checks and error messages implemented for domain settings.
+Approximate geographical limits of data indicated on domain selection window.
+No replacement of missing values option included.
+New meaning for 0% maximum missing values: stations/grids with any missing values are excluded.
+Forced selection of one missing value replacement option.
+Vertical lines on graphs set as default.
+Hourglass cursor indicated while JPEG files are saving.
+New warning issued if more than one month/season per year is suspected in input files.
+New warning issued if project file settings are changed and an attempt is made to close the file.
+Results window generation modularized.
+Further modularisation of map drawing routines.
+Help pages converted to full html, and are opened in the default browser.
+Help pages updated for new features.
+CPT enabled when Help Pages are open.
+
+
+version 3.05
+
+Prevented program from crashing when there is a problem reading in forecast data.
+Fixed problems arising on second viewing of forecast results.
+Fixed an occasional program crash and other problems when stations are outside of domain.
+Fixed failure to allow line-breaks in station input files.
+Slight changes to some error messages on reading input files.
+Forced selection of one input data structure.
+Accelerator keys added for data structure selection.
+Some improvements in efficiency of calculation of skill scores for skill maps.
+Corrected mapping of ROC areas for the above-normal category.
+Fixed occasional problems of maps being drawn horizontally striped.
+Fixed problem of missing map shading where input longitudes wrap around.
+Fixed tercile indicators on graphs when data is rescaled.
+Fixed inaccuracies in ROC area calculations and graphs.
+Improved formatting of scaling label on axes.
+Improved visibility of crosses on station maps.
+Added option to include crosses on graphs.
+Added option to include vertical lines on graphs.
+Added regression line to scatter plot.
+Opening of project files modularized.
+Opening of input files modularized.
+Graphics drawing modularized.
+Calculation of validation statistics modularized.
+Contingency table calculations modularized.
+Most support routines included in modules.
+Minor enhancements in efficiency of reading station data.
+Simplified memory allocation for reading data.
+Some redundant variables removed.
+Changed assumed-sized arrays to assumed-shaped arrays, and provided explicit interfaces for most routines.
+Help pages updated for new features.
+
+
+version 3.04
+
+Added option to replace missing values with median.
+Added option to replace missing values by regression using nearest neighbour.
+Updated help pages to describe new missing value options.
+Fixed occasional failure to replace missing values in forecast data.
+Fixed input screen formatting problem for some screen resolutions when switching analysis methods after a calculation. 
+Disabled input screen reactivation after opening output file windows.
+Supplied some missing use statements in interface blocks.
+Some renaming of variables.
+
+
+version 3.03
+
+EOF and CCA loadings of unreferenced data now plotted as correlations on bar charts.
+Fixed problem closing CPT when project file is unsuccessfully opened from Introductory window.
+Fixed problem displaying CCA and PCR project files when project file is unsuccessfully opened from Introductory window.
+Fixed incorrect indication of full training period when using retroactive option with PCR.
+Fixed some problems with multiple file extensions for output files.
+Output file extensions for unformatted files changed to .dat.
+Output file description added to derived type, which changes some window text in places.
+General improvements in output formats.
+Implemented option to save real-time forecasts.
+Help pages updated to explain how to save real-time forecasts.
+Streamlined output file routines, and reorganized iofiles and data_io modules.
+Graphics output file name can now be set, and warning is issued if file exists.
+Previous directory is remembered when using browse buttons.
+Help pages updated to explain output file extensions, and for JPEG output.
+Save Y eigenvalues scree plot removed for PCR.
+Implemented rescaling of data for plots when values are either large or small.
+Made minor adjustments to algorithm for identifying selected skill measure.
+Simplified save forecast image menu prompt.
+Improved save skill map data dialogue window.
+Adjusted default record length of skill scores output file.
+Safer memory deallocation implemented.
+Realigned longitudes array implemented to simplify all longitude references for gridded data.
+Some redundant checks removed.
+Some internal renaming of arrays.
+Some changes to window handles and removal of redundant control variables.
+Some corrections made to subroutine argument intents.
+Changed DOUBLE PRECISION to REAL with declared KIND(1.0d0).
+Some redundant INTRINSIC declarations deleted.
+Supplied missing USE statements in a few INTERFACE blocks.
+
+
+version 3.02
+
+Options for missing values included.
+Help pages updated for missing value option.
+Option to set default domain included.
+Precision of values on labelbar made variable.
+Some causes of uneven spacing of horizontal colour-bar labels and of longitude labels fixed.
+Occasional problem of overlapping latitude labels fixed.
+EOF/CCA mode numbers added to loadings and temporal scores graphs.
+Canonical correlation added to CCA modes graphics window.
+Colour scales on hit score maps changed.
+Internal changes made to some contour-setting for graphics.
+Prompt for domain automatically issued after specifying number of gridpoints or stations.
+Output file prompts split into property sheets.
+Problem with progress bar when no output files are specified fixed.
+Format of output of cross-validated and retroactive predictions modified.
+New CPT.ini file required.
+Check included and advisory issued for old CPT.ini files.
+Project File formats updated to include missing value information.
+Check included and advisory issued for old Project Files.
+Problem opening project file with unset input files fixed.
+Radio button prompt introduced for data file structure.
+Fixed problem identifying first year of data in forecast file for station data.
+Fixed some problems caused by external files being left open after being read unsuccessfully.
+Input file selection routines modularized.
+Old input files retained if new input file selection is cancelled.
+Default first year of interest retained when input file is selected.
+Console window caption removed.
+Confirmation prompts added to forecast file window.
+Close menu item removed from forecast file window.
+Help menu item added to output files window.
+Domain and grid derived-types introduced to simplify programming.
+Data structure flag added to input file derived type.
+Redundant first year of data in file default setting prompts removed.
+Redundant window handle settings removed.
+Slight adjustments made to contingency table formats.
+Minimum disk space requirement details in Help Pages updated.
+Other minor revisions to Help Pages.
+
+
+version 3.01
+
+Forecast maps and bar charts implemented.
+Skill maps and bar charts can be saved.
+Addition of option for station dataset as input data structure.
+Skill maps drawn for station datasets.
+"Number of gridpoints" and "Number of series" prompts changed dynamically to reflect data structure.
+"Series" prompts changed to reflect data structure.
+Automatic prompt for number of series when ungridded format is selected replaces Input Screen prompt.
+Minor performance enhancements in construction and update of Input Screen.
+Other minor performance enhancements.
+Some occasional memory allocation problems when opening project files fixed.
+Some additional checks for correct input file formats implemented.
+Items on Input Screen reorganized.
+Some problems with cursor when warning and error messages issued resolved.
+Fixed problem with cursor when no output files are specified.
+Fixed problem with indicating latitudes between 0 and 10S.
+Fixed problem with formatting of some windows at low screen resolutions.
+Help pages updated for new features.
+Note on missing values added to the Input Datasets Help Page.
+Other minor editorial changes made to Help Pages.
+
+
+version 2.32
+
+Warning message issued if problem with reading country boundaries rather than program crashing.
+Error message issued if problem opening or reading CPT.ini.
+
+
+version 2.31
+
+Grid references shown for gridded Y data on verification, contingency table, and scatter plot screens.
+Column headers added to formatted eigenvalues output files.
+Formatted output of EOF loadings changed for gridded data, with latitudes and longitudes included in output.
+Output routines generalized.
+Some editorial changes made to Help Files.
+
+
+version 2.30
+
+Fixed problem with map shading when data domain is sub-global.
+Skill maps enlarged.
+Fixed problem with Y data settings in Project Files.
+Occasional problems in setting northern domain limit for sub-global grids fixed.
+Some problems with hourglass cursor after calculations are aborted fixed.
+Small changes to the way aborted calculations are handled.
+Help page on Project Files added.
+Some dead help page links fixed.
+
+
+version 2.29
+
+Option to open project file from title screen added.
+Hourglass cursor added for when program is busy.
+Skill maps and histograms implemented.
+Verification menu items renamed to Validation, and sub-menus modified to include the new maps.
+Window title for domain selection clarified.
+Other changes to some window titles.
+Latitude-longitude lines reset to dotted format.
+Corrections made to western longitude labels.
+Corrections made to map shading when map domain exceeds data domain.
+Colour scale centred correctly when number of contours is less than maximum.
+Scaling on colour-bar corrected and indicated.
+Other small adjustments made to colour-bar.
+Small crosses added to scree plots to indicate data points.
+Input file names cancelled if unsuccessfully read.
+Action menu item disabled when input file is closed.
+Updates made to Help-About.
+Comments on JPEG quality included in the Help pages.
+Acknowledgements added to the Help pages.
+Changes made to Help pages because of new features.
+Changes made to the mapping subroutine to allow for greater flexibility in calling.
+
+
+version 2.28
+
+Coordinate labels added to maps.
+Colour bar added to maps.
+Map titles repositioned on wide maps.
+All EOF and CCA loadings on maps are now shown as correlations with the corresponding time scores.
+Line labels added to ROC diagrams.
+Added ability to save graphics as JPEG files using right mouse button.
+CPT.INI modified to store default output directory for JPEG files.
+Gridded input files can be ordered north-south or south-north.
+Corresponding changes made to help pages.
+Help page structure map updated.
+Advisory message added for successful saving of project file.
+
+
+version 2.27
+
+Correction made for setting default number of Y series.
+Comment on bimodal forecast probabilities added to help pages.
+Seamless adjustments to some Fortran IMPLICIT statements and INTERFACE blocks.
+
+
+version 2.26
+
+Improved data input error checking.
+Improved memory management.
+Forced reset of forecast file when X input file is re-specified.
+Errors in categorical verification measures, including ROC graphs, fixed.
+Fixed errors and occasional memory violations when typing in series number.
+
+
+version 2.25
+
+Fixed problems with latitudes for gridded files when data runs to next line.
+
+
+version 2.24
+
+Problems opening gridded y files when using an old project file fixed.
+Occasional premature completion of CCA progress meter fixed.
+Occasional stalling of progress meter fixed.
+Occasional errors with missing grids and series fixed.
+Correction made to CPT.INI to fix problems accessing PROJECTS subdirectory.
+Error trap included for non-consecutive years in gridded input files.

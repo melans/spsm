@@ -1,0 +1,154 @@
+GFORTRAN module version '0' created from pcs.f90 on Tue May 26 11:47:10 2015
+MD5:428b002733aa4b06607cdf236efc7bdf -- If you edit this, you'll get what you deserve.
+
+(()
+() () () () () () () () () () () () () () () () () () () () () () () ()
+() ())
+
+()
+
+()
+
+()
+
+()
+
+(2 'advanced_eof' 'pcs' 'advanced_eof' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN FUNCTION) (INTEGER 4 0 0 INTEGER ()) 3 0 (4 5)
+() 2 () () () 0 0)
+6 'cancor' 'pcs' 'cancor' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN) (REAL 8 0 0 REAL ()) 0 0 () () 0 () () () 0 0)
+7 'cca_opts' 'pcs' 'cca_opts' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC
+DECL UNKNOWN FUNCTION) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 7 () () () 0
+0)
+8 'check_nc' 'pcs' 'check_nc' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC
+DECL UNKNOWN SUBROUTINE) (UNKNOWN 0 0 0 UNKNOWN ()) 9 0 (10 11 12 13 14
+15 16) () 0 () () () 0 0)
+17 'check_ne' 'pcs' 'check_ne' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC
+DECL UNKNOWN SUBROUTINE) (UNKNOWN 0 0 0 UNKNOWN ()) 18 0 (19 20 21 22 23)
+() 0 () () () 0 0)
+24 'check_nes' 'pcs' 'check_nes' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN SUBROUTINE) (UNKNOWN 0 0 0 UNKNOWN ()) 25 0 (
+26 27 28 29) () 0 () () () 0 0)
+30 'check_pcs' 'pcs' 'check_pcs' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN FUNCTION) (INTEGER 4 0 0 INTEGER ()) 0 0 () ()
+30 () () () 0 0)
+31 'eof_opts' 'pcs' 'eof_opts' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC
+DECL UNKNOWN FUNCTION) (INTEGER 4 0 0 INTEGER ()) 32 0 (33 34 35 36 37
+38) () 31 () () () 0 0)
+39 'eofx_opts' 'pcs' 'eofx_opts' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN FUNCTION) (INTEGER 4 0 0 INTEGER ()) 0 0 () ()
+39 () () () 0 0)
+40 'eofy_opts' 'pcs' 'eofy_opts' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN FUNCTION) (INTEGER 4 0 0 INTEGER ()) 0 0 () ()
+40 () () () 0 0)
+41 'gcm_opts' 'pcs' 'gcm_opts' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC
+DECL UNKNOWN FUNCTION) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 41 () () ()
+0 0)
+42 'icco' 'pcs' 'icco' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+43 'iec' 'pcs' 'iec' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+44 'ieofx' 'pcs' 'ieofx' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN TARGET) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () ()
+0 0)
+45 'ieofx_bk' 'pcs' 'ieofx_bk' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+46 'ieofy' 'pcs' 'ieofy' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN TARGET) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () ()
+0 0)
+47 'iex' 'pcs' 'iex' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+48 'iey' 'pcs' 'iey' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+49 'init_pcs' 'pcs' 'init_pcs' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC
+DECL UNKNOWN SUBROUTINE) (UNKNOWN 0 0 0 UNKNOWN ()) 0 0 () () 0 () () ()
+0 0)
+50 'mcc' 'pcs' 'mcc' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+51 'mxe' 'pcs' 'mxe' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+52 'mye' 'pcs' 'mye' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+53 'ncc' 'pcs' 'ncc' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+54 'nco' 'pcs' 'nco' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+55 'ncu' 'pcs' 'ncu' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+56 'npx' 'pcs' 'npx' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+57 'npy' 'pcs' 'npy' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+58 'numbers' 'numbers' 'numbers' 1 ((MODULE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN) (UNKNOWN 0 0 0 UNKNOWN ()) 0 0 () () 0 () () () 0 0)
+59 'nxe' 'pcs' 'nxe' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+60 'nxo' 'pcs' 'nxo' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+61 'nye' 'pcs' 'nye' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+62 'nyo' 'pcs' 'nyo' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+63 'pcs' 'pcs' 'pcs' 1 ((MODULE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN) (UNKNOWN 0 0 0 UNKNOWN ()) 0 0 () () 0 () () () 0 0)
+64 'rp' 'numbers' 'rp' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE) (INTEGER 4 0 0 INTEGER ()) 0 0 () (CONSTANT (INTEGER 4 0
+0 INTEGER ()) 0 '8') () 0 () () () 0 0)
+34 'nv' '' 'nv' 32 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY) (
+INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+5 'ieof' '' 'ieof' 3 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY)
+(INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+38 'me' '' 'me' 32 ((VARIABLE INOUT UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY)
+(INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+33 'cxy' '' 'cxy' 32 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY) (
+CHARACTER 1 0 0 CHARACTER (())) 0 0 () () 0 () () () 0 0)
+35 'nt' '' 'nt' 32 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY) (
+INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+36 'lcw' '' 'lcw' 32 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY) (
+INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+37 'ne' '' 'ne' 32 ((VARIABLE INOUT UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY)
+(INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+4 'cxy' '' 'cxy' 3 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY) (
+CHARACTER 1 0 0 CHARACTER (())) 0 0 () () 0 () () () 0 0)
+19 'nv' '' 'nv' 18 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY) (
+INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+20 'nt' '' 'nt' 18 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY) (
+INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+21 'ne' '' 'ne' 18 ((VARIABLE INOUT UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY)
+(INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+22 'me' '' 'me' 18 ((VARIABLE INOUT UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY)
+(INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+23 'ifail' '' 'ifail' 18 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+26 'nt' '' 'nt' 25 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY) (
+INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+27 'mxe' '' 'mxe' 25 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY) (
+INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+28 'mye' '' 'mye' 25 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY) (
+INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+29 'ifail' '' 'ifail' 25 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+10 'nxe' '' 'nxe' 9 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY) (
+INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+11 'mxe' '' 'mxe' 9 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY) (
+INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+12 'nye' '' 'nye' 9 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY) (
+INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+13 'mye' '' 'mye' 9 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY) (
+INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+14 'ncc' '' 'ncc' 9 ((VARIABLE INOUT UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY)
+(INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+15 'mcc' '' 'mcc' 9 ((VARIABLE INOUT UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY)
+(INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+16 'ifail' '' 'ifail' 9 ((VARIABLE OUT UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+)
+
+('advanced_eof' 0 2 'cancor' 0 6 'cca_opts' 0 7 'check_nc' 0 8 'check_ne'
+0 17 'check_nes' 0 24 'check_pcs' 0 30 'eof_opts' 0 31 'eofx_opts' 0 39
+'eofy_opts' 0 40 'gcm_opts' 0 41 'icco' 0 42 'iec' 0 43 'ieofx' 0 44
+'ieofx_bk' 0 45 'ieofy' 0 46 'iex' 0 47 'iey' 0 48 'init_pcs' 0 49 'mcc'
+0 50 'mxe' 0 51 'mye' 0 52 'ncc' 0 53 'nco' 0 54 'ncu' 0 55 'npx' 0 56
+'npy' 0 57 'numbers' 0 58 'nxe' 0 59 'nxo' 0 60 'nye' 0 61 'nyo' 0 62
+'pcs' 0 63 'rp' 0 64)

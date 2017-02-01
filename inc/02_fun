@@ -1,0 +1,86 @@
+################################################################################
+function vars {
+	echo "+===================================================================+";
+	echo "|     Welcome to Streamflow Prediction Statistical Model (SPSM)     |";
+	echo "+===================================================================+";
+	# counter;
+	# Prameters: decalre the array globally (-Ag)
+	declare -Ag parameter;
+		# parameter["cld"]="total cloud cover";
+		# parameter["evap"]="evaporation";
+		# parameter["gz"]="geopotential height";
+		# parameter["lh"]="surface latent heat flux";
+		# parameter["nlwg"]="net longwave at ground";
+		# parameter["nswg"]="net shortwave at ground";
+		# parameter["nswt"]="net shortwave at toa";
+		# parameter["olr"]="outgoing longwave radiation";
+		# parameter["omg"]="vertical pressure velocity";
+		parameter["prec"]="total precipitation";
+		# parameter["q"]="specific humidity";
+		# parameter["sh"]="surface sensible heat flux";
+		# parameter["slp"]="sea level pressure";
+		parameter["st"]="surface temperature";
+		# parameter["T"]="Forecast Time";
+		# parameter["t2m"]="temperature at 2m";
+		# parameter["taux"]="surface zonal wind stress";
+		# parameter["tauy"]="surface meridional wind stress";
+		# parameter["temp"]="temperature";
+		# parameter["u"]="zonal velocity";
+		# parameter["v"]="meridional velocity";
+
+
+	Zs="1000,0925,0850,0775,0700,0600,0500,0450,0400,0350,0300,0250,0200,0150,0100,0050,0025";
+	XYURI="http://waterservices.usgs.gov/nwis/site/?format=rdb&sites=";
+	mapURI="http://water.usgs.gov/wsc/cat/"
+	flowURI="http://waterservices.usgs.gov/nwis/dv/?format=rdb&statCd=00003&parameterCd=00060&startDT=$[startDT-1]-12-01&endDT=$endDT-12-31&sites=";
+	# echo $flowURI;exit
+	gridsURI="http://iridl.ldeo.columbia.edu/SOURCES/.IRI/.FD/.ECHAM4p5/.Forecast/.ca_sst/.ensemble24/.MONTHLY/[M]average/S/(0000%201%20Jan%20$startDT)/(0000%201%20Dec%20$endDT)/RANGEEDGES";
+	# _gridsURI="[M]average/gridtable.tsv";
+
+	# dirs="dnld,temp,data,results,analysis";
+	# dirs=(${dirs//,/ })
+	# for dir in ${!dirs[@]}; do echo $dir.${dirs[$dir]};done
+	# mkdir -p $Sites;
+	# 0_download
+	# 	info (Lat,Lon), map, downloads (flow, $p)
+	# 1.temp
+	#
+	# 2.data
+	# 	processed (Y.m, X.m.L, CPT files)
+	# 3.CPT
+	# 	CV.m.L, RP.m.L, CPT.out, CPT.err
+	# 4.results
+	#
+	# 5.analysis
+	# 	pdf
+	M=(Months Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec)
+	xx="";
+	for p in ${parameters//,/ }; do
+		xx=$xx$p"_";
+	done;
+	xx="${xx/%_/}";
+}
+################################################################################
+function _msg_ {
+	# msgs
+	counter;
+	text="$1";delay="$2";if [ -z $delay ]; then delay=".01"; fi
+	echo -en "\n";
+	for i in $(seq 0 $(expr length "${text}")); do printf "${text:$i:1}";sleep ${delay};done;
+}
+################################################################################
+function varSite {
+	declare -Ag sitename["$1"]=`awk -F\\\t 'END{print $3}' $Sites/$1/1_download/latlon.info`
+}
+################################################################################
+function varXY {
+	eval `awk -F\\\t 'END{print "site_"$2"=("$6,$5,$NF"); "}' $Sites/$1/1_download/latlon.info`;
+	X="site_$1[0]";X=${!X};X1=`echo $X-$grid|bc`;X2=`echo $X+$grid|bc`;
+	Y="site_$1[1]";Y=${!Y};Y1=`echo $Y-$grid|bc`;Y2=`echo $Y+$grid|bc`;
+}
+################################################################################
+function counter {
+	count=$[$count+1];echo -en "\r											..... $count";
+}
+################################################################################
+# vars

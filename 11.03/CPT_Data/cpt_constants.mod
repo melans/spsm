@@ -1,0 +1,90 @@
+GFORTRAN module version '0' created from CPT_constants.f90 on Wed Apr  3 14:02:36 2013
+MD5:d33d2508f728a7710e652940319cc26e -- If you edit this, you'll get what you deserve.
+
+(() () () () () () () () () () () () () () () () () () () () () () () ()
+() () ())
+
+()
+
+()
+
+()
+
+()
+
+(2 'cpt_constants' 'cpt_constants' 'cpt_constants' 1 ((MODULE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN) (UNKNOWN 0 0 0 UNKNOWN ())
+0 0 () () 0 () () () 0 0)
+3 'ipm' 'cpt_constants' 'ipm' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0 INTEGER ()) 0 0 () (CONSTANT (
+INTEGER 4 0 0 INTEGER ()) 0 '100') () 0 () () () 0 0)
+4 'lscore' 'cpt_constants' 'lscore' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE DIMENSION) (LOGICAL 4 0 0 LOGICAL ())
+0 0 () (ARRAY (LOGICAL 4 0 0 LOGICAL ()) 1 (((CONSTANT (LOGICAL 4 0 0
+LOGICAL ()) 0 1) ()) ((CONSTANT (LOGICAL 4 0 0 LOGICAL ()) 0 1) ()) ((
+CONSTANT (LOGICAL 4 0 0 LOGICAL ()) 0 1) ()) ((CONSTANT (LOGICAL 4 0 0
+LOGICAL ()) 0 1) ()) ((CONSTANT (LOGICAL 4 0 0 LOGICAL ()) 0 1) ()) ((
+CONSTANT (LOGICAL 4 0 0 LOGICAL ()) 0 0) ()) ((CONSTANT (LOGICAL 4 0 0
+LOGICAL ()) 0 0) ()) ((CONSTANT (LOGICAL 4 0 0 LOGICAL ()) 0 0) ()) ((
+CONSTANT (LOGICAL 4 0 0 LOGICAL ()) 0 1) ()) ((CONSTANT (LOGICAL 4 0 0
+LOGICAL ()) 0 1) ()) ((CONSTANT (LOGICAL 4 0 0 LOGICAL ()) 0 1) ()) ((
+CONSTANT (LOGICAL 4 0 0 LOGICAL ()) 0 1) ()) ((CONSTANT (LOGICAL 4 0 0
+LOGICAL ()) 0 1) ()) ((CONSTANT (LOGICAL 4 0 0 LOGICAL ()) 0 1) ()) ((
+CONSTANT (LOGICAL 4 0 0 LOGICAL ()) 0 1) ()) ((CONSTANT (LOGICAL 4 0 0
+LOGICAL ()) 0 1) ())) ('16')) (1 EXPLICIT (CONSTANT (INTEGER 4 0 0
+INTEGER ()) 0 '1') (CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '16')) 0 () ()
+() 0 0)
+5 'mnt' 'cpt_constants' 'mnt' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0 INTEGER ()) 0 0 () (CONSTANT (
+INTEGER 4 0 0 INTEGER ()) 0 '4') () 0 () () () 0 0)
+6 'na' 'cpt_constants' 'na' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0 INTEGER ()) 0 0 () (CONSTANT (
+INTEGER 4 0 0 INTEGER ()) 0 '4') () 0 () () () 0 0)
+7 'nb' 'cpt_constants' 'nb' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0 INTEGER ()) 0 0 () (CONSTANT (
+INTEGER 4 0 0 INTEGER ()) 0 '11') () 0 () () () 0 0)
+8 'nds' 'cpt_constants' 'nds' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0 INTEGER ()) 0 0 () (CONSTANT (
+INTEGER 4 0 0 INTEGER ()) 0 '3') () 0 () () () 0 0)
+9 'nep' 'cpt_constants' 'nep' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0 INTEGER ()) 0 0 () (CONSTANT (
+INTEGER 4 0 0 INTEGER ()) 0 '1000') () 0 () () () 0 0)
+10 'nev' 'cpt_constants' 'nev' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0 INTEGER ()) 0 0 () (CONSTANT (
+INTEGER 4 0 0 INTEGER ()) 0 '3') () 0 () () () 0 0)
+11 'ng' 'cpt_constants' 'ng' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0 INTEGER ()) 0 0 () (CONSTANT (
+INTEGER 4 0 0 INTEGER ()) 0 '3') () 0 () () () 0 0)
+12 'nmo' 'cpt_constants' 'nmo' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0 INTEGER ()) 0 0 () (CONSTANT (
+INTEGER 4 0 0 INTEGER ()) 0 '4') () 0 () () () 0 0)
+13 'npo' 'cpt_constants' 'npo' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0 INTEGER ()) 0 0 () (CONSTANT (
+INTEGER 4 0 0 INTEGER ()) 0 '3') () 0 () () () 0 0)
+14 'nps' 'cpt_constants' 'nps' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0 INTEGER ()) 0 0 () (CONSTANT (
+INTEGER 4 0 0 INTEGER ()) 0 '14') () 0 () () () 0 0)
+15 'nscore' 'cpt_constants' 'nscore' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0 INTEGER ()) 0 0 () (
+CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '16') () 0 () () () 0 0)
+16 'nskill' 'cpt_constants' 'nskill' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0 INTEGER ()) 0 0 () (
+CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '11') () 0 () () () 0 0)
+17 'nsq' 'cpt_constants' 'nsq' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0 INTEGER ()) 0 0 () (CONSTANT (
+INTEGER 4 0 0 INTEGER ()) 0 '3') () 0 () () () 0 0)
+18 'nstd' 'cpt_constants' 'nstd' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0 INTEGER ()) 0 0 () (
+CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '4') () 0 () () () 0 0)
+19 'nts' 'cpt_constants' 'nts' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0 INTEGER ()) 0 0 () (CONSTANT (
+INTEGER 4 0 0 INTEGER ()) 0 '2') () 0 () () () 0 0)
+20 'nwr' 'cpt_constants' 'nwr' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0 INTEGER ()) 0 0 () (CONSTANT (
+INTEGER 4 0 0 INTEGER ()) 0 '2') () 0 () () () 0 0)
+)
+
+('cpt_constants' 0 2 'ipm' 0 3 'lscore' 0 4 'mnt' 0 5 'na' 0 6 'nb' 0 7
+'nds' 0 8 'nep' 0 9 'nev' 0 10 'ng' 0 11 'nmo' 0 12 'npo' 0 13 'nps' 0
+14 'nscore' 0 15 'nskill' 0 16 'nsq' 0 17 'nstd' 0 18 'nts' 0 19 'nwr' 0
+20)

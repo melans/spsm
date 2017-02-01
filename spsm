@@ -1,0 +1,23 @@
+#!/bin/bash
+. inc/00_inc
+
+
+for site in ${sites//,/ }; do
+	vars;
+	# _1_download_;
+	# _2_format_;
+	# _3_forecast_;
+	_4_calculate_;
+
+	# echo;
+	# X_composing $sites prec 1 0 01;
+	# forecasting $sites "prec st" 1 01 0;
+	# forecasting "$sites" "$parameters";
+
+	# module load R;
+	# correlating;wait;
+	# echo;
+done;
+_msg_ "DONE";
+counter;
+echo;

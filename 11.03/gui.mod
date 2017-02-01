@@ -1,0 +1,127 @@
+GFORTRAN module version '0' created from gui.f90 on Tue May 26 11:47:05 2015
+MD5:90d0ec4018f5b00ee2f2453629b908d4 -- If you edit this, you'll get what you deserve.
+
+(()
+() () () () () () () () () () () () () () () () () () () () () () () ()
+() ())
+
+()
+
+()
+
+()
+
+()
+
+(2 'cfont' 'gui' 'cfont' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN) (CHARACTER 1 0 0 CHARACTER ((CONSTANT (INTEGER 4 0 0
+INTEGER ()) 0 '25'))) 0 0 () () 0 () () () 0 0)
+3 'cwtitle' 'gui' 'cwtitle' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN) (CHARACTER 1 0 0 CHARACTER ((CONSTANT (INTEGER 4 0 0
+INTEGER ()) 0 '128'))) 0 0 () () 0 () () () 0 0)
+4 'gui' 'gui' 'gui' 1 ((MODULE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN) (UNKNOWN 0 0 0 UNKNOWN ()) 0 0 () () 0 () () () 0 0)
+5 'gui_constants' 'gui_constants' 'gui_constants' 1 ((MODULE
+UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN UNKNOWN) (UNKNOWN 0 0 0 UNKNOWN ())
+0 0 () () 0 () () () 0 0)
+6 'icol' 'gui' 'icol' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN DIMENSION) (INTEGER 4 0 0 INTEGER ()) 0 0 () (1 EXPLICIT (
+CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '0') (CONSTANT (INTEGER 4 0 0
+INTEGER ()) 0 '38')) 0 () () () 0 0)
+7 'igsize' 'gui' 'igsize' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+8 'igsz' 'gui' 'igsz' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+9 'init_chars' 'gui' 'init_chars' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN SUBROUTINE) (UNKNOWN 0 0 0 UNKNOWN ()) 0 0 () ()
+0 () () () 0 0)
+10 'irv' 'gui' 'irv' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+11 'iscree' 'gui' 'iscree' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+12 'jcca' 'gui' 'jcca' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+13 'jgauss' 'gui' 'jgauss' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+14 'jgcm' 'gui' 'jgcm' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+15 'jmlr' 'gui' 'jmlr' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+16 'jpcr' 'gui' 'jpcr' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+UNKNOWN) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+17 'lver' 'version' 'lver' 1 ((PARAMETER UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0 INTEGER ()) 0 0 () (CONSTANT (
+INTEGER 4 0 0 INTEGER ()) 0 '37') () 0 () () () 0 0)
+18 'mcol' 'gui_constants' 'mcol' 1 ((PARAMETER UNKNOWN-INTENT
+UNKNOWN-PROC UNKNOWN IMPLICIT-SAVE) (INTEGER 4 0 0 INTEGER ()) 0 0 () (
+CONSTANT (INTEGER 4 0 0 INTEGER ()) 0 '18') () 0 () () () 0 0)
+19 'ncol' 'gui' 'ncol' 1 ((VARIABLE UNKNOWN-INTENT UNKNOWN-PROC UNKNOWN
+IMPLICIT-SAVE) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+20 'print_advisory' 'gui' 'print_advisory' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN SUBROUTINE ALWAYS_EXPLICIT) (UNKNOWN 0 0 0
+UNKNOWN ()) 21 0 (22 23 24) () 0 () () () 0 0)
+25 'print_error' 'gui' 'print_error' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN SUBROUTINE ALWAYS_EXPLICIT) (UNKNOWN 0 0 0
+UNKNOWN ()) 26 0 (27 28 29 30) () 0 () () () 0 0)
+31 'print_warning' 'gui' 'print_warning' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN SUBROUTINE ALWAYS_EXPLICIT) (UNKNOWN 0 0 0
+UNKNOWN ()) 32 0 (33 34 35) () 0 () () () 0 0)
+36 'print_write_error' 'gui' 'print_write_error' 1 ((PROCEDURE
+UNKNOWN-INTENT MODULE-PROC DECL UNKNOWN SUBROUTINE ALWAYS_EXPLICIT) (
+UNKNOWN 0 0 0 UNKNOWN ()) 37 0 (38 39 40) () 0 () () () 0 0)
+41 'set_greyflags' 'gui' 'set_greyflags' 1 ((PROCEDURE UNKNOWN-INTENT
+MODULE-PROC DECL UNKNOWN SUBROUTINE) (UNKNOWN 0 0 0 UNKNOWN ()) 42 0 (
+43 44 45) () 0 () () () 0 0)
+46 'upcase' 'gui' 'upcase' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL
+UNKNOWN SUBROUTINE) (UNKNOWN 0 0 0 UNKNOWN ()) 47 0 (48) () 0 () () () 0
+0)
+49 'version' 'version' 'version' 1 ((MODULE UNKNOWN-INTENT UNKNOWN-PROC
+UNKNOWN UNKNOWN) (UNKNOWN 0 0 0 UNKNOWN ()) 0 0 () () 0 () () () 0 0)
+50 'yesno' 'gui' 'yesno' 1 ((PROCEDURE UNKNOWN-INTENT MODULE-PROC DECL
+UNKNOWN FUNCTION) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 50 () () () 0 0)
+27 'msg1' '' 'msg1' 26 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY)
+(CHARACTER 1 0 0 CHARACTER (())) 0 0 () () 0 () () () 0 0)
+28 'msg2' '' 'msg2' 26 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+OPTIONAL DUMMY) (CHARACTER 1 0 0 CHARACTER (())) 0 0 () () 0 () () () 0
+0)
+29 'msg3' '' 'msg3' 26 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+OPTIONAL DUMMY) (CHARACTER 1 0 0 CHARACTER (())) 0 0 () () 0 () () () 0
+0)
+30 'nopause' '' 'nopause' 26 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+OPTIONAL DUMMY) (LOGICAL 4 0 0 LOGICAL ()) 0 0 () () 0 () () () 0 0)
+33 'msg1' '' 'msg1' 32 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY)
+(CHARACTER 1 0 0 CHARACTER (())) 0 0 () () 0 () () () 0 0)
+34 'msg2' '' 'msg2' 32 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+OPTIONAL DUMMY) (CHARACTER 1 0 0 CHARACTER (())) 0 0 () () 0 () () () 0
+0)
+35 'nopause' '' 'nopause' 32 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+OPTIONAL DUMMY) (LOGICAL 4 0 0 LOGICAL ()) 0 0 () () 0 () () () 0 0)
+22 'msg1' '' 'msg1' 21 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY)
+(CHARACTER 1 0 0 CHARACTER (())) 0 0 () () 0 () () () 0 0)
+23 'msg2' '' 'msg2' 21 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+OPTIONAL DUMMY) (CHARACTER 1 0 0 CHARACTER (())) 0 0 () () 0 () () () 0
+0)
+24 'nopause' '' 'nopause' 21 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+OPTIONAL DUMMY) (LOGICAL 4 0 0 LOGICAL ()) 0 0 () () 0 () () () 0 0)
+38 'msg' '' 'msg' 37 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY) (
+CHARACTER 1 0 0 CHARACTER (())) 0 0 () () 0 () () () 0 0)
+39 'ffile' '' 'ffile' 37 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (CHARACTER 1 0 0 CHARACTER (())) 0 0 () () 0 () () () 0 0)
+40 'nopause' '' 'nopause' 37 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+OPTIONAL DUMMY) (LOGICAL 4 0 0 LOGICAL ()) 0 0 () () 0 () () () 0 0)
+48 'c' '' 'c' 47 ((VARIABLE INOUT UNKNOWN-PROC UNKNOWN UNKNOWN DUMMY) (
+CHARACTER 1 0 0 CHARACTER (())) 0 0 () () 0 () () () 0 0)
+43 'ianal' '' 'ianal' 42 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+44 'ixgrid' '' 'ixgrid' 42 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+45 'iygrid' '' 'iygrid' 42 ((VARIABLE IN UNKNOWN-PROC UNKNOWN UNKNOWN
+DUMMY) (INTEGER 4 0 0 INTEGER ()) 0 0 () () 0 () () () 0 0)
+)
+
+('cfont' 0 2 'cwtitle' 0 3 'gui' 0 4 'gui_constants' 0 5 'icol' 0 6
+'igsize' 0 7 'igsz' 0 8 'init_chars' 0 9 'irv' 0 10 'iscree' 0 11 'jcca'
+0 12 'jgauss' 0 13 'jgcm' 0 14 'jmlr' 0 15 'jpcr' 0 16 'lver' 0 17 'mcol'
+0 18 'ncol' 0 19 'print_advisory' 0 20 'print_error' 0 25 'print_warning'
+0 31 'print_write_error' 0 36 'set_greyflags' 0 41 'upcase' 0 46 'version'
+0 49 'yesno' 0 50)

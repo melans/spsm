@@ -1,0 +1,63 @@
+################################################################################
+function _2_format_ {
+	_msg_ "	Step 2: Formatting ..."
+	# for site in ${sites//,/ }; do
+		# counter;
+		# varSite $site;
+		# varXY $site;
+		# _msg_ "		Processing site # $site (${sitename[$site]}):";
+		_msg_ "		Formatting : (year,month,day,value)";
+		awk '$2=="'$site'"{split($3,dt,"-");print dt[1],dt[2],dt[3],$4}' $Sites/$site/1_download/flow.0 > $Sites/$site/0_temp/flow.1;
+		_msg_ "		Monthly average : (year,month,avg)";
+		awk '{sum[$1"-"$2]+=$4;d[$1"-"$2]+=1}END{for(i in d){split(i,dt,"-");print dt[1],dt[2],sum[i]/d[i]}}' $Sites/$site/0_temp/flow.1 | sort -nk1,2 > $Sites/$site/0_temp/flow.2;
+		_msg_ "		Creating predictands (Y.00 - Y.12) files	";
+		# create Y base file 1st col
+		awk '{if($2==1)print $1}' $Sites/$site/0_temp/flow.2 > $Sites/$site/0_temp/_Y;
+		# add header for the base file
+		sed -i '1iSTN,\nLAT,\nLON,' $Sites/$site/0_temp/_Y;
+		# create the previous yr Dec file (00) from Dec months and delete the last line
+		awk '{if($2==12)print $3}' $Sites/$site/0_temp/flow.2 | sed '$d' > $Sites/$site/0_temp/_00;
+		# create the months (01-12) files
+		awk '{print $3>"'$Sites'/'$site'/0_temp/_"$2}' $Sites/$site/0_temp/flow.2;
+		# remove 1st line in Dec file (which is Dec of prev yr)
+		sed -i '1d' $Sites/$site/0_temp/_12;
+		# add the header for months files (00-12 but not Y)
+		sed -i '1iMM\n'$Y'\n'$X'' $Sites/$site/0_temp/_??;
+		# put the month in the header
+		for m in {00..12}; do
+			counter;
+			sed -i 's/MM/'$m'.0/' $Sites/$site/0_temp/_$m;
+			# merge _Y and _mm to form Y.mm
+			pr -mts" " $Sites/$site/0_temp/_Y $Sites/$site/0_temp/_$m > $Sites/$site/2_format/Y.$m.0;
+			sed -i 's/, /,/' $Sites/$site/2_format/Y.$m.0;
+		done
+		# Fix missing Sep 2009 for site 08194500
+		if [ $site == "08194500" ]; then
+			_msg_ "			Fixing Sep 2009 for site #$site";
+			sed -i '/2009 -999/d' $Sites/$site/2_format/Y.09.0;
+			sed -i '/2008 /a 2009 -999' $Sites/$site/2_format/Y.09.0;
+		fi
+		# compose the X files
+		for f in `ls $Sites/$site/1_download/*.?.*.0`; do
+			counter;
+			# fix parameters file date format
+			awk 'NR>2{r=FILENAME;t=mktime("2000 "$3*1+1" 1 0 0 0");y=strftime("%Y",t)-40;m=strftime("%m",t);gsub(/1_download/,"0_temp",r);split(r,p,".");gsub(/1_download/,"0_temp",r);split(r,p,"/0_temp/");split(p[2],p,".");gsub(/0_temp\/\w+./,"0_temp/"p[1]"."m".",r);gsub(/.0$/,".1",r);print y,$2,$1,$4>r}' $f
+		done
+		# remove 1st line in Dec file (which is Dec of prev yr)
+		# sed -i '1d' $Sites/$site/0_temp/*.?.*.12.1;
+		_msg_ "		Creating Partial Predictors (X) files for : ...	";
+		xp="";
+		for f in `ls $Sites/$site/0_temp/*.??.?.*.1`; do
+			counter;
+			f2="${f/%.1/.2}";
+			p=`echo $f|cut -d/ -f 4|cut -d. -f 1`;
+			if [ $p != "$xp" ]; then
+				_msg_ "			X($p)";
+				xp=$p;
+			fi;
+			awk '{if(d==0 || d!=$1){Y=$2",";X=$3",";d=$1;p=1}else{Y=Y$2",";X=X$3",";p++}}END{for(i=1;i<=p;i++)printf "%s_%s,","'$p'",i;printf "\n%s\n%s",Y,X}' $f > $f2
+			awk '{if(d==$1){printf "%s ",$4}else{printf "\n%s ",$4;d=$1};}' $f >> $f2
+		done;
+	wait;
+}
+################################################################################

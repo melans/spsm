@@ -1,0 +1,69 @@
+################################################################################
+function _3_forecast_CPT_ {
+	counter;
+	cd 11.03;
+	./CPT.x < ../$1 > ../$1.out;
+	cd ..;
+}
+################################################################################
+# X_composing site parameters Lead_time Z month
+# ex.	(X_composing $sites "prec st" 1 01 0;)
+function _3_forecast_Ls_ {
+	counter;
+	# take site, parameter, lead time, Z, and month,and generate X.p.L.Z.m from (_mm , p.L.Z.m.2 , _Y)
+	# site=$1;parameters=$2;
+	m=$1;L=$2;Z=$3;
+	m0=`echo $(printf %02d $[10#$m-1])`;
+	_msg_ "			${M[10#$m+$L-1]} ($L month(s) lead time)"
+	x="";
+	for p in ${parameters//,/ }; do
+		counter;
+		x=$x"$Sites/$site/0_temp/$p.$m.$L.$Z.2 ";
+	done;
+	x=$x"$Sites/$site/0_temp/_$m";
+	cpt=$Sites/$site/3_forecast/$xx.$m.$L.$Z.cpt;
+	pr -mts' ' $Sites/$site/0_temp/_Y $x|sed 's/, /,/g' > $Sites/$site/2_format/X.$xx.$m.$L.$Z;
+	X=../$Sites/$site/2_format/X.$xx.$m.$L.$Z;
+	if [ $L -eq 1 ]; then
+		Y=../$Sites/$site/2_format/Y.$m0.$[L-1];
+	else
+		Y=../$Sites/$site/2_format/Y.$m.$[L-1];
+	fi;
+	CV=../$Sites/$site/3_forecast/$xx.$m.$L.$Z.CV;
+	RP=../$Sites/$site/3_forecast/$xx.$m.$L.$Z.RP;
+	limits=`awk 'NR>2{if(l1<$2||!l1)l1=$2;if(l2>$2||!l2)l2=$2;if(l3>$1||!l3)l3=$1;if(l4<$1||!l4)l4=$1;}END{print l1,l2,l3,l4}' $Sites/$site/1_download/$p.1.0.0`
+	awk '{print $1}' inc/03_cpt|\
+		sed 's/X/'${X//\//\\/}'/g'|\
+		sed 's/Y/'${Y//\//\\/}'/g'|\
+		sed 's/Limits/'${limits// /\\n}'/g'|\
+		sed 's/ITP/'$training'/g'|\
+		sed 's/CV/'${CV//\//\\/}'/g'|\
+		sed 's/RP/'${RP//\//\\/}'/g' \
+	> $cpt;
+	_3_forecast_CPT_ $cpt;
+	Q0=$Sites/$site/2_format/Y.$m.$[L-1]
+	Q=$Sites/$site/2_format/Y.$m.$L;
+	# echo "STN,$m,$l" > $Q;
+	# head -n3 $Q0|sed  >> $Q;
+	head -n3 $Q0 > $Q;
+	awk 'NR>6{print $1,$2}' $Sites/$CV.txt >> $Q;
+}
+################################################################################
+function _3_forecast_ {
+	# counter;
+	# take site, parameter, lead time, Z, and month,and generate X.p.L.Z.m from (_mm , p.L.Z.m.2 , _Y)
+	# sites=$1;parameters=$2;
+	x="";xx="";
+	_msg_ "	Step 3: Run CPT at ..."
+	for m in {01..12}; do
+		_msg_ "		${M[10#$m]} to predict streamflow of ..."
+		for L in {1..7}; do
+			counter;
+			# _3_forecast_Ls_ "$site" "$parameters" $m $L 0;
+			_3_forecast_Ls_ $m $L 0;
+		done;
+		# _3_forecast_Ls_ $sites "prec st" $m 1 0;
+	done;
+		# _3_forecast_Ls_ $sites "$parameters" 01 1 0;
+}
+################################################################################
