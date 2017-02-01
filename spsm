@@ -4,7 +4,6 @@
 
 for site in ${sites//,/ }; do
 	vars;
-
 	# _1_download_;
 	# _2_format_;
 	# _3_forecast_;
