@@ -18,6 +18,9 @@ function _4_calculate_ {
 		# echo "$m : $y_trn";echo
 		# y_obs=`awk -vORS=, '{if(NR>3 && $1>='$strt')print $2}' ../$dir/data/Y.$m|sed 's/,$//'`;
 		for L in {1..7}; do
+			m24=$[$m+$l-1];if [ $m24>12 ];then m24=$[$m24-12];fi
+			# x=m+l-1
+			# x=x>12?x-12:x
 		# 	set y_rp=`awk -vORS=, '{if(NR>6 && $1>='$strt')print $2}' ../$dir/Results/RP.$m.$l.txt|sed 's/,$//'`;
 		# 	set y_cv=`awk -vORS=, '{if(NR>6 && $1>='$strt')print $2}' ../$dir/Results/CV.$m.$l.txt|sed 's/,$//'`;
 		# 	yy=`awk -vORS=, '$1>1986&&$1==$1*1{print $2}' $Sites/$site/2_format/Y.$m.0|sed 's/,$//g'`;
