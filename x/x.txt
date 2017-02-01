@@ -1,18 +1,18 @@
-<style>table,tr,td{border:1px solid;text-align:center;white-space:nowrap}</style>
+<style>table,tr,td{border:1px solid;text-align:center;white-space:nowrap;font-size:11px;padding:0px}</style>
 <body topmargin=0 leftmargin=0>
 <table><tr><td>L
 <script>
 M=arr("Months,Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec,Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec")
-
-for(m=1;m<13;m++)W("<td><button onclick='select("+m+")'>"+M[m]+"")
-
-for(l=1;l<8;l++){
-W("<tr><td>"+l)
+for(l=1;l<8;l++)W("<td>"+l)
 for(m=1;m<13;m++){
-x=m+l-1
-x=x>12?x-12:x
-B("<td "+(x==10?"bgcolor=yellow":"")+" >Y."+m+"."+l+" = X."+m+"."+l+" + Y."+m+"."+(l-1))
-B((x)+" "+((x)%12)+" = "+M[x])
+//W("<tr><td>"+m)
+W("<tr><td><button onclick='select("+m+")'>"+M[m]+"")
+for(l=1;l<8;l++){
+m24=m+l-1;m24=m24>12?m24-12:m24
+l8=m-l+1;l8=l8<1?l8+12:l8
+B("<td "+(m24==1?"bgcolor=yellow":"")+" >Y."+m+"."+l+" = X."+m+"."+l+" + Y."+m+"."+(l-1))
+B((m)+" "+(l)+" = "+M[m24])
+B(l8+"."+l)
 //W("<hr>Q("+M[x]+") = CPT("+M[x]+") + Q("+M[x-1]+")")
 }
 
@@ -20,6 +20,7 @@ B((x)+" "+((x)%12)+" = "+M[x])
 function select(me){
 alert(me)
 }
+
 
 	function _(s){return(document.getElementById(s))}
 	function __(s){return(document.getElementsByName(s))}
